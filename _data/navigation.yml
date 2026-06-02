@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Resources & Notes"
+    url: /resources/
 
   - title: "Projects"
     url: /projects/    
