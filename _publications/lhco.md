@@ -6,4 +6,4 @@ permalink: paper
 date: 2023-09-18
 ---
 
-[Click to see the code](https://github.com/c4rlosr4ul/python_crash_course)
+[Click to see the code](https://github.com/carlosraulps/python_crash_course)

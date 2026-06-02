@@ -1,2 +1,14 @@
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+node_modules/
 
+# Sensitive / Personal Documents
+files/passp.pdf
+files/crn-cpf.pdf
+files/conversa1.pdf
+files/conversa2.pdf
+files/extra.pdf

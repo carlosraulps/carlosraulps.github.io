@@ -11,9 +11,9 @@ title                    : "Carlos Ra&uacutel Blog"
 title_separator          : "-"
 name                     : &name "Carlos Ra&uacutel "
 description              : &description "personal description"
-url                      : https://c4rlosr4ul.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://carlosraulps.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "c4rlosr4ul/c4rlosr4ul.github.io"
+repository               : "carlosraulps/carlosraulps.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "c4rlosr4ul"
+  github           : "carlosraulps"
   google_plus      :
   keybase          :
   instagram        :
