@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Resources & Notes"
-permalink: /resources/
+title: "Legacy Resources Notes (Archive)"
+permalink: /resources/archive/
 author_profile: true
 ---
 

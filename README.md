@@ -1,8 +1,62 @@
-# I will continue updated on my blog. :P
+# ⚛️ Carlos Raúl Primo Ramos · Academic & Scientific Computing Hub
 
-## $C_j=O_\pi O$
-### $\frac{\partial (\rho u_{i})}{\partial t} + \frac{\partial[\rho u_{i}u_{j}]}{\partial x_{j}} = -\frac{\partial p}{\partial x_{i}} + \frac{\partial \tau_{ij}}{\partial x_{j}} + \rho f_{i}$
+> Personal academic website, computational physics portfolio, Density Functional Theory (DFT) platforms, and interactive research applications.
 
-My blog based in https://github.com/mmistakes/minimal-mistakes and i appreciate it.
+<p align="center">
+  <a href="https://carlosraulps.github.io/"><img src="https://img.shields.io/badge/Live%20Website-carlosraulps.github.io-173D31?style=for-the-badge&logoColor=white" alt="Live Website" /></a>
+  <a href="https://carlosraulps.github.io/resources/"><img src="https://img.shields.io/badge/Resources%20Hub-Interactive%20Scientific%20Portfolio-4E8062?style=for-the-badge&logoColor=white" alt="Resources Hub" /></a>
+  <a href="https://carlosraulps.github.io/2d-carbon-explorer/"><img src="https://img.shields.io/badge/Carbon%20Atlas-2D%20Carbon%20Explorer-C85A32?style=for-the-badge&logoColor=white" alt="Carbon Atlas" /></a>
+</p>
 
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+---
+
+## 🔬 Core Platforms & Hub Sections
+
+### 1. [Scientific Resources Hub (`/resources/`)](https://carlosraulps.github.io/resources/)
+A high-density editorial scientific portfolio featuring:
+- **Flagship Carbon Atlas Showcase**: Hardware-accelerated 3D WebGL crystal lattice viewer (React Three Fiber) with signed Henkelman Bader net charge coloring and Girão ring topology taxonomy ($A = x\prod_n n^{a_n}$).
+- **VASP Automatization Platform**: Event-driven simulation lifecycle diagram, automatic k-mesh generation, and Pulay mixing convergence protocols.
+- **Fortran Algorithmic Numerics**: Double-precision ODE integrators with interactive $\mathcal{O}(h^4)$ vs $\mathcal{O}(h)$ log-log error convergence plotting.
+- **HPC Slurm Telemetry**: Multi-cluster partition telemetry across Iskay, Huk, Carbono, and Arch with real-time Discord daemon integration.
+- **Mathematical Axiomatizer**: Automated LLM derivation-to-LaTeX converter with XeLaTeX-compliant theorem environments.
+- **Searchable Repository Directory**: Real-time debounced discovery across all 15 open-source research repositories.
+
+### 2. [Carbon Atlas · 2D Carbon Explorer (`/2d-carbon-explorer/`)](https://carlosraulps.github.io/2d-carbon-explorer/)
+Full interactive materials informatics discovery platform for 61 two-dimensional carbon allotropes beyond graphene:
+- Girão 61-allotrope master dataset spanning all 17 wallpaper groups.
+- Live thermodynamic stability filtering against the $0.456\text{ eV/atom}$ experimental synthesis threshold.
+- Interactive **Ab Initio Quantum & Strain Laboratory** (CDD slices, HSE06 band structures, and strain-dependent Bader charges).
+- Multiformat simulation geometry exports (VASP POSCAR, CIF, XYZ, Quantum ESPRESSO, JSON).
+
+### 3. Academic Portfolio
+- **[About / Home](https://carlosraulps.github.io/)**: Research focus in computational physics and materials science.
+- **[Publications](https://carlosraulps.github.io/publications/)**: Peer-reviewed articles and preprints.
+- **[Curriculum Vitae (CV)](https://carlosraulps.github.io/cv/)**: Academic background, UNMSM, and UFABC research activities.
+- **[Study Manuals](https://carlosraulps.github.io/files/apuntes_de_Git_y_Github.pdf)**: Authored Spanish guide to Git & GitHub version control.
+
+---
+
+## 🛠️ Local Development & Build
+
+### Prerequisites
+- Node.js v20+ / v25+
+- Ruby 3.x with Bundler (for native Jekyll builds)
+
+### Commands
+```bash
+# Run Resources Hub locally (Vite HMR at http://localhost:5173/)
+npm run dev:resources
+
+# Compile Resources Hub production assets
+npm run build:resources
+
+# Preview Resources Hub production build
+npm run preview:resources
+```
+
+Detailed developer instructions are available in [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
+
+---
+
+## 📄 License
+This repository and its open-source scientific tools are released under the [MIT License](LICENSE).
