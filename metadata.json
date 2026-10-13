@@ -1,0 +1,7 @@
+{
+  "name": "Scientific Computing Hub & Resources · Carlos Raúl",
+  "description": "Carlos Raúl · Scientific Computing Hub, Interactive Density Functional Theory (DFT) Applications, Carbon Atlas 2D Allotrope Discovery, Numerical Computing, and Research Infrastructure.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
