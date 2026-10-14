@@ -2,24 +2,24 @@ import { MetricItem } from '../types';
 
 export const SCIENTIFIC_METRICS: MetricItem[] = [
   {
-    label: '2D Allotropes Catalogued',
-    value: '61',
-    description: 'Girão ring topology taxonomy spanning all 17 plane wallpaper groups (p1 to p6mm)',
+    label: 'DFT Calculations Executed',
+    value: '5,000+',
+    description: 'High-throughput electronic structure, hybrid functional calculations, and Bader partitioning',
   },
   {
     label: 'Open Scientific Repositories',
-    value: '15+',
+    value: '14',
     description: 'First-principles DFT, numerical methods, ML discovery, and Slurm orchestration',
   },
   {
     label: 'Computational Domains',
     value: '5',
-    description: 'Materials Informatics, Electronic Structure, Fortran Numerics, AI Automation, HPC Infra',
+    description: 'Electronic Structure, Fortran Numerics, AI Automation, HPC Infra, Academic Workflows',
   },
   {
-    label: 'Thermodynamic Baseline',
-    value: '0.456 eV',
-    description: 'Validated experimental synthesis threshold (ΔE vs Pristine Graphene monolayer)',
+    label: 'HPC Execution Scale',
+    value: '1,000+ Cores',
+    description: 'Distributed Slurm workload execution across academic supercomputing clusters',
   },
 ];
 

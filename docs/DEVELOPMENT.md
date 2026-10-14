@@ -1,6 +1,6 @@
-# Scientific Resources Hub & Carbon Atlas Developer Guide
+# Scientific Resources Hub Developer Guide
 
-This document describes the architecture, local development workflow, and deployment procedures for the **Resources Hub** and the standalone **Carbon Atlas (2D Carbon Explorer)** application.
+This document describes the architecture, local development workflow, and deployment procedures for the **Resources Hub** application.
 
 ---
 
@@ -54,31 +54,7 @@ npm run preview:resources
 
 ---
 
-## 3. Carbon Atlas (2D Carbon Explorer) Integration
-
-Carbon Atlas is Carlos's flagship materials informatics application for exploring two-dimensional carbon allotropes beyond graphene.
-
-### 3.1. Architectural Separation
-- **Portfolio Hub Integration (`resources-hub`)**: Contains an ultra-lightweight, hardware-accelerated 3D WebGL crystal preview (`LatticeViewer3D.tsx`) built with React Three Fiber + Drei. It features authentic allotropes (Pristine Graphene, Biphenylene Net-W, Phagraphene, Pentaheptite) with signed Henkelman Bader net charge coloring, Girão ring invariants, and thermodynamic viability gauges against the 0.456 eV/atom threshold.
-- **Standalone Application (`2d-carbon-explorer`)**: Lives in its own repository (`https://github.com/carlosraulps/2d-carbon-explorer`). It includes the complete Mendeley Data v2 61-allotrope database, the interactive **PHOTH Quantum & Strain Lab**, electronic band structure unwrapping (PBE vs HSE06), and simulation coordinate exporters.
-
-### 3.2. Developing and Deploying Carbon Atlas Separately
-1. Clone or open the Carbon Atlas repository:
-   ```bash
-   cd /path/to/2d-carbon-explorer/frontend
-   npm install
-   npm run dev
-   ```
-2. Build the application for deployment:
-   ```bash
-   npm run build
-   ```
-3. Deploy the resulting `dist/` directory to GitHub Pages at `https://carlosraulps.github.io/2d-carbon-explorer/`.
-4. If server-side ab initio DFT relaxation or ASE generation is required, deploy the FastAPI backend (`backend/`) to a container hosting provider (Render, Fly.io, Railway, or university server) and point `VITE_API_BASE_URL` to it. GitHub Pages serves the client-side WebGL workspace.
-
----
-
-## 4. Git & GitHub Pages Deployment
+## 3. Git & GitHub Pages Deployment
 
 ### 4.1. Master Branch Policy
 Per user project rules, all commits and remote operations MUST target the `master` branch (never `main`).

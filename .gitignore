@@ -13,3 +13,9 @@ files/conversa1.pdf
 files/conversa2.pdf
 files/extra.pdf
 
+# Private Research & Unreleased Allotrope Data
+2d-carbon-explorer/
+*private*
+*_archive*
+*_backup*
+

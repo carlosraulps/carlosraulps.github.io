@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://carlosraulps.github.io/"><img src="https://img.shields.io/badge/Live%20Website-carlosraulps.github.io-173D31?style=for-the-badge&logoColor=white" alt="Live Website" /></a>
   <a href="https://carlosraulps.github.io/resources/"><img src="https://img.shields.io/badge/Resources%20Hub-Interactive%20Scientific%20Portfolio-4E8062?style=for-the-badge&logoColor=white" alt="Resources Hub" /></a>
-  <a href="https://carlosraulps.github.io/2d-carbon-explorer/"><img src="https://img.shields.io/badge/Carbon%20Atlas-2D%20Carbon%20Explorer-C85A32?style=for-the-badge&logoColor=white" alt="Carbon Atlas" /></a>
 </p>
 
 ---
@@ -14,21 +13,13 @@
 
 ### 1. [Scientific Resources Hub (`/resources/`)](https://carlosraulps.github.io/resources/)
 A high-density editorial scientific portfolio featuring:
-- **Flagship Carbon Atlas Showcase**: Hardware-accelerated 3D WebGL crystal lattice viewer (React Three Fiber) with signed Henkelman Bader net charge coloring and Girão ring topology taxonomy ($A = x\prod_n n^{a_n}$).
 - **VASP Automatization Platform**: Event-driven simulation lifecycle diagram, automatic k-mesh generation, and Pulay mixing convergence protocols.
 - **Fortran Algorithmic Numerics**: Double-precision ODE integrators with interactive $\mathcal{O}(h^4)$ vs $\mathcal{O}(h)$ log-log error convergence plotting.
 - **HPC Slurm Telemetry**: Multi-cluster partition telemetry across Iskay, Huk, Carbono, and Arch with real-time Discord daemon integration.
 - **Mathematical Axiomatizer**: Automated LLM derivation-to-LaTeX converter with XeLaTeX-compliant theorem environments.
-- **Searchable Repository Directory**: Real-time debounced discovery across all 15 open-source research repositories.
+- **Searchable Repository Directory**: Real-time debounced discovery across all 14 open-source research repositories.
 
-### 2. [Carbon Atlas · 2D Carbon Explorer (`/2d-carbon-explorer/`)](https://carlosraulps.github.io/2d-carbon-explorer/)
-Full interactive materials informatics discovery platform for 61 two-dimensional carbon allotropes beyond graphene:
-- Girão 61-allotrope master dataset spanning all 17 wallpaper groups.
-- Live thermodynamic stability filtering against the $0.456\text{ eV/atom}$ experimental synthesis threshold.
-- Interactive **Ab Initio Quantum & Strain Laboratory** (CDD slices, HSE06 band structures, and strain-dependent Bader charges).
-- Multiformat simulation geometry exports (VASP POSCAR, CIF, XYZ, Quantum ESPRESSO, JSON).
-
-### 3. Academic Portfolio
+### 2. Academic Portfolio
 - **[About / Home](https://carlosraulps.github.io/)**: Research focus in computational physics and materials science.
 - **[Publications](https://carlosraulps.github.io/publications/)**: Peer-reviewed articles and preprints.
 - **[Curriculum Vitae (CV)](https://carlosraulps.github.io/cv/)**: Academic background, UNMSM, and UFABC research activities.

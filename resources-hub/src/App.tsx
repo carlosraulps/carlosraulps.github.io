@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ProjectMetadata } from './types';
 import { EditorialNavbar } from './components/Navigation/EditorialNavbar';
 import { EditorialHero } from './components/Hero/EditorialHero';
-import { CarbonAtlasShowcase } from './components/CarbonAtlas/CarbonAtlasShowcase';
 import { ProjectDiscovery } from './components/Projects/ProjectDiscovery';
 import { CategorySections } from './components/Category/CategorySections';
 import { ProjectModal } from './components/Projects/ProjectModal';
@@ -21,10 +20,7 @@ export function App() {
         {/* 1. Overview & Hero */}
         <EditorialHero />
 
-        {/* 2. Flagship: Carbon Atlas 3D WebGL Showcase */}
-        <CarbonAtlasShowcase />
-
-        {/* 3. Searchable Directory of all 15 Repositories */}
+        {/* 2. Searchable Directory of Repositories */}
         <ProjectDiscovery onOpenDetails={setSelectedProject} />
 
         {/* 4. Deep-Dive Domain Sections with Embedded Interactive Schematics */}

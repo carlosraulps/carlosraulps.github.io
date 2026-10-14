@@ -1,30 +1,7 @@
 import { ProjectMetadata } from '../types';
 
 export const PROJECTS: ProjectMetadata[] = [
-  // 1. FLAGSHIP: Carbon Atlas
-  {
-    id: 'carbon-atlas',
-    title: 'Carbon Atlas (2D Carbon Explorer)',
-    shortDescription: 'Materials informatics and crystallographic discovery platform for two-dimensional carbon allotropes beyond graphene.',
-    fullDescription: 'Carbon Atlas resolves nanoscience nomenclature ambiguity by coupling mathematical Girão ring-topology classification with first-principles DFT-D3 and HSE06 electronic structure benchmarks. Features hardware-accelerated 3D WebGL crystal inspection, Wyckoff net charge visualization, thermodynamic viability gauges against the 0.456 eV/atom experimental synthesis threshold, and multiformat simulation exports (VASP POSCAR, CIF, XYZ, QE).',
-    category: 'featured',
-    primaryLanguage: 'React / TypeScript / Python',
-    languageColor: '#3178C6',
-    techStack: ['React 18', 'Three.js', 'React Three Fiber', 'FastAPI', 'Pymatgen', 'ASE', 'VASP 6.x', 'HSE06', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/carlosraulps/2d-carbon-explorer',
-    liveDemoUrl: 'https://carlosraulps.github.io/2d-carbon-explorer/',
-    highlights: [
-      '61 validated allotropes spanning all 17 plane wallpaper groups',
-      'Calculated ΔE vs. Graphene monolayer ground state',
-      'Signed Henkelman Bader net charge distribution',
-      'Interactive crystal inspection with supercell expansion'
-    ],
-    scientificDomain: '2D Materials Informatics & Crystallography',
-    schematicType: 'carbon-atlas',
-    featured: true,
-  },
-
-  // 2. FLAGSHIP: VASP Automatization Platform
+  // 1. FLAGSHIP: VASP Automatization Platform
   {
     id: 'vasp-automatization-platform',
     title: 'VASP-automatization-platform',

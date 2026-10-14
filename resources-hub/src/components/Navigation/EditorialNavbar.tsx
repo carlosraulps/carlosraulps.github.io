@@ -23,7 +23,6 @@ export function EditorialNavbar() {
 
   const sectionAnchors = [
     { title: 'Overview', href: '#overview' },
-    { title: 'Carbon Atlas', href: '#carbon-atlas' },
     { title: 'Featured Applications', href: '#featured-apps' },
     { title: 'DFT & Materials', href: '#dft-materials' },
     { title: 'Numerical Computing', href: '#numerical-computing' },

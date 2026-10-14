@@ -51,12 +51,10 @@ jobs:
         run: |
           bundle exec jekyll build --destination ./_site
 
-      - name: Ensure Resources Hub and 2D Carbon Explorer in _site
+      - name: Ensure Resources Hub in _site
         run: |
           mkdir -p ./_site/resources
           cp -r ./resources/* ./_site/resources/
-          mkdir -p ./_site/2d-carbon-explorer
-          cp -r ./2d-carbon-explorer/* ./_site/2d-carbon-explorer/
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

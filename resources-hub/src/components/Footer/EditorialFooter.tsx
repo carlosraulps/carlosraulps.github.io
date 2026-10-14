@@ -24,7 +24,7 @@ export function EditorialFooter() {
               </span>
             </div>
             <p className="text-xs text-ink-700 leading-relaxed font-sans max-w-sm">
-              Computational physics and mathematical modeling researcher specializing in Density Functional Theory, 2D carbon allotrope informatics, and high-performance scientific software development.
+              Computational physics and mathematical modeling researcher specializing in Density Functional Theory, electronic structure simulations, and high-performance scientific software development.
             </p>
             <div className="text-[11px] font-mono text-ink-500 pt-1">
               Affiliations: Universidad Nacional Mayor de San Marcos (UNMSM) · Universidade Federal do ABC (UFABC)
@@ -53,13 +53,13 @@ export function EditorialFooter() {
             <ul className="space-y-2 text-ink-700">
               <li>
                 <a
-                  href="https://carlosraulps.github.io/2d-carbon-explorer/"
+                  href="https://github.com/carlosraulps/VASP-automatization-platform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-forest-900 transition-colors flex items-center justify-between"
                 >
-                  <span>Carbon Atlas (2D Carbon Explorer)</span>
-                  <span className="text-[10px] text-terracotta-600">Live App ↗</span>
+                  <span>VASP Automatization Platform</span>
+                  <span className="text-[10px] text-forest-700">GitHub ↗</span>
                 </a>
               </li>
               <li>
