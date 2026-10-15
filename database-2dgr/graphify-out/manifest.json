@@ -1,0 +1,1010 @@
+{
+  "app.py": {
+    "mtime": 1791673985.8798692,
+    "seen": 1791974673.5676951,
+    "ast_hash": "50d24ca6d3558fe2e5e1263fbc124f5b",
+    "semantic_hash": "50d24ca6d3558fe2e5e1263fbc124f5b"
+  },
+  "data/catalog.json": {
+    "mtime": 1792037611.4565637,
+    "seen": 1792063866.162768,
+    "ast_hash": "10aa6085e2969530593d65ddf20706cb",
+    "semantic_hash": ""
+  },
+  "database/__init__.py": {
+    "mtime": 1791673060.924782,
+    "seen": 1791974673.5677729,
+    "ast_hash": "8254e5c2727a74974543b46ca3b22ef0",
+    "semantic_hash": "8254e5c2727a74974543b46ca3b22ef0"
+  },
+  "database/catalog.py": {
+    "mtime": 1791659264.6717434,
+    "seen": 1791974673.567774,
+    "ast_hash": "cc3c5049273a4a157e09cd46d2d567e4",
+    "semantic_hash": "cc3c5049273a4a157e09cd46d2d567e4"
+  },
+  "database/loader.py": {
+    "mtime": 1791673621.7135541,
+    "seen": 1791974673.567775,
+    "ast_hash": "9bddc0fa7310b4a7280e8b22effec622",
+    "semantic_hash": "9bddc0fa7310b4a7280e8b22effec622"
+  },
+  "README.md": {
+    "mtime": 1791831572.6783857,
+    "seen": 1792034592.186531,
+    "ast_hash": "0bc7cecf8406b16133f25d2fc1219930",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1791597817.472928,
+    "seen": 1792034592.186541,
+    "ast_hash": "766e610069a5a9a2eca3804c7c9f1587",
+    "semantic_hash": ""
+  },
+  "backend/app/__init__.py": {
+    "mtime": 1791674616.113581,
+    "seen": 1791974673.567701,
+    "ast_hash": "da2af8d11abe4119f5a5f3f8c104ee4e",
+    "semantic_hash": "da2af8d11abe4119f5a5f3f8c104ee4e"
+  },
+  "backend/app/main.py": {
+    "mtime": 1791831656.808843,
+    "seen": 1791974673.567703,
+    "ast_hash": "abd5aa46456d589064df03d23df7d5be",
+    "semantic_hash": "abd5aa46456d589064df03d23df7d5be"
+  },
+  "backend/app/routers/__init__.py": {
+    "mtime": 1791674591.8343673,
+    "seen": 1791974673.567706,
+    "ast_hash": "30d3c7d7ec05aba59ad96b7fa9f760b0",
+    "semantic_hash": "30d3c7d7ec05aba59ad96b7fa9f760b0"
+  },
+  "backend/app/routers/exports.py": {
+    "mtime": 1791674580.770863,
+    "seen": 1791974673.567712,
+    "ast_hash": "e43b43f52e07ff4d5e9a0464b26b081b",
+    "semantic_hash": "e43b43f52e07ff4d5e9a0464b26b081b"
+  },
+  "backend/app/routers/structures.py": {
+    "mtime": 1791674564.3170984,
+    "seen": 1791974673.5677161,
+    "ast_hash": "dcd74d6c766c0bf33bc88f215a1786e6",
+    "semantic_hash": "dcd74d6c766c0bf33bc88f215a1786e6"
+  },
+  "backend/app/services/__init__.py": {
+    "mtime": 1791674542.499298,
+    "seen": 1791974673.567717,
+    "ast_hash": "9e84b15695254c9d0aa13b428bd72801",
+    "semantic_hash": "9e84b15695254c9d0aa13b428bd72801"
+  },
+  "backend/app/services/crystallography.py": {
+    "mtime": 1791830703.5157661,
+    "seen": 1791974673.567721,
+    "ast_hash": "a8c47a73565ba9e24022d36ced437901",
+    "semantic_hash": "a8c47a73565ba9e24022d36ced437901"
+  },
+  "backend/app/services/exporters.py": {
+    "mtime": 1791934681.0470226,
+    "seen": 1791974673.567723,
+    "ast_hash": "57571b7495b6471ef226ecc251496d9c",
+    "semantic_hash": "57571b7495b6471ef226ecc251496d9c"
+  },
+  "backend/app/services/supercells.py": {
+    "mtime": 1791674470.1876972,
+    "seen": 1791974673.567729,
+    "ast_hash": "c51c640d16fa7939f09d62900ece11df",
+    "semantic_hash": "c51c640d16fa7939f09d62900ece11df"
+  },
+  "backend/app/services/symmetry.py": {
+    "mtime": 1791674505.2735417,
+    "seen": 1791974673.56773,
+    "ast_hash": "cb859f25bb17662a5b8c3a04402b815d",
+    "semantic_hash": "cb859f25bb17662a5b8c3a04402b815d"
+  },
+  "backend/pyproject.toml": {
+    "mtime": 1791675515.2897162,
+    "seen": 1791974673.567731,
+    "ast_hash": "c90ab3dd9f8c481b3bb6f92af882aff6",
+    "semantic_hash": "c90ab3dd9f8c481b3bb6f92af882aff6"
+  },
+  "backend/scripts/import_allotropes.py": {
+    "mtime": 1791759528.0255404,
+    "seen": 1791974673.567733,
+    "ast_hash": "4a3a56be3a747113a114f75be261337c",
+    "semantic_hash": "4a3a56be3a747113a114f75be261337c"
+  },
+  "backend/tests/conftest.py": {
+    "mtime": 1791674641.4626515,
+    "seen": 1791974673.567734,
+    "ast_hash": "777e231c09b3ffb02a357a65284e277c",
+    "semantic_hash": "777e231c09b3ffb02a357a65284e277c"
+  },
+  "backend/tests/test_api.py": {
+    "mtime": 1791937493.205903,
+    "seen": 1791974673.567735,
+    "ast_hash": "244858676fb9c1f814f55ffe6cd9daf9",
+    "semantic_hash": "244858676fb9c1f814f55ffe6cd9daf9"
+  },
+  "backend/tests/test_crystallography.py": {
+    "mtime": 1791674839.8196316,
+    "seen": 1791974673.567737,
+    "ast_hash": "5cccdf864599401e25a319df5e724cb7",
+    "semantic_hash": "5cccdf864599401e25a319df5e724cb7"
+  },
+  "backend/tests/test_exports.py": {
+    "mtime": 1791674681.7378125,
+    "seen": 1791974673.567741,
+    "ast_hash": "d0cab31b6020dd4bd34536d317b8e28d",
+    "semantic_hash": "d0cab31b6020dd4bd34536d317b8e28d"
+  },
+  "backend/tests/test_supercells.py": {
+    "mtime": 1791674667.7534354,
+    "seen": 1791974673.567744,
+    "ast_hash": "a1afc0423a193fdfd7e4bbd27fbdfa4e",
+    "semantic_hash": "a1afc0423a193fdfd7e4bbd27fbdfa4e"
+  },
+  "components/__init__.py": {
+    "mtime": 1791600218.2321835,
+    "seen": 1791974673.5677462,
+    "ast_hash": "7610b137badb9ec15b5d78aff4b01908",
+    "semantic_hash": "7610b137badb9ec15b5d78aff4b01908"
+  },
+  "components/crystallographic_cards.py": {
+    "mtime": 1791659117.2105002,
+    "seen": 1791974673.5677462,
+    "ast_hash": "3ca2b2ef1490efa5359ad2880a29be70",
+    "semantic_hash": "3ca2b2ef1490efa5359ad2880a29be70"
+  },
+  "components/midb_view.py": {
+    "mtime": 1791637318.5077024,
+    "seen": 1791974673.567747,
+    "ast_hash": "31e996c7c4fc835e3d670fe76a1fbc71",
+    "semantic_hash": "31e996c7c4fc835e3d670fe76a1fbc71"
+  },
+  "components/settings_modal.py": {
+    "mtime": 1791634951.1426368,
+    "seen": 1791974673.567748,
+    "ast_hash": "d916b1d3f9db50e807d75f4c974e522d",
+    "semantic_hash": "d916b1d3f9db50e807d75f4c974e522d"
+  },
+  "components/stability_chart.py": {
+    "mtime": 1791658592.722526,
+    "seen": 1791974673.567749,
+    "ast_hash": "b06609ae067321f411248640ced8ee89",
+    "semantic_hash": "b06609ae067321f411248640ced8ee89"
+  },
+  "components/symmetry_visualizer.py": {
+    "mtime": 1791647450.4127607,
+    "seen": 1791974673.56775,
+    "ast_hash": "66e7f7c62b334a9c9071af7500b681b4",
+    "semantic_hash": "66e7f7c62b334a9c9071af7500b681b4"
+  },
+  "components/upload_modal.py": {
+    "mtime": 1791660531.5392509,
+    "seen": 1791974673.56775,
+    "ast_hash": "6b5639f67b20358145633f68f53275da",
+    "semantic_hash": "6b5639f67b20358145633f68f53275da"
+  },
+  "data/mendeley_catalog.json": {
+    "mtime": 1791673085.7836282,
+    "seen": 1791974673.567768,
+    "ast_hash": "3f7632896260822950e8a78945925a94",
+    "semantic_hash": "3f7632896260822950e8a78945925a94"
+  },
+  "data/midb_catalog.json": {
+    "mtime": 1791633152.8485646,
+    "seen": 1791974673.567769,
+    "ast_hash": "a83dcc0460b788dfc47e20a5dc6c4266",
+    "semantic_hash": "a83dcc0460b788dfc47e20a5dc6c4266"
+  },
+  "database/mendeley.py": {
+    "mtime": 1791673025.7408605,
+    "seen": 1791974673.567777,
+    "ast_hash": "d3fc9c062001269c7087262a9ce4e0f5",
+    "semantic_hash": "d3fc9c062001269c7087262a9ce4e0f5"
+  },
+  "database/midb.py": {
+    "mtime": 1791633181.4389768,
+    "seen": 1791974673.567778,
+    "ast_hash": "173f61603cf8a9ff98770c2c49d0f505",
+    "semantic_hash": "173f61603cf8a9ff98770c2c49d0f505"
+  },
+  "frontend/package.json": {
+    "mtime": 1791934681.058793,
+    "seen": 1791974673.5677812,
+    "ast_hash": "2939ac51a38026c08c5290a2e7f78b27",
+    "semantic_hash": "2939ac51a38026c08c5290a2e7f78b27"
+  },
+  "frontend/postcss.config.js": {
+    "mtime": 1791672601.3761191,
+    "seen": 1791974673.567782,
+    "ast_hash": "cacd09e71648997869205c0795def9b8",
+    "semantic_hash": "cacd09e71648997869205c0795def9b8"
+  },
+  "frontend/src/components/AbInitioLab.jsx": {
+    "mtime": 1792075534.4471946,
+    "seen": 1792075572.4563751,
+    "ast_hash": "2e66deb01210dfff205baa891628d396",
+    "semantic_hash": ""
+  },
+  "frontend/src/data/allotropes.js": {
+    "mtime": 1792065326.6740184,
+    "seen": 1792065730.483489,
+    "ast_hash": "a7c77bd490cabdabc34a0c5dac9d680a",
+    "semantic_hash": ""
+  },
+  "frontend/src/data/photh_calculations.js": {
+    "mtime": 1791942659.635472,
+    "seen": 1791974673.5678048,
+    "ast_hash": "8e05a52be4095ccaefa237510af943da",
+    "semantic_hash": "8e05a52be4095ccaefa237510af943da"
+  },
+  "frontend/src/main.jsx": {
+    "mtime": 1792067621.7725866,
+    "seen": 1792070657.302169,
+    "ast_hash": "fdf57d5ebf7cbd336f432cf3224f701e",
+    "semantic_hash": ""
+  },
+  "frontend/tailwind.config.js": {
+    "mtime": 1791672601.374998,
+    "seen": 1791974673.567816,
+    "ast_hash": "07f4717a68881bf3e3413452777ba60c",
+    "semantic_hash": "07f4717a68881bf3e3413452777ba60c"
+  },
+  "frontend/vite.config.js": {
+    "mtime": 1791756427.4073057,
+    "seen": 1791974673.567818,
+    "ast_hash": "118d4566bfc3952345e63fe524fc4674",
+    "semantic_hash": "118d4566bfc3952345e63fe524fc4674"
+  },
+  "scripts/export_allotropes_js.py": {
+    "mtime": 1791939277.5693595,
+    "seen": 1791974673.567826,
+    "ast_hash": "13f86ff89ba5b9c686988e8e5ff72c8f",
+    "semantic_hash": "13f86ff89ba5b9c686988e8e5ff72c8f"
+  },
+  "scripts/extract_midb.py": {
+    "mtime": 1791633146.1758976,
+    "seen": 1791974673.567828,
+    "ast_hash": "8b392398d1464498324a56f8661033b4",
+    "semantic_hash": "8b392398d1464498324a56f8661033b4"
+  },
+  "scripts/postprocessing/render_coupled_band_pdos.py": {
+    "mtime": 1791728228.9456208,
+    "seen": 1791974673.5678332,
+    "ast_hash": "44d5c4fdc143a5c63967b4092dfa3054",
+    "semantic_hash": "44d5c4fdc143a5c63967b4092dfa3054"
+  },
+  "scripts/postprocessing/render_her_free_energy.py": {
+    "mtime": 1791721893.2477622,
+    "seen": 1791974673.5678341,
+    "ast_hash": "af99a41c1c93733d1629cf59221711e5",
+    "semantic_hash": "af99a41c1c93733d1629cf59221711e5"
+  },
+  "scripts/postprocessing/render_strained_bader.py": {
+    "mtime": 1791721908.4101317,
+    "seen": 1791974673.5678349,
+    "ast_hash": "cd4924c8c4a0fa7bc04f34fba81563b7",
+    "semantic_hash": "cd4924c8c4a0fa7bc04f34fba81563b7"
+  },
+  "scripts/postprocessing/webapp_theme.py": {
+    "mtime": 1791724989.8047132,
+    "seen": 1791974673.5678349,
+    "ast_hash": "aceec7e9b9792b70013ecc036cc4bb83",
+    "semantic_hash": "aceec7e9b9792b70013ecc036cc4bb83"
+  },
+  "scripts/test_user_requirements.py": {
+    "mtime": 1791683296.2730467,
+    "seen": 1791974673.56784,
+    "ast_hash": "dc8195aad623e5837fa50abb1c5f2470",
+    "semantic_hash": "dc8195aad623e5837fa50abb1c5f2470"
+  },
+  "scripts/test_visual_and_functional.py": {
+    "mtime": 1791680971.3647768,
+    "seen": 1791974673.567843,
+    "ast_hash": "821a5ea97e1d996b5a1d182182ae8052",
+    "semantic_hash": "821a5ea97e1d996b5a1d182182ae8052"
+  },
+  "frontend/README.md": {
+    "mtime": 1791672601.3751419,
+    "seen": 1792034592.186539,
+    "ast_hash": "4dfa8975bd2ca441662c43e8bd941175",
+    "semantic_hash": ""
+  },
+  "frontend/index.html": {
+    "mtime": 1791672601.3753774,
+    "seen": 1792034592.1865401,
+    "ast_hash": "a4ae2856a7e5c61525a6d1ae687fcb52",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_bader_biaxial_breathing.gif": {
+    "mtime": 1791722262.073639,
+    "seen": 1792034592.186574,
+    "ast_hash": "5c75d5445cef224ad967db37a7e4e731",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_bader_uniaxial_x.gif": {
+    "mtime": 1791722282.2520502,
+    "seen": 1792034592.1865752,
+    "ast_hash": "ab785f1099c84100d00b4dc6bab8ae8e",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_bader_uniaxial_y.gif": {
+    "mtime": 1791722301.7762754,
+    "seen": 1792034592.186576,
+    "ast_hash": "afd48e42fd7a3a3a638aca7cd63bcad3",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_band_pdos_coupled_biaxial.gif": {
+    "mtime": 1791728254.2186975,
+    "seen": 1792034592.1865768,
+    "ast_hash": "546c62b1699ab4b3da7bc6dab6e53df5",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_band_pdos_coupled_uniaxial_x.gif": {
+    "mtime": 1791728264.335476,
+    "seen": 1792034592.186578,
+    "ast_hash": "119c286aca182ac71f99885ff04b639d",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_band_pdos_coupled_uniaxial_y.gif": {
+    "mtime": 1791728274.5686185,
+    "seen": 1792034592.186579,
+    "ast_hash": "568654b70c74b5a108268f01497fc404",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_ccd_biaxial_breathing.gif": {
+    "mtime": 1791722143.365286,
+    "seen": 1792034592.18658,
+    "ast_hash": "442cd97e297e671a7c1f3ab9cb46196a",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_ccd_uniaxial_x.gif": {
+    "mtime": 1791722155.8449416,
+    "seen": 1792034592.186581,
+    "ast_hash": "0023787d26f349e4f590291792b20013",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/anim_ccd_uniaxial_y.gif": {
+    "mtime": 1791722168.790126,
+    "seen": 1792034592.186582,
+    "ast_hash": "8ac0ba1c0572d00d338645dab6bf37d9",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig0_crystal_structure_and_reciprocal_space.png": {
+    "mtime": 1791678683.8428824,
+    "seen": 1792034592.186583,
+    "ast_hash": "cfb342aea6f7171dae3ff4f3f9b0116e",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig1_electronic_bands_pbe_vs_hse06.png": {
+    "mtime": 1791678683.666745,
+    "seen": 1792034592.186584,
+    "ast_hash": "92ebafe481e26e406e75e8d80efdc7d9",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig2_her_free_energy_profile.png": {
+    "mtime": 1791722116.934524,
+    "seen": 1792034592.1865852,
+    "ast_hash": "591eed68d8a11c4a4b3204e039896055",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig7_mechanical_strain_energy_and_elasticity.png": {
+    "mtime": 1791678683.853606,
+    "seen": 1792034592.1865869,
+    "ast_hash": "9679ea2266bf6c2f18eff4606fb7c77d",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig8_bader_charge_redistribution_under_strain.png": {
+    "mtime": 1791678683.8292947,
+    "seen": 1792034592.1865878,
+    "ast_hash": "137a8b3cd3f08d100a70095c266d7bb3",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_bader_charge_profiles.png": {
+    "mtime": 1791722118.5570323,
+    "seen": 1792034592.1865878,
+    "ast_hash": "04308dc68041a37c2b69feee6919a70c",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_bader_pristine_vs_strained_composite.png": {
+    "mtime": 1791714662.8025386,
+    "seen": 1792034592.18659,
+    "ast_hash": "42feb2634877b26049a74ce9a9f46e12",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_band_pdos_coupled_pristine.png": {
+    "mtime": 1791728244.0920475,
+    "seen": 1792034592.186591,
+    "ast_hash": "f07b77cb29c087a7d8a06c7163e06e19",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_ccd_2d_publication_contour.png": {
+    "mtime": 1791678683.8140697,
+    "seen": 1792034592.186592,
+    "ast_hash": "f82838161ad5bcf73d2df89814d1aa13",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ScientificFormula.jsx": {
+    "mtime": 1792065182.5881522,
+    "seen": 1792065730.4833438,
+    "ast_hash": "2f5be088cac288a26f6479af8309f05e",
+    "semantic_hash": ""
+  },
+  "scripts/postprocessing/render_clean_bader_anim.py": {
+    "mtime": 1791722102.0942066,
+    "seen": 1791974673.567831,
+    "ast_hash": "c6234efc61964e81d09fd5b676a1e83b",
+    "semantic_hash": "c6234efc61964e81d09fd5b676a1e83b"
+  },
+  "scripts/postprocessing/render_clean_ccd_anim.py": {
+    "mtime": 1791721993.239838,
+    "seen": 1791974673.567832,
+    "ast_hash": "9f7315dd6180d680d491809dcd889608",
+    "semantic_hash": "9f7315dd6180d680d491809dcd889608"
+  },
+  "frontend/public/calculations/photh/volumetric/cdd_3d_metadata.json": {
+    "mtime": 1791744630.258135,
+    "seen": 1791974673.5677838,
+    "ast_hash": "e1395b452c4e8c818705ffc26fa102e8",
+    "semantic_hash": "e1395b452c4e8c818705ffc26fa102e8"
+  },
+  "frontend/src/components/Interactive3DLattice.jsx": {
+    "mtime": 1792075234.558692,
+    "seen": 1792075572.45644,
+    "ast_hash": "f4938d362f73543e0d662ce3cfbf9577",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/NativeBandsPbeHse.jsx": {
+    "mtime": 1791738217.1148636,
+    "seen": 1791974673.567793,
+    "ast_hash": "fbdeff8f0cd170eeb3ee1cc4811807fe",
+    "semantic_hash": "fbdeff8f0cd170eeb3ee1cc4811807fe"
+  },
+  "frontend/src/data/pbe_hse06_bands.json": {
+    "mtime": 1791737743.2250881,
+    "seen": 1791974673.5678039,
+    "ast_hash": "7d97a7a8abbecf873493c10d11c8f0c0",
+    "semantic_hash": "7d97a7a8abbecf873493c10d11c8f0c0"
+  },
+  "scripts/export_cdd_vti.py": {
+    "mtime": 1791744599.9639854,
+    "seen": 1791974673.567827,
+    "ast_hash": "022b969d4089e597050cff188753fa11",
+    "semantic_hash": "022b969d4089e597050cff188753fa11"
+  },
+  "scripts/postprocessing/export_pbe_hse_bands.py": {
+    "mtime": 1791737729.5092988,
+    "seen": 1791974673.56783,
+    "ast_hash": "3e89bc9133ba0a2bb4b5f1a56707c00b",
+    "semantic_hash": "3e89bc9133ba0a2bb4b5f1a56707c00b"
+  },
+  "frontend/public/papers/41598_2021_Article_98261.pdf": {
+    "mtime": 1791747609.8660202,
+    "seen": 1792034592.186572,
+    "ast_hash": "9b53065c2a6d545c5e223746fbca6b07",
+    "semantic_hash": ""
+  },
+  "frontend/public/papers/s41524-025-01932-8.pdf": {
+    "mtime": 1791747609.8742898,
+    "seen": 1792034592.186573,
+    "ast_hash": "64380bc76d137ec918db4c3361201217",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_ccd_2d_slice_z045.png": {
+    "mtime": 1791730818.0711343,
+    "seen": 1792034592.186593,
+    "ast_hash": "52c7f0c616fac9897f4d983684aaa980",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_ccd_2d_slice_z050.png": {
+    "mtime": 1791730817.913394,
+    "seen": 1792034592.186594,
+    "ast_hash": "1b90f1475746ce63cb2d18341b8a0fad",
+    "semantic_hash": ""
+  },
+  "frontend/public/calculations/photh/fig_ccd_2d_slice_z055.png": {
+    "mtime": 1791730818.238508,
+    "seen": 1792034592.186595,
+    "ast_hash": "584e525d0883284f992aa652d6139ed3",
+    "semantic_hash": ""
+  },
+  "backend/app/routers/bibliography.py": {
+    "mtime": 1791830509.3387206,
+    "seen": 1791974673.567709,
+    "ast_hash": "e92cd29498860c436c2620a78c057e62",
+    "semantic_hash": "e92cd29498860c436c2620a78c057e62"
+  },
+  "backend/app/routers/ml.py": {
+    "mtime": 1791830556.628455,
+    "seen": 1791974673.5677152,
+    "ast_hash": "e15549204c98b127ab2de6251714ef7a",
+    "semantic_hash": "e15549204c98b127ab2de6251714ef7a"
+  },
+  "backend/app/services/canonical_catalog.py": {
+    "mtime": 1792037730.6238878,
+    "seen": 1792063866.162038,
+    "ast_hash": "9a01a484f8e0d095e78393852d3c7d8f",
+    "semantic_hash": ""
+  },
+  "backend/app/services/descriptors.py": {
+    "mtime": 1791941451.5854304,
+    "seen": 1791974673.567722,
+    "ast_hash": "09f185c19f5e998fadee020d98b81645",
+    "semantic_hash": "09f185c19f5e998fadee020d98b81645"
+  },
+  "backend/app/services/ml_baseline.py": {
+    "mtime": 1791830417.8667016,
+    "seen": 1791974673.567725,
+    "ast_hash": "1db52773bb66a25f6f8a87b30d5713b9",
+    "semantic_hash": "1db52773bb66a25f6f8a87b30d5713b9"
+  },
+  "backend/app/services/ml_exporter.py": {
+    "mtime": 1791830373.2364151,
+    "seen": 1791974673.5677261,
+    "ast_hash": "839400efa6cf0edc55461b42867c0855",
+    "semantic_hash": "839400efa6cf0edc55461b42867c0855"
+  },
+  "backend/app/services/plane_standardizer.py": {
+    "mtime": 1791830246.6711361,
+    "seen": 1791974673.567728,
+    "ast_hash": "65744c15dbb5873abd149629aada5822",
+    "semantic_hash": "65744c15dbb5873abd149629aada5822"
+  },
+  "backend/tests/test_canonical_naming.py": {
+    "mtime": 1791934681.0472317,
+    "seen": 1791974673.5677361,
+    "ast_hash": "9ebd5580c3fddfede1b85fba91ed1f3f",
+    "semantic_hash": "9ebd5580c3fddfede1b85fba91ed1f3f"
+  },
+  "backend/tests/test_descriptors.py": {
+    "mtime": 1791940035.470571,
+    "seen": 1791974673.56774,
+    "ast_hash": "15e50213b5fb6b572f2a5570c43509f9",
+    "semantic_hash": "15e50213b5fb6b572f2a5570c43509f9"
+  },
+  "backend/tests/test_ml_dataset.py": {
+    "mtime": 1791830602.5218816,
+    "seen": 1791974673.5677419,
+    "ast_hash": "8f7d8cce46d40b9003cd1928c03ddb4c",
+    "semantic_hash": "8f7d8cce46d40b9003cd1928c03ddb4c"
+  },
+  "backend/tests/test_plane_rotation.py": {
+    "mtime": 1791830757.1942406,
+    "seen": 1791974673.567743,
+    "ast_hash": "5341f1a856a487338a0f62d3a996b557",
+    "semantic_hash": "5341f1a856a487338a0f62d3a996b557"
+  },
+  "data/bibliography.json": {
+    "mtime": 1792063543.1056776,
+    "seen": 1792063866.162768,
+    "ast_hash": "6e6f30c7390069c09db650918af1d73e",
+    "semantic_hash": ""
+  },
+  "data/ml/baseline_models.json": {
+    "mtime": 1791934681.0546405,
+    "seen": 1791974673.56777,
+    "ast_hash": "ddd7f94d9257e26b0c8f931565b0e8d4",
+    "semantic_hash": "ddd7f94d9257e26b0c8f931565b0e8d4"
+  },
+  "data/ml/feature_metadata.json": {
+    "mtime": 1791830771.5235894,
+    "seen": 1791974673.567771,
+    "ast_hash": "ef39f4b0dfec87a510226c1b02c4a467",
+    "semantic_hash": "ef39f4b0dfec87a510226c1b02c4a467"
+  },
+  "frontend/src/components/BibliographyExplorer.jsx": {
+    "mtime": 1791962267.1636646,
+    "seen": 1791974673.567787,
+    "ast_hash": "608f46180c87d33330534ec26bb619cf",
+    "semantic_hash": "608f46180c87d33330534ec26bb619cf"
+  },
+  "frontend/src/components/MachineLearningStudio.jsx": {
+    "mtime": 1791954120.9793413,
+    "seen": 1791974673.56779,
+    "ast_hash": "fdc689d6a7faca351da94d265524f116",
+    "semantic_hash": "fdc689d6a7faca351da94d265524f116"
+  },
+  "frontend/src/components/StructureInspector.jsx": {
+    "mtime": 1792074601.89278,
+    "seen": 1792075572.456604,
+    "ast_hash": "6e21d5f73d311f0d0d4727039f46e0e5",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1791832217.7213683,
+    "seen": 1791974673.56782,
+    "ast_hash": "fe90404ed7cdfb3ec8ef5177b69a6cee",
+    "semantic_hash": "fe90404ed7cdfb3ec8ef5177b69a6cee"
+  },
+  "scripts/generate_literature_pipeline.py": {
+    "mtime": 1791934681.1338456,
+    "seen": 1791974673.567829,
+    "ast_hash": "eef9eef0c986399f6a32303550d9afe9",
+    "semantic_hash": "eef9eef0c986399f6a32303550d9afe9"
+  },
+  "scripts/standardize_and_enrich_database.py": {
+    "mtime": 1791939193.843051,
+    "seen": 1791974673.567837,
+    "ast_hash": "44665970a9c4a76bb3641e79d11c53f7",
+    "semantic_hash": "44665970a9c4a76bb3641e79d11c53f7"
+  },
+  "scripts/download_papers.py": {
+    "mtime": 1791934681.133076,
+    "seen": 1791974673.5678248,
+    "ast_hash": "5720bbc51d1ff4444601e525ebaa7f21",
+    "semantic_hash": "5720bbc51d1ff4444601e525ebaa7f21"
+  },
+  "docs/SCIENTIFIC_REPRODUCIBILITY.md": {
+    "mtime": 1791831533.5985787,
+    "seen": 1792034592.1865332,
+    "ast_hash": "b427aa5ece5a42207a45d0c2574c768d",
+    "semantic_hash": ""
+  },
+  "downloads/2D_CARBON_ALLOTROPES_RESEARCH_PIPELINE.md": {
+    "mtime": 1791934681.057186,
+    "seen": 1792034592.186534,
+    "ast_hash": "85b16af661b9ed04864ec7ff75220656",
+    "semantic_hash": ""
+  },
+  "downloads/literature_pipeline/README.md": {
+    "mtime": 1791934681.0574386,
+    "seen": 1792034592.186535,
+    "ast_hash": "85b16af661b9ed04864ec7ff75220656",
+    "semantic_hash": ""
+  },
+  "downloads/literature_pipeline/TODO_ALLOTROPES_CHECKLIST.md": {
+    "mtime": 1791934681.0576441,
+    "seen": 1792034592.186537,
+    "ast_hash": "d5bf02a80a36e7c932a3a881c940ed4b",
+    "semantic_hash": ""
+  },
+  "downloads/papers/PAPERS_TO_DOWNLOAD.md": {
+    "mtime": 1792063543.1027005,
+    "seen": 1792063866.164278,
+    "ast_hash": "ee65aef2f421e630557bed56234d12d0",
+    "semantic_hash": ""
+  },
+  "data/girao_verified_energies.json": {
+    "mtime": 1791934681.0477989,
+    "seen": 1791974673.567766,
+    "ast_hash": "ad886281e96c1be15818c3b9848d2542",
+    "semantic_hash": "ad886281e96c1be15818c3b9848d2542"
+  },
+  "frontend/src/data/mlData.js": {
+    "mtime": 1792074941.9592814,
+    "seen": 1792075572.456736,
+    "ast_hash": "932721f239e54af84debe280427b8b70",
+    "semantic_hash": ""
+  },
+  "frontend/src/data/scientificBibliography.js": {
+    "mtime": 1792063543.108,
+    "seen": 1792063866.1634471,
+    "ast_hash": "baffcf99e81b0cce64c78ed50296c0a8",
+    "semantic_hash": ""
+  },
+  "frontend/tests/scientific_integrity.test.mjs": {
+    "mtime": 1792062856.591517,
+    "seen": 1792063866.163566,
+    "ast_hash": "3e4890464e981acee20046faf5b1364f",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/supercellGenerator.js": {
+    "mtime": 1792069067.492405,
+    "seen": 1792070657.3022342,
+    "ast_hash": "f505e418f0365b1455a9ee801c488d9e",
+    "semantic_hash": ""
+  },
+  "reports/crystallographic_integrity_report.json": {
+    "mtime": 1791934681.1316636,
+    "seen": 1791974673.567821,
+    "ast_hash": "28b77e9ce522cb96f082da90b3ab6721",
+    "semantic_hash": "28b77e9ce522cb96f082da90b3ab6721"
+  },
+  "scripts/capture_g20_screenshots.mjs": {
+    "mtime": 1791934681.1325753,
+    "seen": 1791974673.567822,
+    "ast_hash": "2ae298b6205f0332aa6857c6e40683cf",
+    "semantic_hash": "2ae298b6205f0332aa6857c6e40683cf"
+  },
+  "scripts/verify_allotropes_integrity.py": {
+    "mtime": 1791934681.1341932,
+    "seen": 1791974673.5678458,
+    "ast_hash": "d9f6dd6a40f1e6d248e631a3cab4e568",
+    "semantic_hash": "d9f6dd6a40f1e6d248e631a3cab4e568"
+  },
+  "tests/supercell_integrity.test.mjs": {
+    "mtime": 1791934681.1343765,
+    "seen": 1791974673.567849,
+    "ast_hash": "59c3e10086209ac0fbb250a185db8873",
+    "semantic_hash": "59c3e10086209ac0fbb250a185db8873"
+  },
+  "downloads/papers/papers_manifest.json": {
+    "mtime": 1792063543.1007006,
+    "seen": 1792063866.163025,
+    "ast_hash": "a038d2cd7880b8c3cb30cd6b76de0850",
+    "semantic_hash": ""
+  },
+  "scripts/track_papers.py": {
+    "mtime": 1792063502.959828,
+    "seen": 1792063866.164074,
+    "ast_hash": "82c4aa30910c7c9e8eb592821517569c",
+    "semantic_hash": ""
+  },
+  "downloads/papers/araujo2025_high_throughput_framework_twisted_2d_bilayers.pdf": {
+    "mtime": 1791936609.713847,
+    "seen": 1792034592.186542,
+    "ast_hash": "255c40f647d85d15565c9b2f76a8c222",
+    "semantic_hash": ""
+  },
+  "downloads/papers/crespi1996_prediction_pure_carbon_planar_covalent_metal.pdf": {
+    "mtime": 1791936609.724594,
+    "seen": 1792034592.186543,
+    "ast_hash": "ffd81f614d278386bac98deea0bd64cb",
+    "semantic_hash": ""
+  },
+  "downloads/papers/desyatkin2022_scalable_synthesis_multilayer_gamma_graphyne.pdf": {
+    "mtime": 1791936609.7520478,
+    "seen": 1792034592.186545,
+    "ast_hash": "4124d6f4427b685381560a6fa7238473",
+    "semantic_hash": ""
+  },
+  "downloads/papers/fan2017_new_carbon_allotropes_metallic_conducting_properties.pdf": {
+    "mtime": 1791936609.7732434,
+    "seen": 1792034592.1865458,
+    "ast_hash": "519e7b10b9d8302b849be1a210381363",
+    "semantic_hash": ""
+  },
+  "downloads/papers/fan2021_biphenylene_network_nonbenzenoid_carbon_allotrope.pdf": {
+    "mtime": 1791936609.7827432,
+    "seen": 1792034592.186547,
+    "ast_hash": "3d7a01725a78801ee1dd5bebb4fd3ed9",
+    "semantic_hash": ""
+  },
+  "downloads/papers/girao2023_classification_sp2_bonded_carbon_allotropes_2d.pdf": {
+    "mtime": 1791936609.8249462,
+    "seen": 1792034592.186548,
+    "ast_hash": "b44086bf469b4c375eca96402ed3e4d6",
+    "semantic_hash": ""
+  },
+  "downloads/papers/hou2022_synthesis_monolayer_fullerene_network.pdf": {
+    "mtime": 1791936609.856336,
+    "seen": 1792034592.18655,
+    "ast_hash": "adfd2ca79f9f35deb4bd9b109d54eb33",
+    "semantic_hash": ""
+  },
+  "downloads/papers/kolokathis2024_nanotube_construct_web_tool_digital_construction.pdf": {
+    "mtime": 1791936609.9257715,
+    "seen": 1792034592.186551,
+    "ast_hash": "436bae07aabe465554606b45bce5d0ea",
+    "semantic_hash": ""
+  },
+  "downloads/papers/li2010_architecture_graphdiyne_nanoscale_films.pdf": {
+    "mtime": 1791936609.9526863,
+    "seen": 1792034592.186552,
+    "ast_hash": "d9578e68bd158e69f98e8fcac5a81a18",
+    "semantic_hash": ""
+  },
+  "downloads/papers/long2015_theoretical_investigation_2d_non_traditional_carbon_materials.pdf": {
+    "mtime": 1791936609.9712117,
+    "seen": 1792034592.186553,
+    "ast_hash": "c542dd8cdd9f8e6785008ac2639c7dfe",
+    "semantic_hash": ""
+  },
+  "downloads/papers/luo2021_first_principles_investigation_biphenylene.pdf": {
+    "mtime": 1791936609.985415,
+    "seen": 1792034592.1865542,
+    "ast_hash": "9b53065c2a6d545c5e223746fbca6b07",
+    "semantic_hash": ""
+  },
+  "downloads/papers/macmillan2025_graph_embedding_tensor_2d_carbon_allotropes.pdf": {
+    "mtime": 1791936609.9973578,
+    "seen": 1792034592.186555,
+    "ast_hash": "64380bc76d137ec918db4c3361201217",
+    "semantic_hash": ""
+  },
+  "downloads/papers/malko2012_competition_for_graphene_graphynes_dirac_cones.pdf": {
+    "mtime": 1791936610.0109563,
+    "seen": 1792034592.1865559,
+    "ast_hash": "5654f4889dc8f117e18da42808d388ae",
+    "semantic_hash": ""
+  },
+  "downloads/papers/novoselov2004_electric_field_effect_atomically_thin_carbon_films.pdf": {
+    "mtime": 1791936610.0160363,
+    "seen": 1792034592.1865568,
+    "ast_hash": "ef89f63e1b08fcad99ca480f28832327",
+    "semantic_hash": ""
+  },
+  "downloads/papers/paupitz2026_concise_review_recently_synthesized_2d_carbon_allotropes.pdf": {
+    "mtime": 1791936610.0563874,
+    "seen": 1792034592.186558,
+    "ast_hash": "cfd21f7ef7651c86d48a04abf0a0ea74",
+    "semantic_hash": ""
+  },
+  "downloads/papers/santos2024_photh_graphene_new_2d_carbon_allotrope_li_ion.pdf": {
+    "mtime": 1791936610.0809526,
+    "seen": 1792034592.18656,
+    "ast_hash": "219c08616878ed68fe38df32bd151459",
+    "semantic_hash": ""
+  },
+  "downloads/papers/sharma2014_pentahexoctite_new_2d_allotrope_carbon.pdf": {
+    "mtime": 1791936610.0924306,
+    "seen": 1792034592.186561,
+    "ast_hash": "d038c259502c7613a771e177b661bbef",
+    "semantic_hash": ""
+  },
+  "downloads/papers/song2013_graphenylene_unique_2d_carbon_network.pdf": {
+    "mtime": 1791936610.0977304,
+    "seen": 1792034592.186562,
+    "ast_hash": "a2dd3e74f4fe5f284e4a8b1f0ee86e58",
+    "semantic_hash": ""
+  },
+  "downloads/papers/terrones2000_new_metallic_allotropes_planar_tubular_carbon.pdf": {
+    "mtime": 1791936610.100282,
+    "seen": 1792034592.186563,
+    "ast_hash": "da61a5d129ba4a36bc9141afa5ab12e8",
+    "semantic_hash": ""
+  },
+  "downloads/papers/toh2020_synthesis_properties_free_standing_monolayer_amorphous_carbon.pdf": {
+    "mtime": 1791936610.1234884,
+    "seen": 1792034592.1865642,
+    "ast_hash": "11f09dd9d0dd2bc46edd74db5765a43b",
+    "semantic_hash": ""
+  },
+  "downloads/papers/wang2015_phagraphene_low_energy_graphene_allotrope_distorted_dirac_cones.pdf": {
+    "mtime": 1791936610.1372561,
+    "seen": 1792034592.1865652,
+    "ast_hash": "5e99371b54f3d4d450386299d05cff50",
+    "semantic_hash": ""
+  },
+  "downloads/papers/wang2018_popgraphene_new_2d_planar_carbon_allotrope_585_rings.pdf": {
+    "mtime": 1791936610.1494374,
+    "seen": 1792034592.1865659,
+    "ast_hash": "58751a3180cd7f0ea7d7c391e1fbac1b",
+    "semantic_hash": ""
+  },
+  "downloads/papers/wei2013_bending_rigidity_gaussian_bending_stiffness_graphene.pdf": {
+    "mtime": 1791936610.1512494,
+    "seen": 1792034592.186568,
+    "ast_hash": "1c350779cedef61265e018ec8dc578cd",
+    "semantic_hash": ""
+  },
+  "downloads/papers/xie2022_effective_regulation_electronic_properties_biphenylene_network.pdf": {
+    "mtime": 1791936610.1552658,
+    "seen": 1792034592.186569,
+    "ast_hash": "794df5d91914a706695e627c324fc8a1",
+    "semantic_hash": ""
+  },
+  "downloads/papers/yi2018_microporosity_new_property_control_factor_graphene_like_allotropes.pdf": {
+    "mtime": 1791936610.158747,
+    "seen": 1792034592.18657,
+    "ast_hash": "ea93f48618a4c7670b29f72743c2781d",
+    "semantic_hash": ""
+  },
+  "data/allotrope_aliases.json": {
+    "mtime": 1792065244.5210865,
+    "seen": 1792065730.482537,
+    "ast_hash": "36fefb02df9dc3bbb73bc93c318cad71",
+    "semantic_hash": ""
+  },
+  "data/allotropes_catalog.json": {
+    "mtime": 1791941314.0940545,
+    "seen": 1791974673.567753,
+    "ast_hash": "5963e8bd8739229255dec091e6582db5",
+    "semantic_hash": "5963e8bd8739229255dec091e6582db5"
+  },
+  "data/literature_master.json": {
+    "mtime": 1792063543.0992618,
+    "seen": 1792063866.162795,
+    "ast_hash": "c99ea0dc40c47a6f72e9839de9262eb2",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Methodology.jsx": {
+    "mtime": 1792067595.3583233,
+    "seen": 1792070657.301821,
+    "ast_hash": "989e077d340b9c07ce3668254d4f29fd",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/StructureComparisonModal.jsx": {
+    "mtime": 1791964237.8859382,
+    "seen": 1791974673.567796,
+    "ast_hash": "fb287205f10c7cb41d934a366aef96df",
+    "semantic_hash": "fb287205f10c7cb41d934a366aef96df"
+  },
+  "frontend/src/components/SupercellExportDrawer.jsx": {
+    "mtime": 1791942582.556159,
+    "seen": 1791974673.567798,
+    "ast_hash": "647bb7842dac6bc5ccb66d95f5d822cf",
+    "semantic_hash": "647bb7842dac6bc5ccb66d95f5d822cf"
+  },
+  "frontend/src/constants/bondingThresholds.ts": {
+    "mtime": 1791954643.3108823,
+    "seen": 1791974673.567799,
+    "ast_hash": "42bae0c0a47d3bb1e04410560c0e5a46",
+    "semantic_hash": "42bae0c0a47d3bb1e04410560c0e5a46"
+  },
+  "frontend/src/store/allotropesStore.ts": {
+    "mtime": 1791942206.5222106,
+    "seen": 1791974673.5678122,
+    "ast_hash": "8af5797c6e47c24048e9ec0d2595267e",
+    "semantic_hash": "8af5797c6e47c24048e9ec0d2595267e"
+  },
+  "frontend/src/utils/bondingLogic.ts": {
+    "mtime": 1791972012.3625429,
+    "seen": 1791974673.5678132,
+    "ast_hash": "6d72f49603c2caeec933522aaf63acb7",
+    "semantic_hash": "6d72f49603c2caeec933522aaf63acb7"
+  },
+  "scripts/disambiguate_paper_structure.py": {
+    "mtime": 1792063198.1632445,
+    "seen": 1792063866.163667,
+    "ast_hash": "7c39c0387a843a78e03680730b0dd4a6",
+    "semantic_hash": ""
+  },
+  "scripts/process_allotropes.py": {
+    "mtime": 1791941293.0852876,
+    "seen": 1791974673.5678358,
+    "ast_hash": "0d3506916bcb1e0e7989a0b314655cec",
+    "semantic_hash": "0d3506916bcb1e0e7989a0b314655cec"
+  },
+  "tests/scientific_integrity.test.mjs": {
+    "mtime": 1791944086.177197,
+    "seen": 1791974673.5678458,
+    "ast_hash": "39da6c3a7a7888e01db6a49bc3f0a271",
+    "semantic_hash": "39da6c3a7a7888e01db6a49bc3f0a271"
+  },
+  "frontend/src/components/AllotropeSubmissionModal.jsx": {
+    "mtime": 1792036619.692575,
+    "seen": 1792063866.163116,
+    "ast_hash": "8af92dee1b200fe41ad5211b983195c6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/literature-manager/SKILL.md": {
+    "mtime": 1792065276.2842844,
+    "seen": 1792065730.484488,
+    "ast_hash": "3275bd989c9b60a4998aa3016a518189",
+    "semantic_hash": ""
+  },
+  "downloads/papers/ram2020_c568_new_2d_sp2_sp3_hybridized_allotrope_carbon.pdf": {
+    "mtime": 1791934753.5116925,
+    "seen": 1792034592.186559,
+    "ast_hash": "97ea470b7ec5436fbff0127eaf52f484",
+    "semantic_hash": ""
+  },
+  "downloads/papers/zhuo2020_me_graphene_graphene_allotrope_near_zero_poisson_ratio.pdf": {
+    "mtime": 1791934777.1774483,
+    "seen": 1792034592.18657,
+    "ast_hash": "560ebe8708dd16c52cb90c6c5f60875d",
+    "semantic_hash": ""
+  },
+  "reports/c_c_bond_distribution_calibration.png": {
+    "mtime": 1791941313.315395,
+    "seen": 1792034592.186595,
+    "ast_hash": "be459e3c94d843b5331ffc97094e3eda",
+    "semantic_hash": ""
+  },
+  "data/missing_literature_queue.json": {
+    "mtime": 1792063348.7740796,
+    "seen": 1792063866.162845,
+    "ast_hash": "28450065a57fe0233dde841699618817",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/WorkspaceErrorBoundary.jsx": {
+    "mtime": 1792063379.157756,
+    "seen": 1792063866.1633248,
+    "ast_hash": "a03da177354c0fb9f0f6ac5a357e8252",
+    "semantic_hash": ""
+  },
+  "downloads/papers/hoffmann2016_homo_citans_and_carbon_allotropes_for_an_ethics_of.pdf": {
+    "mtime": 1792062146.6134644,
+    "seen": 1792063866.164532,
+    "ast_hash": "02e08cc44020b98a022b9bfc87dc9069",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/scientificDataAvailability.js": {
+    "mtime": 1792074601.50471,
+    "seen": 1792075572.456931,
+    "ast_hash": "d7529ff1e65b5d983a359e87b99a6077",
+    "semantic_hash": ""
+  }
+}

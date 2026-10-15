@@ -1,0 +1,36 @@
+name: build_and_deploy_docs
+
+on:
+    pull_request:
+        types: [closed]
+        branches: [main]
+
+jobs:
+    docs:
+        if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'auto-build-and-sync-styles'
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  ref: main
+
+            - name: Set up Python 3.11
+              uses: actions/setup-python@v5
+              with:
+                  python-version: '3.11'
+
+            - name: Install package and docs deps
+              run: |
+                  pip install -r requirements.txt
+                  pip install -e .
+                  pip install sphinx sphinx-rtd-theme setuptools_scm
+
+            - name: Build docs
+              run: sphinx-build ./docs/source ./docs/build/html
+
+            - name: Deploy docs
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./docs/build/html

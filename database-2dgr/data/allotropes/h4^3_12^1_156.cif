@@ -1,0 +1,32 @@
+# Symmetrized structure with precision = 1e-10
+data_Repository_symm/h4^3_12^1P3m1
+_cell_length_a                  4.950185
+_cell_length_b                  4.950185
+_cell_length_c                  20
+_cell_angle_alpha               90
+_cell_angle_beta                90
+_cell_angle_gamma               120
+_symmetry_space_group_name_H-M  'P3m1'
+_symmetry_Int_Tables_number     156
+
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+ 1 'x, y, z' 
+ 2 '-y, x-y, z' 
+ 3 '-x+y, -x, z' 
+ 4 '-y, -x, z' 
+ 5 '-x+y, y, z' 
+ 6 'x, x-y, z' 
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+C C 1.0 0.0000000 0.0000000 0.9859586
+C C 1.0 0.6666667 0.3333333 0.0709581
+C C 1.0 0.5218490 0.4781510 0.0206440
+C C 1.0 0.8373378 0.6746757 0.9948434

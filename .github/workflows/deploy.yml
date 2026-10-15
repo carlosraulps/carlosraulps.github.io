@@ -60,7 +60,7 @@ jobs:
           mkdir -p ./_site/2d-carbon-explorer
           cp -r ./2d-carbon-explorer/* ./_site/2d-carbon-explorer/
           mkdir -p ./_site/database-2dgr
-          cp -r ./2d-carbon-explorer/* ./_site/database-2dgr/
+          cp -r ./database-2dgr/* ./_site/database-2dgr/
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

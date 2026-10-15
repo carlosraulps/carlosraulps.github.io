@@ -147,7 +147,7 @@ exclude:
   - tmp
   - vendor
   - resources-hub
-  - 2d-carbon-explorer
+  - database-2dgr
 keep_files:
   - .git
   - .svn

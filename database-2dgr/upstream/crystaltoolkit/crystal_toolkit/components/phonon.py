@@ -1,0 +1,1272 @@
+from __future__ import annotations
+
+import itertools
+from copy import deepcopy
+from typing import TYPE_CHECKING
+
+import numpy as np
+import plotly.graph_objects as go
+from dash import dcc, html
+from dash.dependencies import Component, Input, Output, State
+from dash.exceptions import PreventUpdate
+from dash_mp_components import CrystalToolkitScene, PhononAnimationScene, Tooltip
+from emmet.core.phonon import PhononBS
+
+# crystal animation algo
+from pymatgen.analysis.graphs import StructureGraph
+from pymatgen.analysis.local_env import CrystalNN
+from pymatgen.core import Species
+from pymatgen.phonon.bandstructure import PhononBandStructureSymmLine
+from pymatgen.phonon.dos import CompletePhononDos
+from pymatgen.phonon.plotter import PhononBSPlotter
+from pymatgen.transformations.standard_transformations import SupercellTransformation
+
+from crystal_toolkit.core.legend import Legend
+from crystal_toolkit.core.mpcomponent import MPComponent
+from crystal_toolkit.core.panelcomponent import PanelComponent
+from crystal_toolkit.core.scene import Convex, Cylinders, Lines, Scene, Spheres
+from crystal_toolkit.helpers.layouts import (
+    Button,
+    Column,
+    Columns,
+    Icon,
+    Label,
+    get_data_list,
+)
+from crystal_toolkit.helpers.pretty_labels import pretty_labels
+
+if TYPE_CHECKING:
+    from pymatgen.electronic_structure.bandstructure import BandStructureSymmLine
+    from pymatgen.electronic_structure.dos import CompleteDos
+
+DISPLACE_COEF = [0, 1, 0, -1, 0]
+MARKER_COLOR = "red"
+MARKER_SIZE = 12
+MARKER_SHAPE = "x"
+MAX_MAGNITUDE = 500
+MIN_MAGNITUDE = 0
+MAX_SUPERCELL_SITES = 500
+
+DEFAULTS: dict[str, str | bool] = {
+    "color_scheme": "VESTA",
+}
+
+
+# TODOs:
+# - look for additional projection methods in phonon DOS (currently only atom
+#   projections supported)
+# - indicate presence of imaginary frequencies in summary tables
+# - highlight high symmetry points in Brillouin zone when hovering corresponding section
+#   of bandstructure and vice versa
+
+
+class PhononBandstructureAndDosComponent(MPComponent):
+    def __init__(
+        self,
+        mpid: str | None = None,
+        bandstructure_symm_line: BandStructureSymmLine | None = None,
+        density_of_states: CompleteDos | None = None,
+        id: str | None = None,
+        **kwargs,
+    ) -> None:
+        # this is a compound component, can be fed by mpid or
+        # by the BandStructure itself
+
+        super().__init__(
+            id=id,
+            default_data={
+                "mpid": mpid,
+                "bandstructure_symm_line": bandstructure_symm_line,
+                # "num_sites": bandstructure_symm_line.structure.num_sites,
+                "density_of_states": density_of_states,
+            },
+            **kwargs,
+        )
+
+    @property
+    def _sub_layouts(self) -> dict[str, Component]:
+        # defaults
+        state = {"label-select": "sc", "dos-select": "ap"}
+
+        fig = PhononBandstructureAndDosComponent.get_figure(None, None)
+        # Main plot
+        graph = html.Div(
+            [
+                dcc.Graph(
+                    figure=fig,
+                    config={"displayModeBar": False},
+                    responsive=True,
+                    id=self.id("ph-bsdos-graph"),
+                    style={"height": "400px"},
+                )
+            ]
+        )
+
+        # Brillouin zone
+        zone_scene = self.get_brillouin_zone_scene(None)
+        zone = CrystalToolkitScene(
+            data=zone_scene.to_json(), sceneSize="500px", id=self.id("zone")
+        )
+
+        # Hide by default if not loaded by mpid, switching between k-paths
+        # on-the-fly only supported for bandstructures retrieved from MP
+        show_path_options = bool(self.initial_data["default"]["mpid"])
+
+        options = [
+            {"label": "Latimer-Munro", "value": "lm"},
+            {"label": "Hinuma et al.", "value": "hin"},
+            {"label": "Setyawan-Curtarolo", "value": "sc"},
+        ]
+        # Convention selection for band structure
+        convention = html.Div(
+            [
+                self.get_choice_input(
+                    kwarg_label="path-convention",
+                    state=state,
+                    label="Path convention",
+                    help_str="Convention to choose path in k-space",
+                    options=options,
+                )
+            ],
+            style=(
+                {"width": "200px"}
+                if show_path_options
+                else {"maxWidth": "200", "display": "none"}
+            ),
+            id=self.id("path-container"),
+        )
+
+        # Equivalent labels across band structure conventions
+        label_select = html.Div(
+            [
+                self.get_choice_input(
+                    kwarg_label="label-select",
+                    state=state,
+                    label="Label convention",
+                    help_str="Convention to choose labels for path in k-space",
+                    options=options,
+                )
+            ],
+            style=(
+                {"width": "200px"}
+                if show_path_options
+                else {"width": "200px", "display": "none"}
+            ),
+            id=self.id("label-container"),
+        )
+
+        # Density of states data selection
+        dos_select = self.get_choice_input(
+            kwarg_label="dos-select",
+            state=state,
+            label="Projection",
+            help_str="Choose projection",
+            options=[{"label": "Atom Projected", "value": "ap"}],
+            style={"width": "200px"},
+        )
+
+        summary_dict = self._get_data_list_dict(None, None)
+        summary_table = get_data_list(summary_dict)
+
+        crystal_animation_button_container = html.Div(
+            Button(
+                [
+                    Icon(kind="chart-pie"),
+                    html.Span(),
+                    "Generate Phonon Animation",
+                ],
+                kind="primary",
+                id=self.id("animation-button"),
+            ),
+            id=self.id("animation-button-container"),
+        )
+
+        hints = html.Div(
+            "💡 Zoom in by selecting an area of interest, and double-click to return to the original view. (The q points' labels that appear to overlap at the current scale are actually distinct.)",
+            style={"textAlign": "center"},
+        )
+
+        return {
+            "graph": graph,
+            "convention": convention,
+            "dos-select": dos_select,
+            "label-select": label_select,
+            "zone": zone,
+            "table": summary_table,
+            "crystal_animation_button_container": crystal_animation_button_container,
+            "hints": hints,
+        }
+
+    def _get_animation_panel(self):
+        # tip
+        tip = html.Div(
+            html.Span(
+                "💡 Tips: Click different q-points and bands in the dispersion diagram to see the crystal vibration!",
+                style={
+                    "border": "0.5px dashed black",
+                    "display": "inline-flex",
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "textAlign": "center",
+                },
+            ),
+            style={
+                "display": "flex",
+                "justifyContent": "center",
+            },
+        )
+
+        # crystal visualization
+        crystal_animation = html.Div(
+            # CrystalToolkitAnimationScene(
+            PhononAnimationScene(
+                data={"app": "phonon"},
+                sceneSize="400px",
+                id=self.id("crystal-animation"),
+                settings={"defaultZoom": 1.2},
+                axisView="SW",
+                showControls=False,  # disable download for now
+            ),
+        )
+
+        hr = html.Hr(
+            style={
+                "backgroundColor": "#C5C5C6",
+                "border": "none",
+                "margin": "8px 0",
+            }
+        )
+
+        crystal_animation_controls = html.Details(
+            [
+                html.Summary(
+                    html.Strong("Control Panel"),
+                    style={
+                        "textAlign": "center",
+                    },
+                ),
+                html.Div(
+                    [
+                        hr,
+                        html.Div(
+                            [
+                                html.H6(
+                                    "Supercell modification",
+                                    **{"data-tip": True},
+                                    className="tooltip-label",
+                                    style={
+                                        "textAlign": "center",
+                                        "marginBottom": "0",
+                                    },
+                                ),
+                                Tooltip(
+                                    "Scaling limited for performance optimization."
+                                ),
+                            ],
+                            style={
+                                "textAlign": "center",
+                                "marginBottom": "0",
+                            },
+                        ),
+                        html.Div(
+                            [
+                                self.get_numerical_input(
+                                    kwarg_label="scale-x",
+                                    default=1,
+                                    persistence_type="session",
+                                    is_int=True,
+                                    label="x",
+                                    min=1,
+                                    max=10,
+                                    style={"height": "10px"},
+                                    label_style={"textAlign": "center"},
+                                ),
+                                self.get_numerical_input(
+                                    kwarg_label="scale-y",
+                                    default=1,
+                                    persistence_type="session",
+                                    is_int=True,
+                                    label="y",
+                                    min=1,
+                                    max=10,
+                                    style={"height": "10px"},
+                                    label_style={"textAlign": "center"},
+                                ),
+                                self.get_numerical_input(
+                                    kwarg_label="scale-z",
+                                    default=1,
+                                    persistence_type="session",
+                                    is_int=True,
+                                    label="z",
+                                    min=1,
+                                    max=10,
+                                    style={"height": "10px"},
+                                    label_style={"textAlign": "center"},
+                                ),
+                            ],
+                            style={
+                                "display": "flex",
+                                "justify-content": "center",
+                            },
+                        ),
+                        hr,
+                        html.Div(
+                            self.get_slider_input(
+                                kwarg_label="magnitude",
+                                default=0.5,
+                                step=0.01,
+                                domain=[0, 1],
+                                label="Vibration magnitude",
+                                styleInput={
+                                    "height": "28px",
+                                    "box-sizing": "border-box",
+                                    "borderRadius": "4px",
+                                    "width": "5rem",
+                                    "margin": "0",
+                                },
+                                styleSlider={"margin": "0"},
+                                label_style={"textAlign": "center", "margin": "0"},
+                            ),
+                        ),
+                        hr,
+                        html.Div(
+                            self.get_slider_input(
+                                kwarg_label="velocity",
+                                default=0.5,
+                                step=0.01,
+                                domain=[0, 1],
+                                label="Velocity",
+                                styleInput={
+                                    "height": "28px",
+                                    "box-sizing": "border-box",
+                                    "borderRadius": "4px",
+                                    "width": "5rem",
+                                    "margin": "0",
+                                },
+                                styleSlider={"margin": "0"},
+                                label_style={"textAlign": "center", "margin": "0"},
+                            ),
+                        ),
+                        hr,
+                        html.Div(
+                            [
+                                html.H6(
+                                    "Color scheme",
+                                    style={
+                                        "textAlign": "center",
+                                    },
+                                ),
+                                dcc.Dropdown(
+                                    id=self.id("color-scheme"),
+                                    value="VESTA",
+                                    options=[
+                                        {
+                                            "label": "VESTA",
+                                            "value": "VESTA",
+                                        },
+                                        {
+                                            "label": "Jmol",
+                                            "value": "Jmol",
+                                        },
+                                    ],
+                                    style={
+                                        "width": "10rem",
+                                        "height": "30px",
+                                        "fontSize": "12px",
+                                        "display": "inline-block",
+                                    },
+                                ),
+                            ],
+                            style={
+                                "textAlign": "center",
+                                "marginBottom": "0",
+                            },
+                        ),
+                        hr,
+                        html.Div(
+                            html.Button(
+                                "Update",
+                                id=self.id("supercell-controls-btn"),
+                                style={"height": "40px"},
+                            ),
+                            style={"textAlign": "center", "width": "100%"},
+                        ),
+                    ],
+                    style={
+                        "width": "100%",
+                    },
+                ),
+            ],
+            open=True,
+        )
+
+        return [
+            Column(
+                [
+                    tip,
+                    html.Br(),
+                    Columns(
+                        [
+                            html.Div(
+                                crystal_animation,
+                                style={
+                                    "display": "flex",
+                                    "justify-content": "center",
+                                },
+                            ),
+                            html.Div(
+                                crystal_animation_controls,
+                                style={
+                                    "display": "flex",
+                                    "justify-content": "flex-end",
+                                    "paddingRight": "5%",
+                                },
+                            ),
+                        ],
+                        style={"justify-content": "center", "display": "flex"},
+                    ),
+                ],
+            ),
+        ]
+
+    def layout(self) -> html.Div:
+        sub_layouts = self._sub_layouts
+        graph = Columns([Column([sub_layouts["graph"]])])
+        hints = Columns([Column([sub_layouts["hints"]])])
+        crystal_animation_container = Columns(
+            [], id=self.id("crystal-animation-container"), style={"display": "none"}
+        )
+        crystal_animation_button_container = sub_layouts[
+            "crystal_animation_button_container"
+        ]
+        controls = Columns(
+            [
+                Column(
+                    [
+                        sub_layouts["convention"],
+                        sub_layouts["label-select"],
+                        sub_layouts["dos-select"],
+                    ]
+                )
+            ]
+        )
+        brillouin_zone = Columns(
+            [
+                Column([Label("Summary"), sub_layouts["table"]], id=self.id("table")),
+                Column([Label("Brillouin Zone"), sub_layouts["zone"]]),
+            ]
+        )
+
+        return html.Div(
+            [
+                graph,
+                hints,
+                crystal_animation_button_container,
+                crystal_animation_container,
+                controls,
+                brillouin_zone,
+            ]
+        )
+
+    @staticmethod
+    def _complex_vectors_serialization(vectors):
+        # `ph_bs.eigendisplacements[band][qpoint]` is np.complex which is not serializable
+        # this function transfer complex eigenvector to a list of Re and Im
+        # For example,
+        # vectors = [(np.complex128(3.0634449212096337e-09+0j),
+        #    np.complex128(-3.720119057521199e-08+0j),
+        #    np.complex128(-0.0016537315137792753+0j)),
+        #    (np.complex128(3.063444921240483e-09+0j),
+        #    np.complex128(-3.720119057492181e-08+0j),
+        #    np.complex128(-0.0016537315137792735+0j))]
+        # output:
+        # [[[3.0634449212096337e-09, 0.0],
+        #    [-3.720119057521199e-08, 0.0],
+        #    [-0.0016537315137792753, 0.0]],
+        #    [[3.063444921240483e-09, 0.0],
+        #    [-3.720119057492181e-08, 0.0],
+        #    [-0.0016537315137792735, 0.0]]]
+        arr = np.asarray(vectors, dtype=np.complex128)
+        return np.stack([arr.real, arr.imag], axis=-1).astype(float).tolist()
+
+    @staticmethod
+    def _get_time_function_json(
+        ph_bs: BandStructureSymmLine,
+        json_data: dict,
+        band: int = 0,
+        qpoint: int = 0,
+        precision: int = 15,
+        magnitude: int = MAX_MAGNITUDE / 2,
+        total_repeat_cell_cnt: int = 1,
+        velocity: float = 1.0,
+    ) -> dict:
+        if not ph_bs or not json_data:
+            return {}
+        assert json_data["contents"][0]["name"] == "atoms"
+        assert json_data["contents"][1]["name"] == "bonds"
+        rdata = deepcopy(json_data)
+
+        # atoms
+        contents0 = json_data["contents"][0]["contents"]
+        for cidx, _ in enumerate(contents0):
+            rcontent = rdata["contents"][0]["contents"][cidx]
+            # put required data to the given atom index
+            rcontent[
+                "animate"
+            ] = []  # we just need `animate` field indicating animtaion rendering
+
+        # bonds
+        contents1 = json_data["contents"][1]["contents"]
+        for cidx, content in enumerate(contents1):
+            assert len(content["_meta"]) == len(content["positionPairs"])
+            rcontent = rdata["contents"][1]["contents"][cidx]
+            rcontent["animate"] = []
+
+        # remove unused sense (polyhedra and magmoms)
+        del rdata["contents"][2:4]
+
+        # displacement formula: u(R,t) = A * e^(i(q⋅R-ωt))
+        rdata["app"] = "phonon"
+
+        # omega (ω)
+        rdata["omega"] = ph_bs.frequencies[band][
+            qpoint
+        ]  # * 2 * np.pi # should include 2pi, but omitted here to achieve a better visualization
+
+        # The spatial dependence has been simplified:
+        # The real calculation should be:
+        # 1.
+        # ph_bs.qpoints is "frac_coords of the given lattice by default (from Pymatgen)"
+        # transfer from frac_coords to cart_coords
+        # the size of ph_bs.structure.lattice.matrix: (3, 3) (lattice size)
+        # the size of ph_bs.qpoints: (149, 3) (wave vector for each qpoint)
+        # the size of q: (149, 3)
+        # q = np.einsum(
+        #     "ij,kj->ik",
+        #     ph_bs.structure.lattice.reciprocal_lattice.matrix,
+        #     np.array(ph_bs.qpoints),
+        # ).T
+        #
+        # 2.
+        # the size of ph_bs.structure.cart_coords: (2, 3) (the coordinate of two atoms in the unit cell)
+        # R = ph_bs.structure.cart_coords,
+        #
+        # 3.
+        # phases = np.einsum(
+        #     "ij,kj->ik",
+        #     q,
+        #     R,
+        # )
+
+        # Simplified:
+        # q is fractional (reduced) coordinates:
+        #   q = q1*b1 + q2*b2 + q3*b3
+        #
+        # R is a lattice translation written in direct lattice coordinates:
+        #   R = n1*a1 + n2*a2 + n3*a3
+        #
+        # Reciprocal/direct basis satisfy:
+        #   ai · bj = 2π δij   (δij = 1 if i==j else 0)
+        #
+        # Therefore the phase is:
+        #   q · R = 2π (q1*n1 + q2*n2 + q3*n3)
+        #
+        # compute:
+        #   phases = 2π * dot(q_frac, R_frac)
+
+        phases = (
+            np.einsum(
+                "ij,kj->ik",
+                np.array(ph_bs.qpoints),
+                ph_bs.structure.frac_coords,
+            )
+            * 2
+            * np.pi
+        )
+        rdata["phases"] = phases[qpoint].tolist()
+
+        # amplitude (A)
+        rdata["amplitude"] = 1 / np.linalg.norm(
+            ph_bs.eigendisplacements[0][0]
+        )  # magnitude
+
+        # eigenVectors
+        rdata["eigenVectors"] = (
+            PhononBandstructureAndDosComponent._complex_vectors_serialization(
+                ph_bs.eigendisplacements[band][qpoint]
+            )
+        )
+
+        # velocity
+        rdata["velocity"] = velocity
+
+        rdata["name"] = "StructureGraphPhonon"
+
+        return rdata
+
+    @staticmethod
+    def get_brillouin_zone_scene(bs: PhononBandStructureSymmLine) -> Scene:
+        if not bs:
+            return Scene(name="brillouin_zone", contents=[])
+
+        # TODO: from BSPlotter, merge back into BSPlotter
+        # Brillouin zone
+        bz_lattice = bs.structure.lattice.reciprocal_lattice
+        bz = bz_lattice.get_wigner_seitz_cell()
+        lines = []
+        for iface in range(len(bz)):  # pylint: disable=C0200
+            for line in itertools.combinations(bz[iface], 2):
+                for jface in range(len(bz)):
+                    if (
+                        iface < jface
+                        and any(np.all(line[0] == x) for x in bz[jface])
+                        and any(np.all(line[1] == x) for x in bz[jface])
+                    ):
+                        lines += [list(line[0]), list(line[1])]
+
+        zone_lines = Lines(positions=lines)
+        zone_surface = Convex(positions=lines, opacity=0.05, color="#000000")
+
+        labels = {}
+        for qpt in bs.qpoints:
+            if qpt.label:
+                label = qpt.label
+                for orig, new in pretty_labels.items():
+                    label = label.replace(orig, new)
+                labels[label] = bz_lattice.get_cartesian_coords(qpt.frac_coords)
+        label_list = [
+            Spheres(positions=[coords], tooltip=label, radius=0.03, color="#5EB1BF")
+            for label, coords in labels.items()
+        ]
+
+        path = []
+        cylinder_pairs = []
+        for b in bs.branches:
+            start = bz_lattice.get_cartesian_coords(
+                bs.qpoints[b["start_index"]].frac_coords
+            )
+            end = bz_lattice.get_cartesian_coords(
+                bs.qpoints[b["end_index"]].frac_coords
+            )
+            path += [start, end]
+            cylinder_pairs += [[start, end]]
+        # path_lines = Lines(positions=path, color="#ff4b5c")
+        path_lines = Cylinders(
+            positionPairs=cylinder_pairs, color="#5EB1BF", radius=0.01
+        )
+        ibz_region = Convex(positions=path, opacity=0.2, color="#5EB1BF")
+
+        contents = [zone_lines, zone_surface, path_lines, ibz_region, *label_list]
+
+        return Scene(name="brillouin_zone", contents=contents)
+
+    @staticmethod
+    def get_ph_bandstructure_traces(bs, freq_range):
+        bs_reg_plot = PhononBSPlotter(bs)
+
+        bs_data = bs_reg_plot.bs_plot_data()
+
+        bands = []
+        for band_num in range(bs.nb_bands):
+            for segment in bs_data["frequency"]:
+                if any(v <= freq_range[1] for v in segment[band_num]) and any(
+                    v >= freq_range[0] for v in segment[band_num]
+                ):
+                    bands.append(band_num)  # noqa: PERF401
+
+        bs_traces = []
+
+        last_di = 0
+        for d, dist_val in enumerate(bs_data["distances"]):
+            x_dat = dist_val
+
+            traces_for_segment = []
+
+            segment = bs_data["frequency"][d]
+
+            traces_for_segment += [
+                {
+                    "x": x_dat,
+                    "y": segment[band_num],
+                    "mode": "lines",
+                    "line": {"color": "#1f77b4"},
+                    "hoverinfo": "skip",
+                    "name": "Total",
+                    "customdata": [
+                        [di + last_di, band_num] for di in range(len(x_dat))
+                    ],
+                    "hovertemplate": "%{y:.2f} THz<br>band: %{customdata[1]}<br>q-point: %{customdata[0]}<br>",
+                    "showlegend": False,
+                    "xaxis": "x",
+                    "yaxis": "y",
+                }
+                for band_num in bands
+            ]
+
+            bs_traces += traces_for_segment
+            last_di += len(x_dat)
+
+        for entry_num in range(len(bs_data["ticks"]["label"])):
+            for key in pretty_labels:
+                if key in bs_data["ticks"]["label"][entry_num]:
+                    bs_data["ticks"]["label"][entry_num] = bs_data["ticks"]["label"][
+                        entry_num
+                    ].replace(key, pretty_labels[key])
+
+        # Vertical lines for disjointed segments
+        for dist_val, tick_label in zip(
+            bs_data["ticks"]["distance"], bs_data["ticks"]["label"]
+        ):
+            vert_trace = [
+                {
+                    "x": [dist_val, dist_val],
+                    "y": freq_range,
+                    "mode": "lines",
+                    "marker": {
+                        "color": "#F5F5F5" if "|" not in tick_label else "white"
+                    },
+                    "line": {"width": 0.5 if "|" not in tick_label else 2},
+                    "hoverinfo": "skip",
+                    "showlegend": False,
+                    "xaxis": "x",
+                    "yaxis": "y",
+                }
+            ]
+
+            bs_traces += vert_trace
+
+        return bs_traces, bs_data
+
+    @staticmethod
+    def _get_data_list_dict(
+        bs: PhononBandStructureSymmLine, dos: CompletePhononDos
+    ) -> dict[str, str | bool | int]:
+        if (not bs) and (not dos):
+            return {}
+
+        bs_minpoint, bs_min_freq = bs.min_freq()
+        min_freq_report = (
+            f"{bs_min_freq:.2f} THz at frac. coords. {bs_minpoint.frac_coords}"
+        )
+        if bs_minpoint.label is not None:
+            label = f" ({bs_minpoint.label})"
+            for orig, new in pretty_labels.items():
+                label = label.replace(orig, new)
+            min_freq_report += label
+
+        f" at q-point=${bs_minpoint.label}$ (frac. coords. = {bs_minpoint.frac_coords})"
+
+        summary_dict: dict[str, str | bool | int] = {
+            "Number of bands": f"{bs.nb_bands:,}",
+            "Number of q-points": f"{bs.nb_qpoints:,}",
+            # for NAC see https://phonopy.github.io/phonopy/formulation.html#non-analytical-term-correction
+            Label(
+                [
+                    "Has ",
+                    html.A(
+                        "NAC",
+                        href="https://phonopy.github.io/phonopy/formulation.html#non-analytical-term-correction",
+                        target="blank",
+                    ),
+                ]
+            ): ("Yes" if bs.has_nac else "No"),
+            "Has imaginary frequencies": "Yes" if bs.has_imaginary_freq() else "No",
+            "Has eigen-displacements": "Yes" if bs.has_eigendisplacements else "No",
+            "Min frequency": min_freq_report,
+            "max frequency": f"{max(dos.frequencies):.2f} THz",
+        }
+
+        return summary_dict
+
+    @staticmethod
+    def get_ph_dos_traces(dos: CompletePhononDos, freq_range: tuple[float, float]):
+        dos_traces = []
+
+        dos_max = np.abs(dos.frequencies - freq_range[1]).argmin()
+        dos_min = np.abs(dos.frequencies - freq_range[0]).argmin()
+
+        tdos_label = "Total DOS"
+
+        # Total DOS
+        trace_tdos = {
+            "x": dos.densities[dos_min:dos_max],
+            "y": dos.frequencies[dos_min:dos_max],
+            "mode": "lines",
+            "name": tdos_label,
+            "line": go.scatter.Line(color="#444444"),
+            "fill": "tozerox",
+            "fillcolor": "#C4C4C4",
+            "legendgroup": "spinup",
+            "xaxis": "x2",
+            "yaxis": "y2",
+        }
+        dos_traces.append(trace_tdos)
+
+        # Projected DOS
+        if isinstance(dos, CompletePhononDos):
+            colors = [
+                "#d62728",  # brick red
+                "#2ca02c",  # cooked asparagus green
+                "#17becf",  # blue-teal
+                "#bcbd22",  # curry yellow-green
+                "#9467bd",  # muted purple
+                "#8c564b",  # chestnut brown
+                "#e377c2",  # raspberry yogurt pink
+            ]
+
+            ele_dos = dos.get_element_dos()  # project DOS onto elements
+            for count, label in enumerate(ele_dos):
+                spin_up_label = str(label)
+
+                trace = {
+                    "x": ele_dos[label].densities[dos_min:dos_max],
+                    "y": dos.frequencies[dos_min:dos_max],
+                    "mode": "lines",
+                    "name": spin_up_label,
+                    "line": dict(width=2, color=colors[count]),
+                    "xaxis": "x2",
+                    "yaxis": "y2",
+                }
+
+                dos_traces.append(trace)
+
+        return dos_traces
+
+    @staticmethod
+    def get_figure(
+        ph_bs: PhononBandStructureSymmLine | None = None,
+        ph_dos: CompletePhononDos | None = None,
+        freq_range: tuple[float | None, float | None] = (None, None),
+    ) -> go.Figure:
+        if (not ph_dos) and (not ph_bs):
+            empty_plot_style = {
+                "height": 500,
+                "xaxis": {"visible": False},
+                "yaxis": {"visible": False},
+                "paper_bgcolor": "rgba(0,0,0,0)",
+                "plot_bgcolor": "rgba(0,0,0,0)",
+            }
+
+            return go.Figure(layout=empty_plot_style)
+
+        if freq_range[0] is None:
+            freq_range = (np.min(ph_bs.bands) * 1.05, freq_range[1])
+
+        if freq_range[1] is None:
+            freq_range = (freq_range[0], np.max(ph_bs.bands) * 1.05)
+
+        if ph_bs:
+            (
+                bs_traces,
+                bs_data,
+            ) = PhononBandstructureAndDosComponent.get_ph_bandstructure_traces(
+                ph_bs, freq_range=freq_range
+            )
+
+        if ph_dos:
+            dos_traces = PhononBandstructureAndDosComponent.get_ph_dos_traces(
+                ph_dos, freq_range=freq_range
+            )
+
+        # TODO: add logic to handle if bs_traces and/or dos_traces not present
+
+        rmax_list = [
+            max(dos_traces[0]["x"]),
+            abs(min(dos_traces[0]["x"])),
+        ]
+        if len(dos_traces) > 1 and "x" in dos_traces[1] and dos_traces[1]["x"].any():
+            rmax_list += [
+                max(dos_traces[1]["x"]),
+                abs(min(dos_traces[1]["x"])),
+            ]
+
+        rmax = max(rmax_list)
+
+        # -- Add trace data to plots
+
+        in_common_axis_styles = dict(
+            gridcolor="white",
+            linecolor="rgb(71,71,71)",
+            linewidth=2,
+            showgrid=False,
+            showline=True,
+            tickfont=dict(size=16),
+            ticks="inside",
+            tickwidth=2,
+        )
+
+        xaxis_style = dict(
+            **in_common_axis_styles,
+            tickmode="array",
+            mirror=True,
+            range=[0, bs_data["ticks"]["distance"][-1]],
+            ticktext=bs_data["ticks"]["label"],
+            tickvals=bs_data["ticks"]["distance"],
+            title=dict(text="Wave Vector", font=dict(size=16)),
+            zeroline=False,
+            automargin=True,
+        )
+
+        yaxis_style = dict(
+            **in_common_axis_styles,
+            mirror="ticks",
+            range=freq_range,
+            title=dict(text="Frequency (THz)", font=dict(size=16)),
+            zeroline=True,
+            zerolinecolor="white",
+            zerolinewidth=2,
+        )
+
+        xaxis_style_dos = dict(
+            **in_common_axis_styles,
+            title=dict(text="Density of States", font=dict(size=16)),
+            zeroline=False,
+            mirror=True,
+            range=[0, rmax * 1.1],
+            zerolinecolor="white",
+            zerolinewidth=2,
+        )
+
+        yaxis_style_dos = dict(
+            **in_common_axis_styles,
+            zeroline=True,
+            showticklabels=False,
+            mirror="ticks",
+            zerolinewidth=2,
+            range=freq_range,
+            zerolinecolor="white",
+            matches="y",
+            anchor="x2",
+        )
+
+        layout = dict(
+            title="",
+            xaxis1=xaxis_style,
+            xaxis2=xaxis_style_dos,
+            yaxis=yaxis_style,
+            yaxis2=yaxis_style_dos,
+            showlegend=True,
+            height=500,
+            width=1000,
+            hovermode="closest",
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(230,230,230,230)",
+            margin=dict(l=60, b=50, t=50, pad=0, r=30),
+            clickmode="event+select",
+        )
+
+        figure = {"data": bs_traces + dos_traces, "layout": layout}
+
+        legend = dict(
+            x=1.02,
+            y=1.005,
+            xanchor="left",
+            yanchor="top",
+            bordercolor="#333",
+            borderwidth=2,
+            traceorder="normal",
+        )
+
+        figure["layout"]["legend"] = legend
+
+        figure["layout"]["xaxis1"]["domain"] = [0.0, 0.7]
+        figure["layout"]["xaxis2"]["domain"] = [0.73, 1.0]
+
+        return figure
+
+    def _make_legend(self, legend):
+        # this is copied and customized from crystal_toolkit.components.structure.StructureMoleculeComponent
+        # in order to get the consistent legend with the structure viewer
+        if not legend:
+            return html.Div(id=self.id("legend"))
+
+        def get_font_color(hex_code):
+            # ensures contrasting font color for background color
+            c = tuple(int(hex_code[1:][i : i + 2], 16) for i in (0, 2, 4))
+            return (
+                "black"
+                if 1 - (c[0] * 0.299 + c[1] * 0.587 + c[2] * 0.114) / 255 < 0.5
+                else "white"
+            )
+
+        legend_colors = {
+            key: self._legend.get_color(Species(key))
+            for key, val in legend["composition"].items()
+        }
+
+        legend_elements = [
+            html.Span(
+                html.Span(
+                    name, className="icon", style={"color": get_font_color(color)}
+                ),
+                className="button is-static is-rounded",
+                style={"backgroundColor": color},
+            )
+            for name, color in legend_colors.items()
+        ]
+
+        return html.Div(
+            legend_elements,
+            id=self.id("legend"),
+            style={"display": "flex"},
+            className="buttons",
+        )
+
+    def generate_callbacks(self, app, cache) -> None:
+        @app.callback(
+            Output(self.id("ph-bsdos-graph"), "figure", allow_duplicate=True),
+            Output(self.id("zone"), "data"),
+            Output(self.id("table"), "children"),
+            Output(
+                self.id("animation-button-container"), "style", allow_duplicate=True
+            ),
+            Input(self.id("ph_bs"), "data"),
+            Input(self.id("ph_dos"), "data"),
+            # prevent_intial_call=True,
+        )
+        def update_graph(bs, dos):
+            if isinstance(bs, dict):
+                # bs = PhononBS.from_pmg(bs)
+                bs = PhononBandStructureSymmLine.from_dict(bs)
+            if isinstance(dos, dict):
+                dos = CompletePhononDos.from_dict(dos)
+
+            figure = self.get_figure(bs, dos)
+
+            zone_scene = self.get_brillouin_zone_scene(bs)
+
+            summary_dict = self._get_data_list_dict(bs, dos)
+            summary_table = get_data_list(summary_dict)
+
+            if bs.has_eigendisplacements:
+                return figure, zone_scene.to_json(), summary_table, {"display": "flex"}
+            return figure, zone_scene.to_json(), summary_table, {"display": "none"}
+
+        @app.callback(
+            Output(self.id("ph-bsdos-graph"), "figure", allow_duplicate=True),
+            State(self.id("ph-bsdos-graph"), "figure"),
+            Input(self.id("ph-bsdos-graph"), "clickData"),
+            Input(self.id("animation-button"), "n_clicks"),
+            prevent_intial_call=True,
+        )
+        def update_pointer_graph(figure, nclick, animation_click):
+            if not animation_click:
+                raise PreventUpdate
+
+            # remove marker if there is one
+            figure["data"] = [
+                t for t in figure["data"] if t.get("name") != "click-marker"
+            ]
+
+            x_click = nclick["points"][0]["x"] if nclick else 0
+            y_click = nclick["points"][0]["y"] if nclick else 0
+            pt = nclick["points"][0] if nclick else {}
+
+            qpoint, band_num = pt.get("customdata", [0, 0])
+
+            figure["data"].append(
+                {
+                    "type": "scatter",
+                    "mode": "markers",
+                    "x": [x_click],
+                    "y": [y_click],
+                    "marker": {
+                        "color": MARKER_COLOR,
+                        "size": MARKER_SIZE,
+                        "symbol": MARKER_SHAPE,
+                    },
+                    "name": "click-marker",
+                    "showlegend": False,
+                    "customdata": [[qpoint, band_num]],
+                    "hovertemplate": (
+                        "%{y:.2f} THz<br>band: %{customdata[1]}<br>q-point: %{customdata[0]}<br>"
+                    ),
+                }
+            )
+
+            return figure
+
+        # @app.callback(
+        #     Output(self.id("brillouin-zone"), "data", allow_duplicate=True),
+        #     Input(self.id("ph-bsdos-graph"), "hoverData"),
+        #     Input(self.id("ph-bsdos-graph"), "clickData"),
+        # )
+        # def highlight_bz_on_hover_bs(hover_data, click_data, label_select):
+        #     """Highlight the corresponding point/edge of the Brillouin Zone when hovering the band
+        #     structure plot.
+        #     """
+        #     # TODO: figure out what to return (CSS?) to highlight BZ edge/point
+        #     return
+
+        @app.callback(
+            Output(self.id("crystal-animation-container"), "children"),
+            Output(self.id("crystal-animation-container"), "style"),
+            Output(
+                self.id("animation-button-container"), "style", allow_duplicate=True
+            ),
+            Input(self.id("animation-button"), "n_clicks"),
+            prevent_intial_call=True,
+        )
+        def create_animation(nclick):
+            if not nclick:
+                raise PreventUpdate
+            return self._get_animation_panel(), {"display": "flex"}, {"display": "none"}
+
+        @app.callback(
+            Output(self.id("crystal-animation"), "data"),
+            Output(self.id("crystal-animation"), "children"),
+            Output(self.get_kwarg_id("scale-x"), "max"),
+            Output(self.get_kwarg_id("scale-y"), "max"),
+            Output(self.get_kwarg_id("scale-z"), "max"),
+            Input(self.id("ph-bsdos-graph"), "clickData"),
+            State(self.id("ph_bs"), "data"),
+            Input(self.id("supercell-controls-btn"), "n_clicks"),
+            State(self.get_kwarg_id("magnitude"), "value"),
+            State(self.get_kwarg_id("scale-x"), "value"),
+            State(self.get_kwarg_id("scale-y"), "value"),
+            State(self.get_kwarg_id("scale-z"), "value"),
+            State(self.get_kwarg_id("velocity"), "value"),
+            State(self.id("color-scheme"), "value"),
+            Input(self.id("animation-button"), "n_clicks"),
+        )
+        def update_crystal_animation(
+            cd,
+            bs,
+            sueprcell_update,
+            magnitude_fraction,
+            scale_x,
+            scale_y,
+            scale_z,
+            velocity,
+            color_scheme,
+            nclink_button,
+        ):
+            # Avoids using `get_all_kwargs_id` for all `Input`; instead, uses `State` to prevent flickering when users modify `scale_x`, `scale_y`, or `scale_z` fields,
+            # ensuring updates occur only after the `supercell-controls-btn`` is clicked.
+            if not bs or not nclink_button:
+                raise PreventUpdate
+            # Since `self.get_kwarg_id()` uses dash.dependencies.ALL, it returns a list of values.
+            # Although we could use `magnitude_fraction = magnitude_fraction[0]` to get the first value,
+            # this approach provides better clarity and readability.
+            kwargs = self.reconstruct_kwargs_from_state()
+            magnitude_fraction = kwargs.get("magnitude")
+            scale_x = kwargs.get("scale-x")
+            scale_y = kwargs.get("scale-y")
+            scale_z = kwargs.get("scale-z")
+            velocity = kwargs.get("velocity")
+            # color_scheme = kwargs.get("color-scheme")
+
+            if isinstance(bs, dict):
+                bs = PhononBS.from_pmg(bs)
+                # bs = PhononBandStructureSymmLine.from_dict(bs)
+
+            struct = bs.structure
+            total_repeat_cell_cnt = 1
+
+            #
+            num_sites = struct.num_sites
+
+            # update structure if the controls got triggered
+            total_repeat_cell_cnt = scale_x * scale_y * scale_z
+
+            # create supercell
+            trans = SupercellTransformation(
+                ((scale_x, 0, 0), (0, scale_y, 0), (0, 0, scale_z))
+            )
+            struct = trans.apply_transformation(struct)
+
+            struc_graph = StructureGraph.from_local_env_strategy(struct, CrystalNN())
+
+            # legend
+            legend = Legend(
+                struc_graph.structure,
+                color_scheme=color_scheme,
+                # radius_scheme=radius_strategy,
+                cmap_range=None,
+            )
+            self._legend = legend
+            legend_layout = html.Div(self._make_legend(legend.get_legend()))
+
+            # scene
+            scene = struc_graph.get_scene(
+                draw_image_atoms=False,
+                bonded_sites_outside_unit_cell=False,
+                site_get_scene_kwargs={
+                    "retain_atom_idx": True,
+                    "total_repeat_cell_cnt": total_repeat_cell_cnt,
+                },
+                legend=legend,
+            )
+
+            # axis
+            axes = struct.lattice._axes_from_lattice()
+            axes.visible = True
+            scene.contents.append(axes)
+
+            #
+            json_data = scene.to_json()
+
+            qpoint = 0
+            band_num = 0
+
+            if cd and cd.get("points"):
+                pt = cd["points"][0]
+                qpoint, band_num = pt.get("customdata", [-1, -1])
+                if qpoint == -1 or band_num == -1:
+                    raise ValueError("qpoint and band_num are invalid")
+
+            # magnitude
+            magnitude = (
+                MAX_MAGNITUDE - MIN_MAGNITUDE
+            ) * magnitude_fraction + MIN_MAGNITUDE
+
+            # set maximum scale for supercell to limit size
+            max_sc_scale = max(
+                1,
+                int(np.floor((MAX_SUPERCELL_SITES / num_sites) ** (1 / 3))),
+            )
+            return (
+                PhononBandstructureAndDosComponent._get_time_function_json(
+                    ph_bs=bs,
+                    json_data=json_data,
+                    band=band_num,
+                    qpoint=qpoint,
+                    total_repeat_cell_cnt=total_repeat_cell_cnt,
+                    magnitude=magnitude,
+                    velocity=velocity,
+                ),
+                [None, legend_layout],
+                [max_sc_scale],
+                [max_sc_scale],
+                [max_sc_scale],
+            )
+
+
+class PhononBandstructureAndDosPanelComponent(PanelComponent):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.bs = PhononBandstructureAndDosComponent()
+        self.bs.attach_from(self, this_store_name="mpid")
+
+    @property
+    def title(self) -> str:
+        return "Band Structure and Density of States"
+
+    @property
+    def description(self) -> str:
+        return (
+            "Display the band structure and density of states for this structure "
+            "if it has been calculated by the Materials Project."
+        )
+
+    @property
+    def initial_contents(self) -> html.Div:
+        return html.Div(
+            [
+                super().initial_contents,
+                html.Div([self.bs.standard_layout], style={"display": "none"}),
+            ]
+        )
+
+    def update_contents(self, new_store_contents, *args) -> html.Div:
+        return self.bs.standard_layout

@@ -1,0 +1,522 @@
+{
+  "c4^1_5^1_7^1_8^1_38": {
+    "cif_stem": "c4^1_5^1_7^1_8^1_38",
+    "name": "\ud835\udc5041 51 71 81",
+    "symbol": "\ud835\udc5041 51 71 81",
+    "table": "Table 2",
+    "delta_e": 0.6,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a",
+    "cif_natoms": 16
+  },
+  "c4^1_6^2_8^1_65": {
+    "cif_stem": "c4^1_6^2_8^1_65",
+    "name": "Net-W",
+    "symbol": "\ud835\udc5041 62 81",
+    "table": "Table 1",
+    "delta_e": 0.355,
+    "ref": "[50,51]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 16
+  },
+  "c4^2_5^4_6^1_14^1_65": {
+    "cif_stem": "c4^2_5^4_6^1_14^1_65",
+    "name": "QPHT-graphene",
+    "symbol": "\ud835\udc5042 54 61 141",
+    "table": "Table 1",
+    "delta_e": 0.642,
+    "ref": "[18]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 32
+  },
+  "c4^2_6^2_10^1_65": {
+    "cif_stem": "c4^2_6^2_10^1_65",
+    "name": "Naphthylene-\ud835\udefd",
+    "symbol": "\ud835\udc5042 62 101",
+    "table": "Table 1",
+    "delta_e": 0.531,
+    "ref": "[21]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 20
+  },
+  "c5^2_6^2_8^1_a_65": {
+    "cif_stem": "c5^2_6^2_8^1_a_65",
+    "name": "\ud835\udefd-phographene",
+    "symbol": "\ud835\udc5052 62 81",
+    "table": "Table 1",
+    "delta_e": 0.196,
+    "ref": "[20]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 20
+  },
+  "c5^2_6^2_8^1_b_65": {
+    "cif_stem": "c5^2_6^2_8^1_b_65",
+    "name": "\ud835\udefd-phographene",
+    "symbol": "\ud835\udc5052 62 81",
+    "table": "Table 1",
+    "delta_e": 0.196,
+    "ref": "[20]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 20
+  },
+  "c5^2_6^4_7^2_65": {
+    "cif_stem": "c5^2_6^4_7^2_65",
+    "name": "SW-graphene",
+    "symbol": "\ud835\udc5052 64 72",
+    "table": "Table 1",
+    "delta_e": 0.133,
+    "ref": "[52]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 32
+  },
+  "c5^2_6^4_8^1_65": {
+    "cif_stem": "c5^2_6^4_8^1_65",
+    "name": "Cmmm-graphene",
+    "symbol": "\ud835\udc5052 64 81",
+    "table": "Table 1",
+    "delta_e": 0.236,
+    "ref": "[11]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 28
+  },
+  "c5^2_7^2_65": {
+    "cif_stem": "c5^2_7^2_65",
+    "name": "R57a/Pentaheptite",
+    "symbol": "\ud835\udc5052 72",
+    "table": "Table 1",
+    "delta_e": 0.239,
+    "ref": "[8\u201310]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 16
+  },
+  "c5^2_8^1_65": {
+    "cif_stem": "c5^2_8^1_65",
+    "name": "Popgraphene/OPG-L",
+    "symbol": "\ud835\udc5052 81",
+    "table": "Table 1",
+    "delta_e": 0.304,
+    "ref": "[48\u201350]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 12
+  },
+  "c5^4_6^1_10^1_65": {
+    "cif_stem": "c5^4_6^1_10^1_65",
+    "name": "DHP-graphene",
+    "symbol": "\ud835\udc5054 61 101",
+    "table": "Table 1",
+    "delta_e": 0.365,
+    "ref": "[16]",
+    "wallpaper_group": "\ud835\udc50\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 24
+  },
+  "h3^2_12^1_191": {
+    "cif_stem": "h3^2_12^1_191",
+    "name": "C3\u201312",
+    "symbol": "\u210e32 121",
+    "table": "Table 1",
+    "delta_e": 0.966,
+    "ref": "[30]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 6
+  },
+  "h4^3_12^1_156": {
+    "cif_stem": "h4^3_12^1_156",
+    "name": "\u210e43 121",
+    "symbol": "\u210e43 121",
+    "table": "Table 2",
+    "delta_e": 1.488,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc5d3\ud835\udc5a1",
+    "cif_natoms": 8
+  },
+  "h4^3_5^6_18^1_191": {
+    "cif_stem": "h4^3_5^6_18^1_191",
+    "name": "TPH-\ud835\udf0e",
+    "symbol": "\u210e43 56 181",
+    "table": "Table 1",
+    "delta_e": 0.835,
+    "ref": "[33,38]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 20
+  },
+  "h4^3_6^2_12^1_191": {
+    "cif_stem": "h4^3_6^2_12^1_191",
+    "name": "Graphenylenea",
+    "symbol": "\u210e43 62 121",
+    "table": "Table 1",
+    "delta_e": 0.622,
+    "ref": "[14,25,35\u201337]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 12
+  },
+  "h4^6_5^12_6^3_12^2_18^1_191": {
+    "cif_stem": "h4^6_5^12_6^3_12^2_18^1_191",
+    "name": "Hexapentalene-\ud835\udf0e",
+    "symbol": "\u210e46 512 63 122 181",
+    "table": "Table 1",
+    "delta_e": 0.645,
+    "ref": "[40]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 48
+  },
+  "h4^6_6^6_9^2_12^1_191": {
+    "cif_stem": "h4^6_6^6_9^2_12^1_191",
+    "name": "Naphthylene-\ud835\udefc",
+    "symbol": "\u210e46 66 92 121",
+    "table": "Table 1",
+    "delta_e": 0.545,
+    "ref": "[21]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 30
+  },
+  "h4^6_6^8_8^3_12^1_191": {
+    "cif_stem": "h4^6_6^8_8^3_12^1_191",
+    "name": "Triphenylene",
+    "symbol": "\u210e46 68 83 121",
+    "table": "Table 1",
+    "delta_e": 0.467,
+    "ref": "[39]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 36
+  },
+  "h4^6_6^9_10^3_191": {
+    "cif_stem": "h4^6_6^9_10^3_191",
+    "name": "Corographene",
+    "symbol": "\u210e46 69 103",
+    "table": "Table 1",
+    "delta_e": 0.441,
+    "ref": "[15]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 36
+  },
+  "h5^12_6^3_9^2_12^1_191": {
+    "cif_stem": "h5^12_6^3_9^2_12^1_191",
+    "name": "Hexapentalene-\ud835\udefc",
+    "symbol": "\u210e512 63 92 121",
+    "table": "Table 1",
+    "delta_e": 0.383,
+    "ref": "[40]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 36
+  },
+  "h5^3_6^13_7^3_189": {
+    "cif_stem": "h5^3_6^13_7^3_189",
+    "name": "Azugraphene",
+    "symbol": "\u210e53 613 73",
+    "table": "Table 1",
+    "delta_e": 0.151,
+    "ref": "[41]",
+    "wallpaper_group": "\ud835\udc5d31\ud835\udc5a",
+    "cif_natoms": 38
+  },
+  "h5^3_6^1_9^1_187": {
+    "cif_stem": "h5^3_6^1_9^1_187",
+    "name": "C65/PHE-graphene",
+    "symbol": "\u210e53 61 91",
+    "table": "Table 1",
+    "delta_e": 0.401,
+    "ref": "[31\u201333]",
+    "wallpaper_group": "\ud835\udc5d3\ud835\udc5a1",
+    "cif_natoms": 10
+  },
+  "h5^3_6^2_7^3_189": {
+    "cif_stem": "h5^3_6^2_7^3_189",
+    "name": "H567",
+    "symbol": "\u210e53 62 73",
+    "table": "Table 1",
+    "delta_e": 0.233,
+    "ref": "[9,10]",
+    "wallpaper_group": "\ud835\udc5d31\ud835\udc5a",
+    "cif_natoms": 16
+  },
+  "h5^3_7^3_189": {
+    "cif_stem": "h5^3_7^3_189",
+    "name": "C57",
+    "symbol": "\u210e53 73",
+    "table": "Table 1",
+    "delta_e": 0.457,
+    "ref": "[34]",
+    "wallpaper_group": "\ud835\udc5d31\ud835\udc5a",
+    "cif_natoms": 12
+  },
+  "h5^6_12^1_191": {
+    "cif_stem": "h5^6_12^1_191",
+    "name": "TPH-\ud835\udefc",
+    "symbol": "\u210e56 121",
+    "table": "Table 1",
+    "delta_e": 0.6,
+    "ref": "[33,38]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 14
+  },
+  "h5^6_6^3_12^1_191": {
+    "cif_stem": "h5^6_6^3_12^1_191",
+    "name": "TPH-\ud835\udefd",
+    "symbol": "\u210e56 63 121",
+    "table": "Table 1",
+    "delta_e": 0.794,
+    "ref": "[38]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 20
+  },
+  "h6^1_191": {
+    "cif_stem": "h6^1_191",
+    "name": "Graphene",
+    "symbol": "\u210e61",
+    "table": "Table 1",
+    "delta_e": 0.0,
+    "ref": "[1]",
+    "wallpaper_group": "\ud835\udc5d6\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 2
+  },
+  "o4^1_5^1_6^1_9^1_6": {
+    "cif_stem": "o4^1_5^1_6^1_9^1_6",
+    "name": "\ud835\udc5c41 51 61 91",
+    "symbol": "\ud835\udc5c41 51 61 91",
+    "table": "Table 2",
+    "delta_e": 0.88,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc5d1",
+    "cif_natoms": 8
+  },
+  "o4^1_5^2_10^1_10": {
+    "cif_stem": "o4^1_5^2_10^1_10",
+    "name": "\ud835\udc5c41 52 101",
+    "symbol": "\ud835\udc5c41 52 101",
+    "table": "Table 2",
+    "delta_e": 0.611,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc5d2",
+    "cif_natoms": 8
+  },
+  "o5^2_6^1_7^2_10": {
+    "cif_stem": "o5^2_6^1_7^2_10",
+    "name": "PHH-graphened",
+    "symbol": "\ud835\udc5c52 61 72",
+    "table": "Table 1",
+    "delta_e": 0.244,
+    "ref": "[59]",
+    "wallpaper_group": "\ud835\udc5d2",
+    "cif_natoms": 10
+  },
+  "o5^2_6^2_7^2_10": {
+    "cif_stem": "o5^2_6^2_7^2_10",
+    "name": "O567",
+    "symbol": "\ud835\udc5c52 62 72",
+    "table": "Table 1",
+    "delta_e": 0.357,
+    "ref": "[61]",
+    "wallpaper_group": "\ud835\udc5d2",
+    "cif_natoms": 12
+  },
+  "r4^1_5^2_6^2_10^1_47": {
+    "cif_stem": "r4^1_5^2_6^2_10^1_47",
+    "name": "TPDH-graphene",
+    "symbol": "\ud835\udc5f41 52 62 101",
+    "table": "Table 1",
+    "delta_e": 0.445,
+    "ref": "[56]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 12
+  },
+  "r4^1_5^2_8^2_47": {
+    "cif_stem": "r4^1_5^2_8^2_47",
+    "name": "TPO-graphene",
+    "symbol": "\ud835\udc5f41 52 82",
+    "table": "Table 1",
+    "delta_e": 0.663,
+    "ref": "[55]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 10
+  },
+  "r4^1_5^4_6^3_8^1_10^1_47": {
+    "cif_stem": "r4^1_5^4_6^3_8^1_10^1_47",
+    "name": "Net-\ud835\udf0f",
+    "symbol": "\ud835\udc5f41 54 63 81 101",
+    "table": "Table 1",
+    "delta_e": 0.331,
+    "ref": "[57]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 20
+  },
+  "r4^1_6^1_8^1_47": {
+    "cif_stem": "r4^1_6^1_8^1_47",
+    "name": "Biphenylene",
+    "symbol": "\ud835\udc5f41 61 81",
+    "table": "Table 1",
+    "delta_e": 0.456,
+    "ref": "[13,26]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 6
+  },
+  "r4^1_6^3_8^1_47": {
+    "cif_stem": "r4^1_6^3_8^1_47",
+    "name": "Net-Y",
+    "symbol": "\ud835\udc5f41 63 81",
+    "table": "Table 1",
+    "delta_e": 0.293,
+    "ref": "[54]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 10
+  },
+  "r4^2_5^2_7^6_51": {
+    "cif_stem": "r4^2_5^2_7^6_51",
+    "name": "TPH-graphene",
+    "symbol": "\ud835\udc5f42 52 76",
+    "table": "Table 1",
+    "delta_e": 0.386,
+    "ref": "[12,58]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc542",
+    "cif_natoms": 20
+  },
+  "r4^2_6^1_10^1_47": {
+    "cif_stem": "r4^2_6^1_10^1_47",
+    "name": "\ud835\udc5f42 61 101",
+    "symbol": "\ud835\udc5f42 61 101",
+    "table": "Table 2",
+    "delta_e": 0.791,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 8
+  },
+  "r4^2_8^2_47": {
+    "cif_stem": "r4^2_8^2_47",
+    "name": "\ud835\udc5f42 82",
+    "symbol": "\ud835\udc5f42 82",
+    "table": "Table 2",
+    "delta_e": 0.844,
+    "ref": "Girao et al. (2023) Table 2",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 8
+  },
+  "r4^5_6^4_10^1_12^1_47": {
+    "cif_stem": "r4^5_6^4_10^1_12^1_47",
+    "name": "Naphthylene-\ud835\udefe",
+    "symbol": "\ud835\udc5f45 64 101 121",
+    "table": "Table 1",
+    "delta_e": 0.576,
+    "ref": "[22]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 22
+  },
+  "r5^2_6^1_8^1_47": {
+    "cif_stem": "r5^2_6^1_8^1_47",
+    "name": "Pentahexoctiteb",
+    "symbol": "\ud835\udc5f52 61 81",
+    "table": "Table 1",
+    "delta_e": 0.35,
+    "ref": "[20,53]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 8
+  },
+  "r5^2_6^2_7^2_51": {
+    "cif_stem": "r5^2_6^2_7^2_51",
+    "name": "\ud835\udf13-graphene",
+    "symbol": "\ud835\udc5f52 62 72",
+    "table": "Table 1",
+    "delta_e": 0.154,
+    "ref": "[19]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc542",
+    "cif_natoms": 12
+  },
+  "r5^2_6^2_8^1_47": {
+    "cif_stem": "r5^2_6^2_8^1_47",
+    "name": "HOP-graphenec",
+    "symbol": "\ud835\udc5f52 62 81",
+    "table": "Table 1",
+    "delta_e": 0.237,
+    "ref": "[20,23,24]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 10
+  },
+  "r5^2_6^6_7^2_51": {
+    "cif_stem": "r5^2_6^6_7^2_51",
+    "name": "Phagraphene",
+    "symbol": "\ud835\udc5f52 66 72",
+    "table": "Table 1",
+    "delta_e": 0.193,
+    "ref": "[17]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc542",
+    "cif_natoms": 20
+  },
+  "r5^4_6^2_7^4_25": {
+    "cif_stem": "r5^4_6^2_7^4_25",
+    "name": "PHH-graphene",
+    "symbol": "\ud835\udc5f54 62 74",
+    "table": "Table 1",
+    "delta_e": 0.315,
+    "ref": "[59]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a",
+    "cif_natoms": 20
+  },
+  "r5^4_6^3_8^2_47": {
+    "cif_stem": "r5^4_6^3_8^2_47",
+    "name": "\ud835\udeff-phographene",
+    "symbol": "\ud835\udc5f54 63 82",
+    "table": "Table 1",
+    "delta_e": 0.258,
+    "ref": "[20]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc5a2",
+    "cif_natoms": 18
+  },
+  "r5^4_6^4_7^4_55": {
+    "cif_stem": "r5^4_6^4_7^4_55",
+    "name": "PAI-graphene",
+    "symbol": "\ud835\udc5f54 64 74",
+    "table": "Table 1",
+    "delta_e": 0.134,
+    "ref": "[60]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc54\ud835\udc542",
+    "cif_natoms": 24
+  },
+  "r5^4_7^4_55": {
+    "cif_stem": "r5^4_7^4_55",
+    "name": "R57b",
+    "symbol": "\ud835\udc5f54 74",
+    "table": "Table 1",
+    "delta_e": 0.216,
+    "ref": "[9,10]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc54\ud835\udc542",
+    "cif_natoms": 16
+  },
+  "r5^4_8^2_51": {
+    "cif_stem": "r5^4_8^2_51",
+    "name": "OPG-Z",
+    "symbol": "\ud835\udc5f54 82",
+    "table": "Table 1",
+    "delta_e": 0.353,
+    "ref": "[49]",
+    "wallpaper_group": "\ud835\udc5d\ud835\udc5a\ud835\udc542",
+    "cif_natoms": 12
+  },
+  "t4^1_8^1_123": {
+    "cif_stem": "t4^1_8^1_123",
+    "name": "T-graphene",
+    "symbol": "\ud835\udc6141 81",
+    "table": "Table 1",
+    "delta_e": 0.52,
+    "ref": "[30,42,43]",
+    "wallpaper_group": "\ud835\udc5d4\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 4
+  },
+  "t5^4_6^4_8^2_127": {
+    "cif_stem": "t5^4_6^4_8^2_127",
+    "name": "\ud835\udefc-phographene",
+    "symbol": "\ud835\udc6154 64 82",
+    "table": "Table 1",
+    "delta_e": 0.191,
+    "ref": "[20,44,45]",
+    "wallpaper_group": "\ud835\udc5d4\ud835\udc54\ud835\udc5a",
+    "cif_natoms": 20
+  },
+  "t5^4_6^8_8^2_123": {
+    "cif_stem": "t5^4_6^8_8^2_123",
+    "name": "Octite SC",
+    "symbol": "\ud835\udc6154 68 82",
+    "table": "Table 1",
+    "delta_e": 0.315,
+    "ref": "[46,47]",
+    "wallpaper_group": "\ud835\udc5d4\ud835\udc5a\ud835\udc5a",
+    "cif_natoms": 28
+  }
+}

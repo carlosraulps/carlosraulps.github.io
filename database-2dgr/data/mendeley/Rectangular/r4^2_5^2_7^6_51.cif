@@ -1,0 +1,36 @@
+# Symmetrized structure with precision = 1e-10
+data_Repository_symm/r4^2_5^2_7^6Pmma
+_cell_length_a                  7.837865
+_cell_length_b                  14.99868
+_cell_length_c                  7.080493
+_cell_angle_alpha               90
+_cell_angle_beta                90
+_cell_angle_gamma               90
+_symmetry_space_group_name_H-M  'Pmma'
+_symmetry_Int_Tables_number     51
+
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+ 1 'x, y, z' 
+ 2 '-x, -y, -z' 
+ 3 '1/2-x, -y, z' 
+ 4 '1/2+x, y, -z' 
+ 5 '1/2+x, -y, -z' 
+ 6 '1/2-x, y, z' 
+ 7 '-x, y, -z' 
+ 8 'x, -y, z' 
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+C C 1.0 0.2500000 0.0000000 0.4019047
+C C 1.0 0.2500000 0.0000000 0.1972041
+C C 1.0 0.0931918 0.0000000 0.5217709
+C C 1.0 0.1593748 0.0000000 0.7102219
+C C 1.0 0.0711745 0.0000000 0.8791341
+C C 1.0 0.1050080 0.0000000 0.0838821
