@@ -53,6 +53,15 @@ export function EditorialFooter() {
             <ul className="space-y-2 text-ink-700">
               <li>
                 <a
+                  href="/2d-carbon-explorer/"
+                  className="hover:text-forest-900 transition-colors flex items-center justify-between"
+                >
+                  <span>Carbon Atlas (2D Carbon Explorer)</span>
+                  <span className="text-[10px] text-terracotta-600">Live App ↗</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://github.com/carlosraulps/VASP-automatization-platform"
                   target="_blank"
                   rel="noopener noreferrer"

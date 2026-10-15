@@ -8,7 +8,7 @@ export const SCIENTIFIC_METRICS: MetricItem[] = [
   },
   {
     label: 'Open Scientific Repositories',
-    value: '14',
+    value: '15',
     description: 'First-principles DFT, numerical methods, ML discovery, and Slurm orchestration',
   },
   {

@@ -33,11 +33,11 @@ export function EditorialHero() {
         {/* Primary Action Buttons */}
         <div className="mt-8 flex items-center gap-3 flex-wrap font-mono text-xs">
           <a
-            href="#featured-apps"
+            href="/2d-carbon-explorer/"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-forest-800 hover:bg-forest-900 text-ivory-50 font-medium transition-all shadow-sm hover:shadow active:scale-[0.98]"
           >
             <Atom className="w-4 h-4 text-forest-300" />
-            <span>Featured Applications</span>
+            <span>Launch Carbon Atlas (2D Explorer) ↗</span>
           </a>
 
           <a
@@ -45,7 +45,7 @@ export function EditorialHero() {
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded bg-white hover:bg-ivory-100 text-ink-800 border border-forest-800/20 font-medium transition-all shadow-sm active:scale-[0.98]"
           >
             <Code2 className="w-4 h-4 text-forest-700" />
-            <span>Browse All 14 Repositories</span>
+            <span>Browse All 15 Repositories</span>
           </a>
 
           <a
