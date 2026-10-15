@@ -28,13 +28,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'resources-hub/package-lock.json'
 
       - name: Install Resources Hub Dependencies
         run: |
           cd resources-hub
-          npm ci
+          npm ci || npm install
 
       - name: Build Resources Hub
         run: |
@@ -60,6 +58,8 @@ jobs:
         run: |
           mkdir -p ./_site/2d-carbon-explorer
           cp -r ./2d-carbon-explorer/* ./_site/2d-carbon-explorer/
+          mkdir -p ./_site/database-2dgr
+          cp -r ./2d-carbon-explorer/* ./_site/database-2dgr/
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
