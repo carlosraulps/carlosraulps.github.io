@@ -1,7 +1,0 @@
-crystal\_toolkit.components.search module
-=========================================
-
-.. automodule:: crystal_toolkit.components.search
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -1,7 +1,0 @@
-crystal\_toolkit.components.xas module
-======================================
-
-.. automodule:: crystal_toolkit.components.xas
-   :members:
-   :undoc-members:
-   :show-inheritance:

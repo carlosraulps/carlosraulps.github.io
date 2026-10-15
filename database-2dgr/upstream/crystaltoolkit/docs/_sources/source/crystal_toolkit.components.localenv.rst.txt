@@ -1,7 +1,0 @@
-crystal\_toolkit.components.localenv module
-===========================================
-
-.. automodule:: crystal_toolkit.components.localenv
-   :members:
-   :undoc-members:
-   :show-inheritance:

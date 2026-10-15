@@ -1,7 +1,0 @@
-crystal\_toolkit.components.pourbaix module
-===========================================
-
-.. automodule:: crystal_toolkit.components.pourbaix
-   :members:
-   :undoc-members:
-   :show-inheritance:
