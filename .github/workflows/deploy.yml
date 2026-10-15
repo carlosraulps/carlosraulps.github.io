@@ -47,6 +47,7 @@ jobs:
 
       - name: Build Jekyll Site
         run: |
+          bundle install || bundle update
           bundle exec jekyll build --destination ./_site
 
       - name: Ensure Resources Hub in _site
