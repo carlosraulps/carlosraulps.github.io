@@ -54,7 +54,27 @@ npm run preview:resources
 
 ---
 
-## 3. Git & GitHub Pages Deployment
+## 3. Carbon Atlas (2D Carbon Explorer) Integration
+
+Carbon Atlas is Carlos's flagship materials informatics application for exploring two-dimensional carbon allotropes beyond graphene.
+
+### 3.1. Architecture & Data Provenance
+- **Complete Monorepo Source (`database-2dgr/`)**: Contains the end-to-end Python backend, crystallographic datasets (Girão 61-allotrope master dataset, Mendeley Data V2, MIDB), machine learning descriptors, and React 18 frontend source.
+- **Client-Side Production Build (`2d-carbon-explorer/`)**: The static production bundle (Vite + React Three Fiber + Drei) compiled to pure static HTML/JS/CSS with relative asset paths, deployed directly to GitHub Pages at `/2d-carbon-explorer/` and `/database-2dgr/`.
+- **Scientific Coverage**: Includes the interactive PHOTH Ab Initio Quantum & Strain Laboratory, Henkelman Bader charge redistribution under biaxial/uniaxial strain, 3D volumetric charge density difference (CDD) slices, and didactic supercell expansion.
+
+### 3.2. Building and Updating Carbon Atlas
+```bash
+cd database-2dgr/frontend
+npm install
+npm test
+npm run build
+cp -r dist/* ../../2d-carbon-explorer/
+```
+
+---
+
+## 4. Git & GitHub Pages Deployment
 
 ### 4.1. Master Branch Policy
 Per user project rules, all commits and remote operations MUST target the `master` branch (never `main`).

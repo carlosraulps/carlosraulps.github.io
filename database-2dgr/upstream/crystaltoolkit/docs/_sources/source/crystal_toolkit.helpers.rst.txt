@@ -1,0 +1,21 @@
+crystal\_toolkit.helpers package
+================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   crystal_toolkit.helpers.asymptote_renderer
+   crystal_toolkit.helpers.layouts
+   crystal_toolkit.helpers.povray_renderer
+   crystal_toolkit.helpers.utils
+
+Module contents
+---------------
+
+.. automodule:: crystal_toolkit.helpers
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,6 @@
+[submodule "upstream/crystaltoolkit"]
+	path = upstream/crystaltoolkit
+	url = https://github.com/materialsproject/crystaltoolkit.git
+[submodule "upstream/dash-mp-components"]
+	path = upstream/dash-mp-components
+	url = https://github.com/materialsproject/dash-mp-components.git

@@ -1,0 +1,763 @@
+{
+  "references": [
+    {
+      "id": "novoselov_2004_science",
+      "doi": "10.1126/science.1102896",
+      "title": "Electric Field Effect in Atomically Thin Carbon Films",
+      "authors": [
+        "K. S. Novoselov",
+        "A. K. Geim",
+        "S. V. Morozov",
+        "D. Jiang",
+        "Y. Zhang",
+        "S. V. Dubonos",
+        "I. V. Grigorieva",
+        "A. A. Firsov"
+      ],
+      "year": 2004,
+      "venue": "Science",
+      "volume": "306",
+      "pages": "666–669",
+      "url": "https://doi.org/10.1126/science.1102896",
+      "relationship": "Experimental Synthesis",
+      "description": "Experimental isolation, micromechanical cleavage, and electric field effect discovery of pristine monolayer graphene. Demonstrates ambipolar field-effect mobility up to ~10,000 cm²/(V·s) at room temperature."
+    },
+    {
+      "id": "crespi_1996_prb",
+      "doi": "10.1103/PhysRevB.53.R13303",
+      "title": "Prediction of a class of planar sp2-bonded carbon allotropes",
+      "authors": [
+        "V. H. Crespi",
+        "L. X. Benedict",
+        "M. L. Cohen",
+        "S. G. Louie"
+      ],
+      "year": 1996,
+      "venue": "Physical Review B",
+      "volume": "53",
+      "pages": "R13303–R13306",
+      "url": "https://doi.org/10.1103/PhysRevB.53.R13303",
+      "relationship": "Theoretical Proposal",
+      "description": "First theoretical prediction of pentaheptite 5-7 ring carbon networks. Proposes fully coordinated sp² planar sheets composed exclusively of alternating pentagons and heptagons, displaying intrinsic metallic band structures."
+    },
+    {
+      "id": "terrones_2000_prl",
+      "doi": "10.1103/PhysRevLett.84.1716",
+      "title": "New metallic allotropes of planar and tubular carbon",
+      "authors": [
+        "H. Terrones",
+        "M. Terrones",
+        "E. Hernández",
+        "N. Grobert",
+        "J.-C. Charlier",
+        "P. M. Ajayan"
+      ],
+      "year": 2000,
+      "venue": "Physical Review Letters",
+      "volume": "84",
+      "pages": "1716–1719",
+      "url": "https://doi.org/10.1103/PhysRevLett.84.1716",
+      "relationship": "Theoretical Proposal",
+      "description": "Prediction of Haeckelite planar and tubular carbon allotropes containing square, pentagonal, and heptagonal defects. Demonstrates robust intrinsic metallic conductivity and high in-plane stiffness."
+    },
+    {
+      "id": "li_2010_chemcommun",
+      "doi": "10.1039/B922733D",
+      "title": "Architecture of graphdiyne nanoscale films",
+      "authors": [
+        "G. Li",
+        "Y. Li",
+        "H. Liu",
+        "Y. Guo",
+        "Y. Li",
+        "D. Zhu"
+      ],
+      "year": 2010,
+      "venue": "Chemical Communications",
+      "volume": "46",
+      "pages": "3256–3258",
+      "url": "https://doi.org/10.1039/B922733D",
+      "relationship": "Experimental Synthesis",
+      "description": "Scalable bottom-up solution synthesis of graphdiyne nanoscale thin films via copper-catalyzed cross-coupling of hexaethynylbenzene. Confirms periodic sp-sp² hybridization."
+    },
+    {
+      "id": "enyashin_2011_pssb",
+      "doi": "10.1002/pssb.201046554",
+      "title": "Graphene allotropes: Graphenylene, Net W, and Net C",
+      "authors": [
+        "A. N. Enyashin",
+        "A. L. Ivanovskii"
+      ],
+      "year": 2011,
+      "venue": "Physica Status Solidi (b)",
+      "volume": "248",
+      "pages": "1879–1883",
+      "url": "https://doi.org/10.1002/pssb.201046554",
+      "relationship": "Theoretical Proposal",
+      "description": "Systematic electronic band structure calculations and structural stability analysis of graphenylene networks and related square-hexagonal-octagonal allotropes."
+    },
+    {
+      "id": "malko_2012_prl",
+      "doi": "10.1103/PhysRevLett.108.086804",
+      "title": "Competition for Graphene: Novel Two-Dimensional sp2 Carbon Allotropes",
+      "authors": [
+        "D. Malko",
+        "C. Neiss",
+        "F. Viñes",
+        "A. Görling"
+      ],
+      "year": 2012,
+      "venue": "Physical Review Letters",
+      "volume": "108",
+      "pages": "086804",
+      "url": "https://doi.org/10.1103/PhysRevLett.108.086804",
+      "relationship": "Electronic & Dirac Physics",
+      "description": "Discovery of direction-dependent Dirac cones in 6,6,12-graphyne and β-graphyne. Demonstrates that relativistic linear dispersion can exist in planar sp² networks lacking hexagonal symmetry."
+    },
+    {
+      "id": "wei_2013_nanolett",
+      "doi": "10.1021/nl303168w",
+      "title": "Bending Rigidity and Gaussian Bending Stiffness of Single-Layered Graphene",
+      "authors": [
+        "Y. Wei",
+        "B. Wang",
+        "J. Wu",
+        "R. Yang",
+        "M. L. Dunn"
+      ],
+      "year": 2013,
+      "venue": "Nano Letters",
+      "volume": "13",
+      "pages": "26–30",
+      "url": "https://doi.org/10.1021/nl303168w",
+      "relationship": "Computational Benchmark",
+      "description": "Comprehensive atomistic study of bending rigidity and Gaussian curvature stiffness in single-layer graphene, establishing the continuum elastic modulus threshold for 2D carbon sheets."
+    },
+    {
+      "id": "song_2013_jmcc",
+      "doi": "10.1039/C2TC00006G",
+      "title": "Graphenylene, a unique two-dimensional carbon network with nondelocalized cyclohexatriene units",
+      "authors": [
+        "Q. Song",
+        "B. Wang",
+        "K. Deng",
+        "X. Feng",
+        "M. Wagner",
+        "J. D. Gale",
+        "K. Müllen",
+        "L. Zhi"
+      ],
+      "year": 2013,
+      "venue": "Journal of Materials Chemistry C",
+      "volume": "1",
+      "pages": "38–41",
+      "url": "https://doi.org/10.1039/C2TC00006G",
+      "relationship": "Theoretical Proposal",
+      "description": "First-principles study of graphenylene (4-6-12 ring carbon network). Identifies nondelocalized cyclohexatriene units with alternating bond lengths (1.37 vs 1.48 Å), regular pore diameter (~3.2 Å), and narrow direct bandgap."
+    },
+    {
+      "id": "sharma_2014_scirep",
+      "doi": "10.1038/srep07164",
+      "title": "Pentahexoctite: A new two-dimensional allotrope of carbon",
+      "authors": [
+        "B. R. Sharma",
+        "A. Manjanath",
+        "A. K. Singh"
+      ],
+      "year": 2014,
+      "venue": "Scientific Reports",
+      "volume": "4",
+      "pages": "7164",
+      "url": "https://doi.org/10.1038/srep07164",
+      "relationship": "Theoretical Proposal",
+      "description": "Proposes pentahexoctite, an sp² carbon monolayer comprising 5, 6, and 8 membered rings. Computes thermal stability using ab initio molecular dynamics at 1000 K and reveals metallic conductivity."
+    },
+    {
+      "id": "long_2015_carbon",
+      "doi": "10.1016/j.carbon.2015.09.030",
+      "title": "Theoretical investigation on two-dimensional non-traditional carbon materials employing three-membered ring and four-membered ring as building blocks",
+      "authors": [
+        "G. Long",
+        "M. Wu",
+        "Z. Qin",
+        "L. Chen"
+      ],
+      "year": 2015,
+      "venue": "Carbon",
+      "volume": "95",
+      "pages": "1033–1038",
+      "url": "https://doi.org/10.1016/j.carbon.2015.09.030",
+      "relationship": "Theoretical Proposal",
+      "description": "Systematic first-principles analysis of carbon sheets containing cyclopropane (3-ring) and cyclobutadiene (4-ring) motifs. Identifies stability limits of high-angle strain geometries in C3-12 (h3^2_12^1_191)."
+    },
+    {
+      "id": "wang_2015_nanolett",
+      "doi": "10.1021/acs.nanolett.5b02512",
+      "title": "Phagraphene: A Low-Energy Graphene Allotrope Composed of 5-6-7 Carbon Rings with Distorted Dirac Cones",
+      "authors": [
+        "Z. Wang",
+        "X.-F. Zhou",
+        "X. Zhang",
+        "Q. Zhu",
+        "H. Dong",
+        "M. Zhao",
+        "A. R. Oganov"
+      ],
+      "year": 2015,
+      "venue": "Nano Letters",
+      "volume": "15",
+      "pages": "6182–6186",
+      "url": "https://doi.org/10.1021/acs.nanolett.5b02512",
+      "relationship": "Electronic & Dirac Physics",
+      "description": "Ab initio evolutionary discovery of phagraphene containing 5-6-7 rings with directional Dirac cones. Exhibits thermodynamic formation energy of only +0.205 eV/atom above graphene, with distorted Dirac cones and Fermi velocity v_F ~ 6.3e5 m/s."
+    },
+    {
+      "id": "fan_2017_rscadv",
+      "doi": "10.1039/C7RA01762F",
+      "title": "New carbon allotropes with metallic conducting properties: a first-principles prediction",
+      "authors": [
+        "X. Fan",
+        "J. Li",
+        "G. Chen"
+      ],
+      "year": 2017,
+      "venue": "RSC Advances",
+      "volume": "7",
+      "pages": "17417–17426",
+      "url": "https://doi.org/10.1039/C7RA01762F",
+      "relationship": "Theoretical Proposal",
+      "description": "Proposes α-, β-, and δ-phographene planar allotropes. Evaluates cohesive energies, mechanical tensile limits, and density of states across non-hexagonal polygon variations."
+    },
+    {
+      "id": "wang_2018_jmatchema",
+      "doi": "10.1039/C8TA00438B",
+      "title": "Popgraphene: a new 2D planar carbon allotrope composed of 5-8-5 carbon rings for high-performance lithium-ion battery anodes",
+      "authors": [
+        "S. Wang",
+        "B. Yang",
+        "H. Chen",
+        "E. Ruckenstein"
+      ],
+      "year": 2018,
+      "venue": "Journal of Materials Chemistry A",
+      "volume": "6",
+      "pages": "6815–6821",
+      "url": "https://doi.org/10.1039/C8TA00438B",
+      "relationship": "Catalysis & Reactivity",
+      "description": "Prediction of Popgraphene composed of 5-8-5 carbon rings (Cmmm symmetry, 12 atoms). Demonstrates ultrahigh theoretical Li capacity (1117 mAh/g) and low diffusion barriers (0.16 eV)."
+    },
+    {
+      "id": "yi_2018_jmatchema",
+      "doi": "10.1039/C8TA02606H",
+      "title": "Microporosity as a new property control factor in graphene-like 2D allotropes",
+      "authors": [
+        "W.-C. Yi",
+        "W. Liu",
+        "J. Botana",
+        "J.-Y. Liu",
+        "M.-S. Miao"
+      ],
+      "year": 2018,
+      "venue": "Journal of Materials Chemistry A",
+      "volume": "6",
+      "pages": "10348–10353",
+      "url": "https://doi.org/10.1039/C8TA02606H",
+      "relationship": "Theoretical Proposal",
+      "description": "Identifies microporosity as a structural descriptor governing the electronic and adsorption behavior of non-hexagonal 2D carbon allotropes, focusing on Cmmm 28-atom sheets."
+    },
+    {
+      "id": "toh_2020_nature",
+      "doi": "10.1038/s41586-019-1871-2",
+      "title": "Synthesis and properties of free-standing monolayer amorphous carbon",
+      "authors": [
+        "C.-T. Toh",
+        "H. Zhang",
+        "J. Ravano",
+        "Y. Lin",
+        "J. H. Choi",
+        "P. Liu",
+        "C. H. Sow"
+      ],
+      "year": 2020,
+      "venue": "Nature",
+      "volume": "577",
+      "pages": "199–203",
+      "url": "https://doi.org/10.1038/s41586-019-1871-2",
+      "relationship": "Experimental Synthesis",
+      "description": "Direct growth and atomic-resolution transmission electron microscopy of free-standing monolayer amorphous carbon (MAC). Proves Zachariasen glass model with continuous random distribution of 4-, 5-, 6-, 7-, 8-membered rings."
+    },
+    {
+      "id": "fan_2021_science",
+      "doi": "10.1126/science.abg4509",
+      "title": "Biphenylene network: A nonbenzenoid carbon allotrope",
+      "authors": [
+        "Q. Fan",
+        "L. Yan",
+        "M. W. Tripp",
+        "O. Krejčí",
+        "S. Dimosthenous",
+        "S. R. Kachel",
+        "M. Chen",
+        "A. S. Foster",
+        "U. Koert",
+        "P. Liljeroth",
+        "J. M. Gottfried"
+      ],
+      "year": 2021,
+      "venue": "Science",
+      "volume": "372",
+      "pages": "852–856",
+      "url": "https://doi.org/10.1126/science.abg4509",
+      "relationship": "Experimental Synthesis",
+      "description": "Bottom-up on-surface synthesis and bond-resolved scanning probe characterization of the periodic biphenylene network (4-6-8 rings). Confirms nonbenzenoid planar conjugation, metallic character, and formation energy Delta E = +0.456 eV/atom."
+    },
+    {
+      "id": "luo_2021_scirep",
+      "doi": "10.1038/s41598-021-98261-9",
+      "title": "A first principles investigation on the structural, mechanical, electronic, and catalytic properties of biphenylene",
+      "authors": [
+        "Y. Luo",
+        "C. Ren",
+        "Y. Xu",
+        "J. Yu",
+        "S. Wang",
+        "M. Sun"
+      ],
+      "year": 2021,
+      "venue": "Scientific Reports",
+      "volume": "11",
+      "pages": "19008",
+      "url": "https://doi.org/10.1038/s41598-021-98261-9",
+      "relationship": "Catalysis & Reactivity",
+      "description": "DFT examination of the biphenylene network: computes in-plane Young’s modulus (258 N/m), Poisson ratio (0.33), 4500 K thermal melting persistence, and hydrogen evolution reaction (HER) catalytic Gibbs free energy (ΔG_H* ~ 0.08 eV)."
+    },
+    {
+      "id": "desyatkin_2022_jacs",
+      "doi": "10.1021/jacs.2c06583",
+      "title": "Scalable Synthesis and Characterization of Multilayer γ-Graphyne, New Carbon Crystals with a Small Direct Band Gap",
+      "authors": [
+        "V. G. Desyatkin",
+        "W. B. Martin",
+        "A. E. Aliev",
+        "B. Chapman",
+        "G. Leitao",
+        "S. Rafieborujeni"
+      ],
+      "year": 2022,
+      "venue": "Journal of the American Chemical Society",
+      "volume": "144",
+      "pages": "17999–18008",
+      "url": "https://doi.org/10.1021/jacs.2c06583",
+      "relationship": "Experimental Synthesis",
+      "description": "Scalable chemical synthesis of crystalline multilayer γ-graphyne via dynamic covalent cross-coupling of terminal alkynes. Confirms direct optical band gap of ~0.48 eV and lattice constant a = 6.86 Å."
+    },
+    {
+      "id": "hou_2022_nature",
+      "doi": "10.1038/s41586-022-04771-5",
+      "title": "Synthesis of a monolayer fullerene network",
+      "authors": [
+        "L. Hou",
+        "X. Cui",
+        "B. Guan",
+        "S. Wang",
+        "R. Yao",
+        "M. Zheng",
+        "H. Sun",
+        "L. He",
+        "K. Liu",
+        "Y. Li"
+      ],
+      "year": 2022,
+      "venue": "Nature",
+      "volume": "606",
+      "pages": "507–510",
+      "url": "https://doi.org/10.1038/s41586-022-04771-5",
+      "relationship": "Experimental Synthesis",
+      "description": "Interfacial synthesis of quasi-hexagonal (qHP) and quasi-tetragonal (qTP) polymeric monolayer fullerene C60 networks with regular intermolecular covalent bonds and band gap Eg ~ 1.6 eV."
+    },
+    {
+      "id": "xie_2022_rscadv",
+      "doi": "10.1039/D2RA03673H",
+      "title": "Effective regulation of the electronic properties of a biphenylene network by hydrogenation and halogenation",
+      "authors": [
+        "Y. Xie",
+        "L. Chen",
+        "J. Xu",
+        "W. Liu"
+      ],
+      "year": 2022,
+      "venue": "RSC Advances",
+      "volume": "12",
+      "pages": "17281–17290",
+      "url": "https://doi.org/10.1039/D2RA03673H",
+      "relationship": "Electronic & Dirac Physics",
+      "description": "First-principles study demonstrating that surface hydrogenation and halogenation open a tuneable direct bandgap up to 2.14 eV in the otherwise metallic biphenylene monolayer."
+    },
+    {
+      "id": "girao_2023_carbon",
+      "doi": "10.1016/j.carbon.2022.12.001",
+      "title": "Classification of sp2-bonded carbon allotropes in two dimensions",
+      "authors": [
+        "E. C. Girão",
+        "A. Macmillan",
+        "V. Meunier"
+      ],
+      "year": 2023,
+      "venue": "Carbon",
+      "volume": "203",
+      "pages": "611–619",
+      "url": "https://doi.org/10.1016/j.carbon.2022.12.001",
+      "relationship": "Foundational Taxonomy",
+      "description": "Foundational classification establishing a rigorous polygon inventory notation (Girão ring symbols) and DFT-D3 relative formation energetics (ΔE) across 61 2D carbon allotropes. Standardizes 17 wallpaper group mappings and in-plane lattice constants."
+    },
+    {
+      "id": "girao_2023_mendeley",
+      "doi": "10.17632/fs42cypny7.2",
+      "title": "Mendeley Data: 2D Carbon Allotropes Crystallographic Dataset (v2)",
+      "authors": [
+        "L. Macmillan",
+        "E. C. Girão",
+        "V. Meunier"
+      ],
+      "year": 2023,
+      "venue": "Mendeley Data",
+      "volume": "v2",
+      "pages": "dataset",
+      "url": "https://doi.org/10.17632/fs42cypny7.2",
+      "relationship": "Crystallographic Dataset",
+      "description": "Open crystallographic repository containing authentic PBE-relaxed CIF files, optimized atomic fractional coordinates, and VASP DFT total energies for the 61 allotrope library."
+    },
+    {
+      "id": "kolokathis_2024_csbj",
+      "doi": "10.1016/j.csbj.2024.09.023",
+      "title": "NanoTube Construct: A web tool for digital construction of nanotubes and junction models",
+      "authors": [
+        "P. D. Kolokathis",
+        "et al."
+      ],
+      "year": 2024,
+      "venue": "Computational and Structural Biotechnology Journal",
+      "volume": "25",
+      "pages": "230–242",
+      "url": "https://doi.org/10.1016/j.csbj.2024.09.023",
+      "relationship": "Computational Benchmark",
+      "description": "Interactive web software tool for geometric roll-up of 2D graphene and planar allotropes into arbitrary chiral nanotubes, topological junctions, and capped structures."
+    },
+    {
+      "id": "santos_2024_scirep",
+      "doi": "10.1038/s41598-024-59858-y",
+      "title": "PHOTH-graphene: a new 2D carbon allotrope with low barriers for Li-ion mobility",
+      "authors": [
+        "E. A. J. Santos",
+        "K. A. L. Lima",
+        "F. L. L. Mendonça",
+        "C. G. Bezerra",
+        "R. M. Ribeiro",
+        "R. P. dos Santos",
+        "J. M. de Sousa"
+      ],
+      "year": 2024,
+      "venue": "Scientific Reports",
+      "volume": "14",
+      "pages": "9516",
+      "url": "https://doi.org/10.1038/s41598-024-59858-y",
+      "relationship": "Theoretical Proposal",
+      "description": "Theoretical discovery of PHOTH-graphene, an sp² planar network comprising 4-, 5-, 6-, 7-, and 8-membered rings (Pmm2 symmetry, 18 atoms). Confirms dynamic stability via phonon dispersion and reports ultra-low Li-ion diffusion barrier of 0.14 eV."
+    },
+    {
+      "id": "araujo_2025_npj",
+      "doi": "10.1038/s41524-025-01892-z",
+      "title": "A high-throughput framework and database for twisted 2D van der Waals bilayers",
+      "authors": [
+        "R. Araújo",
+        "et al."
+      ],
+      "year": 2025,
+      "venue": "npj Computational Materials",
+      "volume": "11",
+      "pages": "48",
+      "url": "https://doi.org/10.1038/s41524-025-01892-z",
+      "relationship": "Computational Benchmark",
+      "description": "High-throughput computational framework and database for twisted 2D van der Waals bilayers, moiré superlattices, and inter-layer binding energetics across 2D materials."
+    },
+    {
+      "id": "macmillan_2025_npj",
+      "doi": "10.1038/s41524-025-01932-8",
+      "title": "Graph embedding tensor: unifying topological description, symmetry detection, and structure generation for two-dimensional carbon allotropes",
+      "authors": [
+        "L. Macmillan",
+        "E. C. Girão",
+        "V. Meunier"
+      ],
+      "year": 2025,
+      "venue": "npj Computational Materials",
+      "volume": "11",
+      "pages": "27",
+      "url": "https://doi.org/10.1038/s41524-025-01932-8",
+      "relationship": "Tensor Representation",
+      "description": "Coordinate-free rank-3 embedding tensor Phi_{v,e,f} encoding wallpaper group symmetries and ring adjacency for 2D carbon. Eliminates geometric tolerance ambiguity and enables generative Stone-Wales crystal discovery."
+    },
+    {
+      "id": "paupitz_2026_carbon",
+      "doi": "10.1016/j.carbon.2026.121320",
+      "title": "A concise review of recently synthesized 2D carbon allotropes: Amorphous carbon, graphynes, biphenylene and fullerene networks",
+      "authors": [
+        "R. Paupitz",
+        "A. F. Fonseca",
+        "M. Bessa",
+        "A. E. Aliev",
+        "W. B. Martin",
+        "D. S. Galvão"
+      ],
+      "year": 2026,
+      "venue": "Carbon",
+      "volume": "252",
+      "pages": "121320",
+      "url": "https://doi.org/10.1016/j.carbon.2026.121320",
+      "relationship": "Comprehensive Review",
+      "description": "Comprehensive synthesis review synthesizing experimental progress on 2D non-hexagonal carbon allotropes (monolayer amorphous carbon, graphynes, biphenylene networks, and 2D C60 fullerene polymers)."
+    },
+    {
+      "id": "macmillan2022_dataset_tensors",
+      "doi": "10.17632/8ng8tb49yn.1",
+      "title": "Mendeley Data: Rank-3 Graph Embedding Tensors (EmbeddingTensors.tar.gz)",
+      "authors": [
+        "L. Macmillan",
+        "E. C. Girão",
+        "V. Meunier"
+      ],
+      "year": 2022,
+      "venue": "Mendeley Data",
+      "volume": "",
+      "pages": "",
+      "url": "https://doi.org/10.17632/8ng8tb49yn.1",
+      "relationship": "Taxonomy & Topology",
+      "description": "Coordinate-free embedding tensor archive"
+    },
+    {
+      "id": "ram_2020_carbon",
+      "doi": "10.1016/j.carbon.2019.11.062",
+      "title": "C568: A new two-dimensional sp2-sp3 hybridized allotrope of carbon",
+      "authors": [
+        "Babu Ram",
+        "Hiroshi Mizuseki"
+      ],
+      "year": 2020,
+      "venue": "Carbon",
+      "volume": "158",
+      "pages": "827-835",
+      "url": "https://doi.org/10.1016/j.carbon.2019.11.062",
+      "relationship": "Theoretical Proposal",
+      "description": "First-principles design and stability analysis of C568, a two-dimensional sp2-sp3 hybridized carbon allotrope composed of 5-6-8 carbon rings. Demonstrates an indirect HSE06 band gap of 1.13 eV, thermal stability up to 800 K in AIMD simulations, and high in-plane carrier mobility of order 10^4 cm²/(V·s)."
+    },
+    {
+      "id": "zhuo_2020_nanoscale",
+      "doi": "10.1039/D0NR03869E",
+      "title": "Me-graphene: a graphene allotrope with near zero Poisson's ratio, sizeable band gap, and high carrier mobility",
+      "authors": [
+        "Zhiwen Zhuo",
+        "Xiaojun Wu",
+        "Jinlong Yang"
+      ],
+      "year": 2020,
+      "venue": "Nanoscale",
+      "volume": "12",
+      "pages": "19359-19366",
+      "url": "https://doi.org/10.1039/D0NR03869E",
+      "relationship": "Theoretical Proposal",
+      "description": "DFT prediction and electronic property characterization of Me-graphene, an allotrope of carbon featuring a near-zero Poisson's ratio (-0.007 to +0.021), a sizeable HSE06 band gap (~0.76 eV), and high directional electron mobilities up to 1.34 x 10^4 cm²/(V·s)."
+    },
+    {
+      "id": "hoffmann_2016_angewandte",
+      "doi": "10.1002/anie.201600655",
+      "title": "Homo Citans and Carbon Allotropes: For an Ethics of Citation",
+      "authors": [
+        "Roald Hoffmann",
+        "Artyom A. Kabanov",
+        "Andrey A. Golov",
+        "Davide M. Proserpio"
+      ],
+      "year": 2016,
+      "venue": "Angewandte Chemie International Edition",
+      "volume": "55",
+      "pages": "10962-10976",
+      "url": "https://doi.org/10.1002/anie.201600655",
+      "relationship": "Benchmark & Methodology",
+      "description": "Landmark study on citation ethics and high-rate duplicate rediscovery in carbon allotrope science. Establishes the SACADA database methodology and periodic graph isomorphism standards for crystallographic allotrope disambiguation."
+    }
+  ],
+  "structure_associations": {
+    "graphene": [
+      "novoselov_2004_science",
+      "wei_2013_nanolett",
+      "toh_2020_nature",
+      "hou_2022_nature",
+      "kolokathis_2024_csbj",
+      "araujo_2025_npj",
+      "paupitz_2026_carbon",
+      "zhuo_2020_nanoscale"
+    ],
+    "h6^1_191": [
+      "novoselov_2004_science"
+    ],
+    "G-01": [
+      "novoselov_2004_science",
+      "wei_2013_nanolett",
+      "toh_2020_nature",
+      "hou_2022_nature",
+      "kolokathis_2024_csbj",
+      "araujo_2025_npj",
+      "paupitz_2026_carbon"
+    ],
+    "G-03": [
+      "novoselov_2004_science"
+    ],
+    "pentaheptite": [
+      "crespi_1996_prb",
+      "terrones_2000_prl"
+    ],
+    "c5^2_7^2_65": [
+      "crespi_1996_prb",
+      "terrones_2000_prl"
+    ],
+    "G-04": [
+      "crespi_1996_prb",
+      "terrones_2000_prl"
+    ],
+    "G-25": [
+      "crespi_1996_prb"
+    ],
+    "r5^4_7^4_55": [
+      "terrones_2000_prl"
+    ],
+    "G-06": [
+      "terrones_2000_prl"
+    ],
+    "graphenylene": [
+      "li_2010_chemcommun",
+      "enyashin_2011_pssb",
+      "song_2013_jmcc",
+      "desyatkin_2022_jacs"
+    ],
+    "G-60": [
+      "li_2010_chemcommun",
+      "enyashin_2011_pssb",
+      "song_2013_jmcc",
+      "desyatkin_2022_jacs"
+    ],
+    "h4^3_6^2_12^1_191": [
+      "enyashin_2011_pssb",
+      "song_2013_jmcc"
+    ],
+    "G-61": [
+      "enyashin_2011_pssb",
+      "song_2013_jmcc"
+    ],
+    "biphenylene": [
+      "malko_2012_prl",
+      "toh_2020_nature",
+      "fan_2021_science",
+      "luo_2021_scirep",
+      "hou_2022_nature",
+      "xie_2022_rscadv",
+      "paupitz_2026_carbon"
+    ],
+    "beta_gr": [
+      "malko_2012_prl",
+      "fan_2017_rscadv",
+      "fan_2021_science"
+    ],
+    "r4^1_6^1_8^1_47": [
+      "malko_2012_prl",
+      "fan_2021_science",
+      "luo_2021_scirep",
+      "xie_2022_rscadv"
+    ],
+    "G-02": [
+      "malko_2012_prl",
+      "toh_2020_nature",
+      "fan_2021_science",
+      "luo_2021_scirep",
+      "hou_2022_nature",
+      "xie_2022_rscadv",
+      "paupitz_2026_carbon"
+    ],
+    "G-13": [
+      "malko_2012_prl",
+      "fan_2017_rscadv",
+      "fan_2021_science"
+    ],
+    "G-15": [
+      "malko_2012_prl",
+      "fan_2021_science"
+    ],
+    "alpha_gr": [
+      "sharma_2014_scirep",
+      "fan_2017_rscadv"
+    ],
+    "G-12": [
+      "sharma_2014_scirep",
+      "fan_2017_rscadv"
+    ],
+    "h3^2_12^1_191": [
+      "long_2015_carbon"
+    ],
+    "G-51": [
+      "long_2015_carbon"
+    ],
+    "phagraphene": [
+      "wang_2015_nanolett"
+    ],
+    "r5^2_6^6_7^2_51": [
+      "wang_2015_nanolett"
+    ],
+    "G-07": [
+      "wang_2015_nanolett"
+    ],
+    "G-08": [
+      "wang_2015_nanolett"
+    ],
+    "c5^2_8^1_65": [
+      "wang_2018_jmatchema"
+    ],
+    "G-42": [
+      "wang_2018_jmatchema"
+    ],
+    "cmmm_graphene": [
+      "yi_2018_jmatchema"
+    ],
+    "c5^2_6^4_8^1_65": [
+      "yi_2018_jmatchema"
+    ],
+    "G-05": [
+      "yi_2018_jmatchema"
+    ],
+    "G-14": [
+      "yi_2018_jmatchema"
+    ],
+    "all": [
+      "girao_2023_carbon",
+      "girao_2023_mendeley",
+      "macmillan_2025_npj",
+      "macmillan2022_dataset_tensors",
+      "hoffmann_2016_angewandte"
+    ],
+    "photh_graphene": [
+      "santos_2024_scirep"
+    ],
+    "G-09": [
+      "santos_2024_scirep"
+    ],
+    "c5^2_6^2_8^1_b_65": [
+      "ram_2020_carbon",
+      "zhuo_2020_nanoscale"
+    ],
+    "G-50": [
+      "ram_2020_carbon",
+      "zhuo_2020_nanoscale"
+    ],
+    "c5^2_6^2_8^1_a_65": [
+      "ram_2020_carbon"
+    ]
+  }
+}

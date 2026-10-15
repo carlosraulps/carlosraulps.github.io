@@ -1,0 +1,4415 @@
+{
+  "metadata": {
+    "description": "CarbonAtlas Calibrated 2D Carbon Allotropes Catalog",
+    "total_structures": 61,
+    "total_unique_bonds": 1569,
+    "functional": "PBE-DFT relaxed",
+    "cutoff_radius_angstrom": 1.85,
+    "calibrated_thresholds": {
+      "double_max": 1.374,
+      "aromatic_max": 1.46,
+      "triple_max": 1.25,
+      "gmm_means": [
+        1.3738,
+        1.423,
+        1.4687
+      ],
+      "gmm_stds": [
+        0.0275,
+        0.0247,
+        0.0443
+      ],
+      "gmm_weights": [
+        0.0625,
+        0.5902,
+        0.3474
+      ]
+    }
+  },
+  "structures": [
+    {
+      "id": "g-01_graphene",
+      "code": "G-01",
+      "filename": "g-01_graphene.cif",
+      "natoms": 2,
+      "cell": {
+        "a": 2.46784,
+        "b": 2.46784,
+        "c": 19.99973,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 2
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 3,
+        "bond_length_mean": 1.42481,
+        "bond_length_std": 0.0,
+        "bond_length_min": 1.42481,
+        "bond_length_max": 1.42481,
+        "bond_length_spread": 0.0,
+        "bond_length_alternation_bla": 0.0,
+        "pauling_order_mean": 1.453,
+        "pauling_order_min": 1.453,
+        "pauling_order_max": 1.453,
+        "is_uniform_resonant": true,
+        "primary_bonding": "Uniform Resonant sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 3,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 1
+        },
+        "polygon_fractions": {
+          "6": 1.0
+        },
+        "ring_entropy_shannon": 0.0,
+        "non_hexagonal_fraction": 0.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "6": 0.0
+        }
+      }
+    },
+    {
+      "id": "g-02_biphenylene",
+      "code": "G-02",
+      "filename": "g-02_biphenylene.cif",
+      "natoms": 6,
+      "cell": {
+        "a": 3.75782,
+        "b": 4.52528,
+        "c": 19.99927,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 6
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 9,
+        "bond_length_mean": 1.43374,
+        "bond_length_std": 0.02479,
+        "bond_length_min": 1.40606,
+        "bond_length_max": 1.45777,
+        "bond_length_spread": 0.05171,
+        "bond_length_alternation_bla": 0.03333,
+        "pauling_order_mean": 1.416,
+        "pauling_order_min": 1.306,
+        "pauling_order_max": 1.544,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 1,
+          "8": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "4": 0.33333,
+          "6": 0.33333,
+          "8": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.0022,
+          "8": 0.0495,
+          "6": 0.0517
+        }
+      }
+    },
+    {
+      "id": "g-03_h6^1_191",
+      "code": "G-03",
+      "filename": "g-03_h6^1_191.cif",
+      "natoms": 2,
+      "cell": {
+        "a": 2.46784,
+        "b": 2.46784,
+        "c": 19.99973,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 2
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 3,
+        "bond_length_mean": 1.42481,
+        "bond_length_std": 0.0,
+        "bond_length_min": 1.42481,
+        "bond_length_max": 1.42481,
+        "bond_length_spread": 0.0,
+        "bond_length_alternation_bla": 0.0,
+        "pauling_order_mean": 1.453,
+        "pauling_order_min": 1.453,
+        "pauling_order_max": 1.453,
+        "is_uniform_resonant": true,
+        "primary_bonding": "Uniform Resonant sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 3,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 1
+        },
+        "polygon_fractions": {
+          "6": 1.0
+        },
+        "ring_entropy_shannon": 0.0,
+        "non_hexagonal_fraction": 0.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "6": 0.0
+        }
+      }
+    },
+    {
+      "id": "g-04_c5^2_7^2_65",
+      "code": "G-04",
+      "filename": "g-04_c5^2_7^2_65.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 5.85864,
+        "b": 7.47886,
+        "c": 14.99993,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.43268,
+        "bond_length_std": 0.04111,
+        "bond_length_min": 1.39109,
+        "bond_length_max": 1.49019,
+        "bond_length_spread": 0.09909,
+        "bond_length_alternation_bla": 0.04506,
+        "pauling_order_mean": 1.429,
+        "pauling_order_min": 1.175,
+        "pauling_order_max": 1.621,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 16,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "7": 4,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.5,
+          "7": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 1.0,
+        "ring_bond_spreads": {
+          "7": 0.0915,
+          "5": 0.0991
+        }
+      }
+    },
+    {
+      "id": "g-05_c5^2_6^4_8^1_65",
+      "code": "G-05",
+      "filename": "g-05_c5^2_6^4_8^1_65.cif",
+      "natoms": 28,
+      "cell": {
+        "a": 8.52581,
+        "b": 8.96173,
+        "c": 24.99805,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 28
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 42,
+        "bond_length_mean": 1.43335,
+        "bond_length_std": 0.04072,
+        "bond_length_min": 1.33504,
+        "bond_length_max": 1.50519,
+        "bond_length_spread": 0.17015,
+        "bond_length_alternation_bla": 0.04583,
+        "pauling_order_mean": 1.426,
+        "pauling_order_min": 1.12,
+        "pauling_order_max": 1.944,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 2,
+          "delocalized": 32,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.04762,
+          "delocalized": 0.7619,
+          "single_like": 0.19048,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "5": 4,
+          "6": 8
+        },
+        "polygon_fractions": {
+          "5": 0.28571,
+          "6": 0.57143,
+          "8": 0.14286
+        },
+        "ring_entropy_shannon": 0.9557,
+        "non_hexagonal_fraction": 0.42857,
+        "stone_wales_fraction": 0.28571,
+        "ring_bond_spreads": {
+          "8": 0.0873,
+          "5": 0.1116,
+          "6": 0.0913
+        }
+      }
+    },
+    {
+      "id": "g-06_r5^4_7^4_55",
+      "code": "G-06",
+      "filename": "g-06_r5^4_7^4_55.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 4.76429,
+        "b": 9.16728,
+        "c": 19.99843,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.43129,
+        "bond_length_std": 0.03262,
+        "bond_length_min": 1.39469,
+        "bond_length_max": 1.49051,
+        "bond_length_spread": 0.09582,
+        "bond_length_alternation_bla": 0.04184,
+        "pauling_order_mean": 1.43,
+        "pauling_order_min": 1.174,
+        "pauling_order_max": 1.602,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 20,
+          "single_like": 4,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.83333,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 4,
+          "7": 4
+        },
+        "polygon_fractions": {
+          "5": 0.5,
+          "7": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 1.0,
+        "ring_bond_spreads": {
+          "5": 0.0895,
+          "7": 0.0958
+        }
+      }
+    },
+    {
+      "id": "g-07_r5^2_6^6_7^2_51",
+      "code": "G-07",
+      "filename": "g-07_r5^2_6^6_7^2_51.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 6.63951,
+        "b": 8.11082,
+        "c": 14.99996,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43248,
+        "bond_length_std": 0.04529,
+        "bond_length_min": 1.38528,
+        "bond_length_max": 1.52003,
+        "bond_length_spread": 0.13475,
+        "bond_length_alternation_bla": 0.03567,
+        "pauling_order_mean": 1.432,
+        "pauling_order_min": 1.067,
+        "pauling_order_max": 1.652,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 24,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 6,
+          "5": 2,
+          "7": 2
+        },
+        "polygon_fractions": {
+          "5": 0.2,
+          "6": 0.6,
+          "7": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.4,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "6": 0.1029,
+          "5": 0.0294,
+          "7": 0.1137
+        }
+      }
+    },
+    {
+      "id": "g-08_phagraphene",
+      "code": "G-08",
+      "filename": "g-08_phagraphene.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 6.63951,
+        "b": 8.11082,
+        "c": 14.99996,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43248,
+        "bond_length_std": 0.04529,
+        "bond_length_min": 1.38528,
+        "bond_length_max": 1.52003,
+        "bond_length_spread": 0.13475,
+        "bond_length_alternation_bla": 0.03567,
+        "pauling_order_mean": 1.432,
+        "pauling_order_min": 1.067,
+        "pauling_order_max": 1.652,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 24,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 6,
+          "5": 2,
+          "7": 2
+        },
+        "polygon_fractions": {
+          "5": 0.2,
+          "6": 0.6,
+          "7": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.4,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "6": 0.1029,
+          "5": 0.0294,
+          "7": 0.1137
+        }
+      }
+    },
+    {
+      "id": "g-09_photh_graphene",
+      "code": "G-09",
+      "filename": "g-09_photh_graphene.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 7.14058,
+        "b": 3.98359,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.45144,
+        "bond_length_std": 0.05223,
+        "bond_length_min": 1.37426,
+        "bond_length_max": 1.54544,
+        "bond_length_spread": 0.17118,
+        "bond_length_alternation_bla": 0.048,
+        "pauling_order_mean": 1.352,
+        "pauling_order_min": 0.983,
+        "pauling_order_max": 1.712,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.6,
+          "single_like": 0.4,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 1,
+          "4": 1,
+          "6": 1,
+          "7": 1,
+          "5": 1
+        },
+        "polygon_fractions": {
+          "4": 0.2,
+          "5": 0.2,
+          "6": 0.2,
+          "7": 0.2,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 1.60944,
+        "non_hexagonal_fraction": 0.8,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "8": 0.0969,
+          "4": 0.169,
+          "6": 0.122,
+          "7": 0.0981,
+          "5": 0.1263
+        }
+      }
+    },
+    {
+      "id": "g-10_h5^6_12^1_191",
+      "code": "G-10",
+      "filename": "g-10_h5^6_12^1_191.cif",
+      "natoms": 14,
+      "cell": {
+        "a": 7.15144,
+        "b": 7.15144,
+        "c": 14.99904,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 14
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 21,
+        "bond_length_mean": 1.442,
+        "bond_length_std": 0.04821,
+        "bond_length_min": 1.4083,
+        "bond_length_max": 1.55781,
+        "bond_length_spread": 0.14951,
+        "bond_length_alternation_bla": 0.04272,
+        "pauling_order_mean": 1.389,
+        "pauling_order_min": 0.944,
+        "pauling_order_max": 1.533,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 18,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.85714,
+          "single_like": 0.14286,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "12": 1,
+          "5": 5
+        },
+        "polygon_fractions": {
+          "5": 0.83333,
+          "12": 0.16667
+        },
+        "ring_entropy_shannon": 0.45057,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.83333,
+        "ring_bond_spreads": {
+          "12": 0.0,
+          "5": 0.1495
+        }
+      }
+    },
+    {
+      "id": "g-11_t5^4_6^8_8^2_123",
+      "code": "G-11",
+      "filename": "g-11_t5^4_6^8_8^2_123.cif",
+      "natoms": 28,
+      "cell": {
+        "a": 8.771,
+        "b": 8.771,
+        "c": 19.99881,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 28
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 42,
+        "bond_length_mean": 1.43749,
+        "bond_length_std": 0.05627,
+        "bond_length_min": 1.30608,
+        "bond_length_max": 1.53566,
+        "bond_length_spread": 0.22958,
+        "bond_length_alternation_bla": 0.05459,
+        "pauling_order_mean": 1.418,
+        "pauling_order_min": 1.014,
+        "pauling_order_max": 2.135,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 24,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.14286,
+          "delocalized": 0.57143,
+          "single_like": 0.28571,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "5": 4,
+          "6": 8
+        },
+        "polygon_fractions": {
+          "5": 0.28571,
+          "6": 0.57143,
+          "8": 0.14286
+        },
+        "ring_entropy_shannon": 0.9557,
+        "non_hexagonal_fraction": 0.42857,
+        "stone_wales_fraction": 0.28571,
+        "ring_bond_spreads": {
+          "8": 0.0681,
+          "5": 0.057,
+          "6": 0.19
+        }
+      }
+    },
+    {
+      "id": "g-12_alpha_gr",
+      "code": "G-12",
+      "filename": "g-12_alpha_gr.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 6.63951,
+        "b": 8.11082,
+        "c": 14.99996,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43248,
+        "bond_length_std": 0.04529,
+        "bond_length_min": 1.38528,
+        "bond_length_max": 1.52003,
+        "bond_length_spread": 0.13475,
+        "bond_length_alternation_bla": 0.03567,
+        "pauling_order_mean": 1.432,
+        "pauling_order_min": 1.067,
+        "pauling_order_max": 1.652,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 24,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 6,
+          "5": 2,
+          "7": 2
+        },
+        "polygon_fractions": {
+          "5": 0.2,
+          "6": 0.6,
+          "7": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.4,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "6": 0.1029,
+          "5": 0.0294,
+          "7": 0.1137
+        }
+      }
+    },
+    {
+      "id": "g-13_beta_gr",
+      "code": "G-13",
+      "filename": "g-13_beta_gr.cif",
+      "natoms": 6,
+      "cell": {
+        "a": 3.75782,
+        "b": 4.52528,
+        "c": 19.99927,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 6
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 9,
+        "bond_length_mean": 1.43374,
+        "bond_length_std": 0.02479,
+        "bond_length_min": 1.40606,
+        "bond_length_max": 1.45777,
+        "bond_length_spread": 0.05171,
+        "bond_length_alternation_bla": 0.03333,
+        "pauling_order_mean": 1.416,
+        "pauling_order_min": 1.306,
+        "pauling_order_max": 1.544,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 1,
+          "8": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "4": 0.33333,
+          "6": 0.33333,
+          "8": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.0022,
+          "8": 0.0495,
+          "6": 0.0517
+        }
+      }
+    },
+    {
+      "id": "g-14_cmmm_graphene",
+      "code": "G-14",
+      "filename": "g-14_cmmm_graphene.cif",
+      "natoms": 28,
+      "cell": {
+        "a": 8.52581,
+        "b": 8.96173,
+        "c": 24.99805,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 28
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 42,
+        "bond_length_mean": 1.43335,
+        "bond_length_std": 0.04072,
+        "bond_length_min": 1.33504,
+        "bond_length_max": 1.50519,
+        "bond_length_spread": 0.17015,
+        "bond_length_alternation_bla": 0.04583,
+        "pauling_order_mean": 1.426,
+        "pauling_order_min": 1.12,
+        "pauling_order_max": 1.944,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 2,
+          "delocalized": 32,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.04762,
+          "delocalized": 0.7619,
+          "single_like": 0.19048,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "5": 4,
+          "6": 8
+        },
+        "polygon_fractions": {
+          "5": 0.28571,
+          "6": 0.57143,
+          "8": 0.14286
+        },
+        "ring_entropy_shannon": 0.9557,
+        "non_hexagonal_fraction": 0.42857,
+        "stone_wales_fraction": 0.28571,
+        "ring_bond_spreads": {
+          "8": 0.0873,
+          "5": 0.1116,
+          "6": 0.0913
+        }
+      }
+    },
+    {
+      "id": "g-15_r4^1_6^1_8^1_47",
+      "code": "G-15",
+      "filename": "g-15_r4^1_6^1_8^1_47.cif",
+      "natoms": 6,
+      "cell": {
+        "a": 3.75782,
+        "b": 4.52528,
+        "c": 19.99927,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 6
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 9,
+        "bond_length_mean": 1.43374,
+        "bond_length_std": 0.02479,
+        "bond_length_min": 1.40606,
+        "bond_length_max": 1.45777,
+        "bond_length_spread": 0.05171,
+        "bond_length_alternation_bla": 0.03333,
+        "pauling_order_mean": 1.416,
+        "pauling_order_min": 1.306,
+        "pauling_order_max": 1.544,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 1,
+          "8": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "4": 0.33333,
+          "6": 0.33333,
+          "8": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.0022,
+          "8": 0.0495,
+          "6": 0.0517
+        }
+      }
+    },
+    {
+      "id": "g-16_h4^3_12^1_156",
+      "code": "G-16",
+      "filename": "g-16_h4^3_12^1_156.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 4.95019,
+        "b": 4.95019,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_buckled": 7,
+        "sp2_planar": 1
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.48117,
+        "bond_length_std": 0.07113,
+        "bond_length_min": 1.40594,
+        "bond_length_max": 1.59823,
+        "bond_length_spread": 0.19229,
+        "bond_length_alternation_bla": 0.04807,
+        "pauling_order_mean": 1.241,
+        "pauling_order_min": 0.828,
+        "pauling_order_max": 1.545,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Strained sp\u00b2 Network",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 3,
+          "single_like": 9,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.25,
+          "single_like": 0.75,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "3": 5
+        },
+        "polygon_fractions": {
+          "3": 1.0
+        },
+        "ring_entropy_shannon": 0.0,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "3": 0.2217
+        }
+      }
+    },
+    {
+      "id": "g-17_h4^6_6^8_8^3_12^1_191",
+      "code": "G-17",
+      "filename": "g-17_h4^6_6^8_8^3_12^1_191.cif",
+      "natoms": 36,
+      "cell": {
+        "a": 11.07482,
+        "b": 11.07482,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 36
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 54,
+        "bond_length_mean": 1.43527,
+        "bond_length_std": 0.03949,
+        "bond_length_min": 1.35417,
+        "bond_length_max": 1.49442,
+        "bond_length_spread": 0.14026,
+        "bond_length_alternation_bla": 0.05718,
+        "pauling_order_mean": 1.416,
+        "pauling_order_min": 1.159,
+        "pauling_order_max": 1.827,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 36,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.11111,
+          "delocalized": 0.66667,
+          "single_like": 0.22222,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 7,
+          "12": 1,
+          "6": 8,
+          "8": 3
+        },
+        "polygon_fractions": {
+          "4": 0.36842,
+          "6": 0.42105,
+          "8": 0.15789,
+          "12": 0.05263
+        },
+        "ring_entropy_shannon": 1.1785,
+        "non_hexagonal_fraction": 0.57895,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.0502,
+          "12": 0.1114,
+          "6": 0.0905,
+          "8": 0.0917
+        }
+      }
+    },
+    {
+      "id": "g-18_h4^6_6^9_10^3_191",
+      "code": "G-18",
+      "filename": "g-18_h4^6_6^9_10^3_191.cif",
+      "natoms": 36,
+      "cell": {
+        "a": 11.06497,
+        "b": 11.06497,
+        "c": 19.99987,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 36
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 54,
+        "bond_length_mean": 1.43503,
+        "bond_length_std": 0.04516,
+        "bond_length_min": 1.35339,
+        "bond_length_max": 1.49643,
+        "bond_length_spread": 0.14304,
+        "bond_length_alternation_bla": 0.0594,
+        "pauling_order_mean": 1.421,
+        "pauling_order_min": 1.152,
+        "pauling_order_max": 1.832,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Mixed Olefinic / Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 24,
+          "single_like": 24,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.11111,
+          "delocalized": 0.44444,
+          "single_like": 0.44444,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "10": 3,
+          "6": 9,
+          "4": 6
+        },
+        "polygon_fractions": {
+          "4": 0.33333,
+          "6": 0.5,
+          "10": 0.16667
+        },
+        "ring_entropy_shannon": 1.01141,
+        "non_hexagonal_fraction": 0.5,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "10": 0.1229,
+          "6": 0.069,
+          "4": 0.0912
+        }
+      }
+    },
+    {
+      "id": "g-19_h5^12_6^3_9^2_12^1_191",
+      "code": "G-19",
+      "filename": "g-19_h5^12_6^3_9^2_12^1_191.cif",
+      "natoms": 36,
+      "cell": {
+        "a": 11.08839,
+        "b": 11.08839,
+        "c": 19.99048,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 36
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 54,
+        "bond_length_mean": 1.43512,
+        "bond_length_std": 0.03437,
+        "bond_length_min": 1.4069,
+        "bond_length_max": 1.51794,
+        "bond_length_spread": 0.11104,
+        "bond_length_alternation_bla": 0.03445,
+        "pauling_order_mean": 1.413,
+        "pauling_order_min": 1.074,
+        "pauling_order_max": 1.54,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 42,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.77778,
+          "single_like": 0.22222,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 3,
+          "5": 14,
+          "12": 1,
+          "9": 1
+        },
+        "polygon_fractions": {
+          "5": 0.73684,
+          "6": 0.15789,
+          "9": 0.05263,
+          "12": 0.05263
+        },
+        "ring_entropy_shannon": 0.8264,
+        "non_hexagonal_fraction": 0.84211,
+        "stone_wales_fraction": 0.73684,
+        "ring_bond_spreads": {
+          "6": 0.0234,
+          "5": 0.111,
+          "12": 0.0,
+          "9": 0.0225
+        }
+      }
+    },
+    {
+      "id": "g-20_o4^1_5^1_6^1_9^1_6",
+      "code": "G-20",
+      "filename": "g-20_o4^1_5^1_6^1_9^1_6.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 5.54911,
+        "b": 4.40693,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 101.9
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 8
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.4579,
+        "bond_length_std": 0.10674,
+        "bond_length_min": 1.34512,
+        "bond_length_max": 1.70343,
+        "bond_length_spread": 0.35831,
+        "bond_length_alternation_bla": 0.10724,
+        "pauling_order_mean": 1.377,
+        "pauling_order_min": 0.589,
+        "pauling_order_max": 1.881,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Mixed Olefinic / Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 3,
+          "delocalized": 4,
+          "single_like": 5,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.25,
+          "delocalized": 0.33333,
+          "single_like": 0.41667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "9": 1,
+          "5": 1,
+          "6": 1,
+          "4": 1
+        },
+        "polygon_fractions": {
+          "4": 0.25,
+          "5": 0.25,
+          "6": 0.25,
+          "9": 0.25
+        },
+        "ring_entropy_shannon": 1.38629,
+        "non_hexagonal_fraction": 0.75,
+        "stone_wales_fraction": 0.25,
+        "ring_bond_spreads": {
+          "9": 0.3551,
+          "5": 0.3583,
+          "6": 0.2579,
+          "4": 0.1206
+        }
+      }
+    },
+    {
+      "id": "g-21_o4^1_5^2_10^1_10",
+      "code": "G-21",
+      "filename": "g-21_o4^1_5^2_10^1_10.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 5.04033,
+        "b": 5.001,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 107.85
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 8
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.43781,
+        "bond_length_std": 0.02987,
+        "bond_length_min": 1.39121,
+        "bond_length_max": 1.48092,
+        "bond_length_spread": 0.08971,
+        "bond_length_alternation_bla": 0.04377,
+        "pauling_order_mean": 1.4,
+        "pauling_order_min": 1.211,
+        "pauling_order_max": 1.62,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.75,
+          "single_like": 0.25,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 2,
+          "10": 1,
+          "4": 1
+        },
+        "polygon_fractions": {
+          "4": 0.25,
+          "5": 0.5,
+          "10": 0.25
+        },
+        "ring_entropy_shannon": 1.03972,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "5": 0.0897,
+          "10": 0.0632,
+          "4": 0.0152
+        }
+      }
+    },
+    {
+      "id": "g-22_r4^2_6^1_10^1_47",
+      "code": "G-22",
+      "filename": "g-22_r4^2_6^1_10^1_47.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 4.56353,
+        "b": 5.16972,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 8
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.4403,
+        "bond_length_std": 0.02917,
+        "bond_length_min": 1.41907,
+        "bond_length_max": 1.49382,
+        "bond_length_spread": 0.07475,
+        "bond_length_alternation_bla": 0.03604,
+        "pauling_order_mean": 1.388,
+        "pauling_order_min": 1.162,
+        "pauling_order_max": 1.48,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.75,
+          "single_like": 0.25,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 1,
+          "4": 2,
+          "10": 1
+        },
+        "polygon_fractions": {
+          "4": 0.5,
+          "6": 0.25,
+          "10": 0.25
+        },
+        "ring_entropy_shannon": 1.03972,
+        "non_hexagonal_fraction": 0.75,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "6": 0.0748,
+          "4": 0.067,
+          "10": 0.0104
+        }
+      }
+    },
+    {
+      "id": "g-23_r4^5_6^4_10^1_12^1_47",
+      "code": "G-23",
+      "filename": "g-23_r4^5_6^4_10^1_12^1_47.cif",
+      "natoms": 22,
+      "cell": {
+        "a": 6.72731,
+        "b": 10.34804,
+        "c": 19.99851,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 22
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 33,
+        "bond_length_mean": 1.43736,
+        "bond_length_std": 0.04748,
+        "bond_length_min": 1.35853,
+        "bond_length_max": 1.50544,
+        "bond_length_spread": 0.14691,
+        "bond_length_alternation_bla": 0.06891,
+        "pauling_order_mean": 1.412,
+        "pauling_order_min": 1.119,
+        "pauling_order_max": 1.801,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Mixed Olefinic / Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 10,
+          "single_like": 17,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.18182,
+          "delocalized": 0.30303,
+          "single_like": 0.51515,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "10": 1,
+          "6": 4,
+          "4": 5,
+          "12": 1
+        },
+        "polygon_fractions": {
+          "4": 0.45455,
+          "6": 0.36364,
+          "10": 0.09091,
+          "12": 0.09091
+        },
+        "ring_entropy_shannon": 1.16223,
+        "non_hexagonal_fraction": 0.63636,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "10": 0.0901,
+          "6": 0.1337,
+          "4": 0.032,
+          "12": 0.1196
+        }
+      }
+    },
+    {
+      "id": "g-24_r5^2_6^1_8^1_47",
+      "code": "G-24",
+      "filename": "g-24_r5^2_6^1_8^1_47.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 3.82941,
+        "b": 5.77908,
+        "c": 14.9998,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 8
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.43626,
+        "bond_length_std": 0.03953,
+        "bond_length_min": 1.38093,
+        "bond_length_max": 1.48952,
+        "bond_length_spread": 0.10858,
+        "bond_length_alternation_bla": 0.04723,
+        "pauling_order_mean": 1.411,
+        "pauling_order_min": 1.178,
+        "pauling_order_max": 1.675,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 8,
+          "single_like": 4,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 2,
+          "8": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "5": 0.5,
+          "6": 0.25,
+          "8": 0.25
+        },
+        "ring_entropy_shannon": 1.03972,
+        "non_hexagonal_fraction": 0.75,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "5": 0.0998,
+          "8": 0.1086,
+          "6": 0.0097
+        }
+      }
+    },
+    {
+      "id": "g-25_pentaheptite",
+      "code": "G-25",
+      "filename": "g-25_pentaheptite.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 5.85864,
+        "b": 7.47886,
+        "c": 14.99993,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.43268,
+        "bond_length_std": 0.04111,
+        "bond_length_min": 1.39109,
+        "bond_length_max": 1.49019,
+        "bond_length_spread": 0.09909,
+        "bond_length_alternation_bla": 0.04506,
+        "pauling_order_mean": 1.429,
+        "pauling_order_min": 1.175,
+        "pauling_order_max": 1.621,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 16,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "7": 4,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.5,
+          "7": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 1.0,
+        "ring_bond_spreads": {
+          "7": 0.0915,
+          "5": 0.0991
+        }
+      }
+    },
+    {
+      "id": "g-26_c4^1_5^1_7^1_8^1_38",
+      "code": "G-26",
+      "filename": "g-26_c4^1_5^1_7^1_8^1_38.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 3.87306,
+        "b": 11.64864,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.44076,
+        "bond_length_std": 0.03671,
+        "bond_length_min": 1.39988,
+        "bond_length_max": 1.53055,
+        "bond_length_spread": 0.13067,
+        "bond_length_alternation_bla": 0.04,
+        "pauling_order_mean": 1.389,
+        "pauling_order_min": 1.031,
+        "pauling_order_max": 1.575,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 18,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.75,
+          "single_like": 0.25,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 2,
+          "4": 2,
+          "7": 2,
+          "8": 2
+        },
+        "polygon_fractions": {
+          "4": 0.25,
+          "5": 0.25,
+          "7": 0.25,
+          "8": 0.25
+        },
+        "ring_entropy_shannon": 1.38629,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "5": 0.0772,
+          "4": 0.1202,
+          "7": 0.0574,
+          "8": 0.1063
+        }
+      }
+    },
+    {
+      "id": "g-27_c4^1_6^2_8^1_65",
+      "code": "G-27",
+      "filename": "g-27_c4^1_6^2_8^1_65.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 4.43405,
+        "b": 10.04413,
+        "c": 24.99927,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.43273,
+        "bond_length_std": 0.03249,
+        "bond_length_min": 1.39029,
+        "bond_length_max": 1.47657,
+        "bond_length_spread": 0.08628,
+        "bond_length_alternation_bla": 0.04999,
+        "pauling_order_mean": 1.424,
+        "pauling_order_min": 1.228,
+        "pauling_order_max": 1.625,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 20,
+          "single_like": 4,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.83333,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "4": 2,
+          "6": 4
+        },
+        "polygon_fractions": {
+          "4": 0.25,
+          "6": 0.5,
+          "8": 0.25
+        },
+        "ring_entropy_shannon": 1.03972,
+        "non_hexagonal_fraction": 0.5,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "8": 0.0863,
+          "4": 0.0429,
+          "6": 0.0637
+        }
+      }
+    },
+    {
+      "id": "g-28_h4^6_6^6_9^2_12^1_191",
+      "code": "G-28",
+      "filename": "g-28_h4^6_6^6_9^2_12^1_191.cif",
+      "natoms": 30,
+      "cell": {
+        "a": 10.30473,
+        "b": 10.30473,
+        "c": 19.99962,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 30
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 45,
+        "bond_length_mean": 1.43652,
+        "bond_length_std": 0.04325,
+        "bond_length_min": 1.35297,
+        "bond_length_max": 1.51694,
+        "bond_length_spread": 0.16397,
+        "bond_length_alternation_bla": 0.05993,
+        "pauling_order_mean": 1.413,
+        "pauling_order_min": 1.078,
+        "pauling_order_max": 1.834,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 24,
+          "single_like": 15,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.13333,
+          "delocalized": 0.53333,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 7,
+          "12": 1,
+          "4": 7,
+          "9": 1
+        },
+        "polygon_fractions": {
+          "4": 0.4375,
+          "6": 0.4375,
+          "9": 0.0625,
+          "12": 0.0625
+        },
+        "ring_entropy_shannon": 1.06992,
+        "non_hexagonal_fraction": 0.5625,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "6": 0.164,
+          "12": 0.1126,
+          "4": 0.0168,
+          "9": 0.059
+        }
+      }
+    },
+    {
+      "id": "g-29_h5^3_6^2_7^3_189",
+      "code": "G-29",
+      "filename": "g-29_h5^3_6^2_7^3_189.cif",
+      "natoms": 16,
+      "cell": {
+        "a": 7.08762,
+        "b": 7.08762,
+        "c": 14.99997,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 16
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 24,
+        "bond_length_mean": 1.43227,
+        "bond_length_std": 0.03898,
+        "bond_length_min": 1.38386,
+        "bond_length_max": 1.48795,
+        "bond_length_spread": 0.10408,
+        "bond_length_alternation_bla": 0.03455,
+        "pauling_order_mean": 1.43,
+        "pauling_order_min": 1.184,
+        "pauling_order_max": 1.659,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 15,
+          "single_like": 9,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.625,
+          "single_like": 0.375,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "7": 4,
+          "5": 3,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "5": 0.375,
+          "6": 0.125,
+          "7": 0.5
+        },
+        "ring_entropy_shannon": 0.97431,
+        "non_hexagonal_fraction": 0.875,
+        "stone_wales_fraction": 0.875,
+        "ring_bond_spreads": {
+          "7": 0.1041,
+          "5": 0.0877,
+          "6": 0.0423
+        }
+      }
+    },
+    {
+      "id": "g-30_c5^4_6^1_10^1_65",
+      "code": "G-30",
+      "filename": "g-30_c5^4_6^1_10^1_65.cif",
+      "natoms": 24,
+      "cell": {
+        "a": 7.07183,
+        "b": 9.92863,
+        "c": 24.99781,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 24
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 36,
+        "bond_length_mean": 1.43455,
+        "bond_length_std": 0.02861,
+        "bond_length_min": 1.40914,
+        "bond_length_max": 1.49683,
+        "bond_length_spread": 0.08769,
+        "bond_length_alternation_bla": 0.03863,
+        "pauling_order_mean": 1.414,
+        "pauling_order_min": 1.15,
+        "pauling_order_max": 1.529,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 28,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.77778,
+          "single_like": 0.22222,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 2,
+          "10": 2,
+          "5": 8
+        },
+        "polygon_fractions": {
+          "5": 0.66667,
+          "6": 0.16667,
+          "10": 0.16667
+        },
+        "ring_entropy_shannon": 0.86757,
+        "non_hexagonal_fraction": 0.83333,
+        "stone_wales_fraction": 0.66667,
+        "ring_bond_spreads": {
+          "6": 0.0154,
+          "10": 0.0358,
+          "5": 0.0877
+        }
+      }
+    },
+    {
+      "id": "g-31_h5^3_6^13_7^3_189",
+      "code": "G-31",
+      "filename": "g-31_h5^3_6^13_7^3_189.cif",
+      "natoms": 38,
+      "cell": {
+        "a": 10.84292,
+        "b": 10.84292,
+        "c": 19.99334,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 38
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 57,
+        "bond_length_mean": 1.43072,
+        "bond_length_std": 0.03893,
+        "bond_length_min": 1.35016,
+        "bond_length_max": 1.48584,
+        "bond_length_spread": 0.13568,
+        "bond_length_alternation_bla": 0.03784,
+        "pauling_order_mean": 1.437,
+        "pauling_order_min": 1.192,
+        "pauling_order_max": 1.851,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 3,
+          "delocalized": 36,
+          "single_like": 18,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.05263,
+          "delocalized": 0.63158,
+          "single_like": 0.31579,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 4,
+          "7": 3,
+          "6": 12
+        },
+        "polygon_fractions": {
+          "5": 0.21053,
+          "6": 0.63158,
+          "7": 0.15789
+        },
+        "ring_entropy_shannon": 0.90971,
+        "non_hexagonal_fraction": 0.36842,
+        "stone_wales_fraction": 0.36842,
+        "ring_bond_spreads": {
+          "5": 0.0774,
+          "7": 0.0857,
+          "6": 0.1028
+        }
+      }
+    },
+    {
+      "id": "g-32_h5^3_6^1_9^1_187",
+      "code": "G-32",
+      "filename": "g-32_h5^3_6^1_9^1_187.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 5.73462,
+        "b": 5.73462,
+        "c": 14.99969,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.43726,
+        "bond_length_std": 0.04641,
+        "bond_length_min": 1.38713,
+        "bond_length_max": 1.51439,
+        "bond_length_spread": 0.12726,
+        "bond_length_alternation_bla": 0.06123,
+        "pauling_order_mean": 1.411,
+        "pauling_order_min": 1.087,
+        "pauling_order_max": 1.642,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 12,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 2,
+          "9": 1
+        },
+        "polygon_fractions": {
+          "5": 0.66667,
+          "9": 0.33333
+        },
+        "ring_entropy_shannon": 0.63651,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.66667,
+        "ring_bond_spreads": {
+          "5": 0.1273,
+          "9": 0.0557
+        }
+      }
+    },
+    {
+      "id": "g-33_o5^2_6^1_7^2_10",
+      "code": "G-33",
+      "filename": "g-33_o5^2_6^1_7^2_10.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 6.01803,
+        "b": 4.62795,
+        "c": 24.99922,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 102.31
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.43309,
+        "bond_length_std": 0.03998,
+        "bond_length_min": 1.36733,
+        "bond_length_max": 1.52175,
+        "bond_length_spread": 0.15442,
+        "bond_length_alternation_bla": 0.0422,
+        "pauling_order_mean": 1.426,
+        "pauling_order_min": 1.061,
+        "pauling_order_max": 1.751,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 1,
+          "delocalized": 9,
+          "single_like": 5,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.06667,
+          "delocalized": 0.6,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "7": 2,
+          "5": 2,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.2,
+          "7": 0.4
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.8,
+        "stone_wales_fraction": 0.8,
+        "ring_bond_spreads": {
+          "7": 0.1544,
+          "5": 0.0871,
+          "6": 0.0376
+        }
+      }
+    },
+    {
+      "id": "g-34_r4^1_5^2_8^2_47",
+      "code": "G-34",
+      "filename": "g-34_r4^1_5^2_8^2_47.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 3.92063,
+        "b": 7.15977,
+        "c": 14.99924,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.44339,
+        "bond_length_std": 0.04093,
+        "bond_length_min": 1.39681,
+        "bond_length_max": 1.49979,
+        "bond_length_spread": 0.10297,
+        "bond_length_alternation_bla": 0.05519,
+        "pauling_order_mean": 1.38,
+        "pauling_order_min": 1.139,
+        "pauling_order_max": 1.591,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 9,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.6,
+          "single_like": 0.4,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 1,
+          "5": 2,
+          "8": 2
+        },
+        "polygon_fractions": {
+          "4": 0.2,
+          "5": 0.4,
+          "8": 0.4
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "4": 0.0305,
+          "5": 0.1023,
+          "8": 0.0834
+        }
+      }
+    },
+    {
+      "id": "g-35_r4^1_6^3_8^1_47",
+      "code": "G-35",
+      "filename": "g-35_r4^1_6^3_8^1_47.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 4.3928,
+        "b": 6.27549,
+        "c": 19.99958,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.4323,
+        "bond_length_std": 0.03514,
+        "bond_length_min": 1.38555,
+        "bond_length_max": 1.49569,
+        "bond_length_spread": 0.11015,
+        "bond_length_alternation_bla": 0.0485,
+        "pauling_order_mean": 1.427,
+        "pauling_order_min": 1.155,
+        "pauling_order_max": 1.65,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 13,
+          "single_like": 2,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.86667,
+          "single_like": 0.13333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 3,
+          "8": 1,
+          "4": 1
+        },
+        "polygon_fractions": {
+          "4": 0.2,
+          "6": 0.6,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.4,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "6": 0.0469,
+          "8": 0.1101,
+          "4": 0.0775
+        }
+      }
+    },
+    {
+      "id": "g-36_r5^2_6^2_8^1_47",
+      "code": "G-36",
+      "filename": "g-36_r5^2_6^2_8^1_47.cif",
+      "natoms": 10,
+      "cell": {
+        "a": 4.87917,
+        "b": 5.61936,
+        "c": 19.9996,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 10
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 15,
+        "bond_length_mean": 1.4312,
+        "bond_length_std": 0.02823,
+        "bond_length_min": 1.36397,
+        "bond_length_max": 1.50429,
+        "bond_length_spread": 0.14032,
+        "bond_length_alternation_bla": 0.02639,
+        "pauling_order_mean": 1.429,
+        "pauling_order_min": 1.123,
+        "pauling_order_max": 1.77,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 1,
+          "delocalized": 12,
+          "single_like": 2,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.06667,
+          "delocalized": 0.8,
+          "single_like": 0.13333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 1,
+          "6": 2,
+          "5": 2
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.4,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.6,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "8": 0.0085,
+          "6": 0.1403,
+          "5": 0.0492
+        }
+      }
+    },
+    {
+      "id": "g-37_r5^4_6^4_7^4_55",
+      "code": "G-37",
+      "filename": "g-37_r5^4_6^4_7^4_55.cif",
+      "natoms": 24,
+      "cell": {
+        "a": 7.20188,
+        "b": 8.9964,
+        "c": 19.99669,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 24
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 36,
+        "bond_length_mean": 1.42864,
+        "bond_length_std": 0.02284,
+        "bond_length_min": 1.39192,
+        "bond_length_max": 1.46676,
+        "bond_length_spread": 0.07484,
+        "bond_length_alternation_bla": 0.03088,
+        "pauling_order_mean": 1.439,
+        "pauling_order_min": 1.268,
+        "pauling_order_max": 1.616,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 30,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.83333,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 4,
+          "7": 4,
+          "6": 4
+        },
+        "polygon_fractions": {
+          "5": 0.33333,
+          "6": 0.33333,
+          "7": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.66666,
+        "ring_bond_spreads": {
+          "5": 0.0481,
+          "7": 0.0713,
+          "6": 0.0748
+        }
+      }
+    },
+    {
+      "id": "g-38_c4^2_5^4_6^1_14^1_65",
+      "code": "G-38",
+      "filename": "g-38_c4^2_5^4_6^1_14^1_65.cif",
+      "natoms": 32,
+      "cell": {
+        "a": 9.49467,
+        "b": 11.40968,
+        "c": 24.9958,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 32
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 48,
+        "bond_length_mean": 1.43863,
+        "bond_length_std": 0.0291,
+        "bond_length_min": 1.40778,
+        "bond_length_max": 1.49336,
+        "bond_length_spread": 0.08557,
+        "bond_length_alternation_bla": 0.03953,
+        "pauling_order_mean": 1.395,
+        "pauling_order_min": 1.163,
+        "pauling_order_max": 1.535,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 36,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.75,
+          "single_like": 0.25,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 2,
+          "14": 2,
+          "5": 8,
+          "4": 4
+        },
+        "polygon_fractions": {
+          "4": 0.25,
+          "5": 0.5,
+          "6": 0.125,
+          "14": 0.125
+        },
+        "ring_entropy_shannon": 1.21301,
+        "non_hexagonal_fraction": 0.875,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "6": 0.0041,
+          "14": 0.0298,
+          "5": 0.0856,
+          "4": 0.0611
+        }
+      }
+    },
+    {
+      "id": "g-39_c5^2_6^4_7^2_65",
+      "code": "G-39",
+      "filename": "g-39_c5^2_6^4_7^2_65.cif",
+      "natoms": 32,
+      "cell": {
+        "a": 8.06429,
+        "b": 10.65102,
+        "c": 24.99476,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 32
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 48,
+        "bond_length_mean": 1.4289,
+        "bond_length_std": 0.01982,
+        "bond_length_min": 1.37916,
+        "bond_length_max": 1.45705,
+        "bond_length_spread": 0.07789,
+        "bond_length_alternation_bla": 0.01918,
+        "pauling_order_mean": 1.437,
+        "pauling_order_min": 1.309,
+        "pauling_order_max": 1.685,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 48,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 8,
+          "5": 4,
+          "7": 4
+        },
+        "polygon_fractions": {
+          "5": 0.25,
+          "6": 0.5,
+          "7": 0.25
+        },
+        "ring_entropy_shannon": 1.03972,
+        "non_hexagonal_fraction": 0.5,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "6": 0.0326,
+          "5": 0.0305,
+          "7": 0.0777
+        }
+      }
+    },
+    {
+      "id": "g-40_r5^4_6^3_8^2_47",
+      "code": "G-40",
+      "filename": "g-40_r5^4_6^3_8^2_47.cif",
+      "natoms": 18,
+      "cell": {
+        "a": 5.71545,
+        "b": 8.64474,
+        "c": 19.99882,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 18
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 27,
+        "bond_length_mean": 1.43197,
+        "bond_length_std": 0.02685,
+        "bond_length_min": 1.37515,
+        "bond_length_max": 1.48731,
+        "bond_length_spread": 0.11216,
+        "bond_length_alternation_bla": 0.031,
+        "pauling_order_mean": 1.425,
+        "pauling_order_min": 1.186,
+        "pauling_order_max": 1.707,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 26,
+          "single_like": 1,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.96296,
+          "single_like": 0.03704,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "6": 3,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.44444,
+          "6": 0.33333,
+          "8": 0.22222
+        },
+        "ring_entropy_shannon": 1.06086,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.44444,
+        "ring_bond_spreads": {
+          "8": 0.0525,
+          "6": 0.0753,
+          "5": 0.0498
+        }
+      }
+    },
+    {
+      "id": "g-41_t4^1_8^1_123",
+      "code": "G-41",
+      "filename": "g-41_t4^1_8^1_123.cif",
+      "natoms": 4,
+      "cell": {
+        "a": 3.44679,
+        "b": 3.44679,
+        "c": 14.99992,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 4
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 6,
+        "bond_length_mean": 1.43472,
+        "bond_length_std": 0.0409,
+        "bond_length_min": 1.37688,
+        "bond_length_max": 1.46364,
+        "bond_length_spread": 0.08676,
+        "bond_length_alternation_bla": 0.05784,
+        "pauling_order_mean": 1.42,
+        "pauling_order_min": 1.281,
+        "pauling_order_max": 1.697,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Strained sp\u00b2 Network",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 2,
+          "single_like": 4,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.33333,
+          "single_like": 0.66667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 1,
+          "8": 1
+        },
+        "polygon_fractions": {
+          "4": 0.5,
+          "8": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.0,
+          "8": 0.0868
+        }
+      }
+    },
+    {
+      "id": "g-42_c5^2_8^1_65",
+      "code": "G-42",
+      "filename": "g-42_c5^2_8^1_65.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 3.69693,
+        "b": 9.07938,
+        "c": 24.9997,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.43213,
+        "bond_length_std": 0.02142,
+        "bond_length_min": 1.39677,
+        "bond_length_max": 1.45007,
+        "bond_length_spread": 0.0533,
+        "bond_length_alternation_bla": 0.03101,
+        "pauling_order_mean": 1.422,
+        "pauling_order_min": 1.339,
+        "pauling_order_max": 1.591,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 18,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.66667,
+          "8": 0.33333
+        },
+        "ring_entropy_shannon": 0.63651,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.66667,
+        "ring_bond_spreads": {
+          "8": 0.0489,
+          "5": 0.0453
+        }
+      }
+    },
+    {
+      "id": "g-43_h5^3_7^3_189",
+      "code": "G-43",
+      "filename": "g-43_h5^3_7^3_189.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 6.15371,
+        "b": 6.15371,
+        "c": 14.99933,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.44014,
+        "bond_length_std": 0.04992,
+        "bond_length_min": 1.35988,
+        "bond_length_max": 1.53144,
+        "bond_length_spread": 0.17156,
+        "bond_length_alternation_bla": 0.04728,
+        "pauling_order_mean": 1.4,
+        "pauling_order_min": 1.028,
+        "pauling_order_max": 1.793,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 3,
+          "delocalized": 12,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.16667,
+          "delocalized": 0.66667,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 3,
+          "7": 3
+        },
+        "polygon_fractions": {
+          "5": 0.5,
+          "7": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 1.0,
+        "ring_bond_spreads": {
+          "5": 0.1716,
+          "7": 0.1001
+        }
+      }
+    },
+    {
+      "id": "g-44_o5^2_6^2_7^2_10",
+      "code": "G-44",
+      "filename": "g-44_o5^2_6^2_7^2_10.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 6.09353,
+        "b": 5.52338,
+        "c": 14.99953,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 102.99
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.44053,
+        "bond_length_std": 0.0677,
+        "bond_length_min": 1.33249,
+        "bond_length_max": 1.58959,
+        "bond_length_spread": 0.2571,
+        "bond_length_alternation_bla": 0.07251,
+        "pauling_order_mean": 1.413,
+        "pauling_order_min": 0.851,
+        "pauling_order_max": 1.96,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Mixed Olefinic / Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 3,
+          "delocalized": 7,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.16667,
+          "delocalized": 0.38889,
+          "single_like": 0.44444,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 2,
+          "7": 2,
+          "5": 2
+        },
+        "polygon_fractions": {
+          "5": 0.33333,
+          "6": 0.33333,
+          "7": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.66666,
+        "ring_bond_spreads": {
+          "6": 0.2179,
+          "7": 0.2004,
+          "5": 0.0987
+        }
+      }
+    },
+    {
+      "id": "g-45_r4^1_5^2_6^2_10^1_47",
+      "code": "G-45",
+      "filename": "g-45_r4^1_5^2_6^2_10^1_47.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 4.95132,
+        "b": 6.96261,
+        "c": 19.99946,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.43574,
+        "bond_length_std": 0.03366,
+        "bond_length_min": 1.35986,
+        "bond_length_max": 1.50672,
+        "bond_length_spread": 0.14686,
+        "bond_length_alternation_bla": 0.04227,
+        "pauling_order_mean": 1.411,
+        "pauling_order_min": 1.114,
+        "pauling_order_max": 1.794,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 1,
+          "delocalized": 14,
+          "single_like": 3,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.05556,
+          "delocalized": 0.77778,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "10": 1,
+          "6": 2,
+          "5": 2,
+          "4": 1
+        },
+        "polygon_fractions": {
+          "4": 0.16667,
+          "5": 0.33333,
+          "6": 0.33333,
+          "10": 0.16667
+        },
+        "ring_entropy_shannon": 1.32967,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.33333,
+        "ring_bond_spreads": {
+          "10": 0.0231,
+          "6": 0.1165,
+          "5": 0.0967,
+          "4": 0.0785
+        }
+      }
+    },
+    {
+      "id": "g-46_r5^2_6^2_7^2_51",
+      "code": "G-46",
+      "filename": "g-46_r5^2_6^2_7^2_51.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 6.70676,
+        "b": 4.83552,
+        "c": 19.99916,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.42966,
+        "bond_length_std": 0.0282,
+        "bond_length_min": 1.40997,
+        "bond_length_max": 1.50314,
+        "bond_length_spread": 0.09317,
+        "bond_length_alternation_bla": 0.03012,
+        "pauling_order_mean": 1.436,
+        "pauling_order_min": 1.127,
+        "pauling_order_max": 1.525,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Resonant Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 16,
+          "single_like": 2,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.88889,
+          "single_like": 0.11111,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 2,
+          "7": 2,
+          "5": 2
+        },
+        "polygon_fractions": {
+          "5": 0.33333,
+          "6": 0.33333,
+          "7": 0.33333
+        },
+        "ring_entropy_shannon": 1.09861,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.66666,
+        "ring_bond_spreads": {
+          "6": 0.0175,
+          "7": 0.0932,
+          "5": 0.0893
+        }
+      }
+    },
+    {
+      "id": "g-47_r5^4_8^2_51",
+      "code": "G-47",
+      "filename": "g-47_r5^4_8^2_51.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 4.87762,
+        "b": 6.8994,
+        "c": 19.99969,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.43412,
+        "bond_length_std": 0.02989,
+        "bond_length_min": 1.38974,
+        "bond_length_max": 1.48103,
+        "bond_length_spread": 0.09129,
+        "bond_length_alternation_bla": 0.03154,
+        "pauling_order_mean": 1.416,
+        "pauling_order_min": 1.211,
+        "pauling_order_max": 1.628,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 12,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 4,
+          "8": 2
+        },
+        "polygon_fractions": {
+          "5": 0.66667,
+          "8": 0.33333
+        },
+        "ring_entropy_shannon": 0.63651,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.66667,
+        "ring_bond_spreads": {
+          "5": 0.0913,
+          "8": 0.0723
+        }
+      }
+    },
+    {
+      "id": "g-48_c4^2_6^2_10^1_65",
+      "code": "G-48",
+      "filename": "g-48_c4^2_6^2_10^1_65.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 6.69211,
+        "b": 8.97243,
+        "c": 19.99968,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43528,
+        "bond_length_std": 0.03808,
+        "bond_length_min": 1.37712,
+        "bond_length_max": 1.50489,
+        "bond_length_spread": 0.12778,
+        "bond_length_alternation_bla": 0.05395,
+        "pauling_order_mean": 1.415,
+        "pauling_order_min": 1.121,
+        "pauling_order_max": 1.696,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 20,
+          "single_like": 10,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "10": 2,
+          "6": 4,
+          "4": 4
+        },
+        "polygon_fractions": {
+          "4": 0.4,
+          "6": 0.4,
+          "10": 0.2
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.6,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "10": 0.0794,
+          "6": 0.1278,
+          "4": 0.0059
+        }
+      }
+    },
+    {
+      "id": "g-49_c5^2_6^2_8^1_a_65",
+      "code": "G-49",
+      "filename": "g-49_c5^2_6^2_8^1_a_65.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 3.91261,
+        "b": 14.05859,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43714,
+        "bond_length_std": 0.05177,
+        "bond_length_min": 1.37552,
+        "bond_length_max": 1.51391,
+        "bond_length_spread": 0.1384,
+        "bond_length_alternation_bla": 0.05478,
+        "pauling_order_mean": 1.415,
+        "pauling_order_min": 1.088,
+        "pauling_order_max": 1.705,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 22,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.73333,
+          "single_like": 0.26667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "6": 4,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.4,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.6,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "8": 0.134,
+          "6": 0.0685,
+          "5": 0.1384
+        }
+      }
+    },
+    {
+      "id": "g-50_c5^2_6^2_8^1_b_65",
+      "code": "G-50",
+      "filename": "g-50_c5^2_6^2_8^1_b_65.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 4.9155,
+        "b": 11.14271,
+        "c": 19.999,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.42914,
+        "bond_length_std": 0.00767,
+        "bond_length_min": 1.42205,
+        "bond_length_max": 1.44408,
+        "bond_length_spread": 0.02203,
+        "bond_length_alternation_bla": 0.00882,
+        "pauling_order_mean": 1.433,
+        "pauling_order_min": 1.365,
+        "pauling_order_max": 1.466,
+        "is_uniform_resonant": true,
+        "primary_bonding": "Uniform Resonant sp\u00b2",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 30,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 1.0,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "5": 4,
+          "8": 2,
+          "6": 4
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.4,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.6,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "5": 0.0173,
+          "8": 0.0047,
+          "6": 0.0163
+        }
+      }
+    },
+    {
+      "id": "g-51_h3^2_12^1_191",
+      "code": "G-51",
+      "filename": "g-51_h3^2_12^1_191.cif",
+      "natoms": 6,
+      "cell": {
+        "a": 5.19634,
+        "b": 5.19634,
+        "c": 19.99977,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 6
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 9,
+        "bond_length_mean": 1.40125,
+        "bond_length_std": 0.03205,
+        "bond_length_min": 1.35592,
+        "bond_length_max": 1.42391,
+        "bond_length_spread": 0.06798,
+        "bond_length_alternation_bla": 0.04532,
+        "pauling_order_mean": 1.577,
+        "pauling_order_min": 1.457,
+        "pauling_order_max": 1.817,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Mixed Olefinic / Aromatic sp\u00b2",
+        "character_counts": {
+          "double_like": 3,
+          "delocalized": 6,
+          "single_like": 0,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.33333,
+          "delocalized": 0.66667,
+          "single_like": 0.0,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": false,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "12": 1,
+          "3": 1
+        },
+        "polygon_fractions": {
+          "3": 0.5,
+          "12": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "12": 0.068,
+          "3": 0.0
+        }
+      }
+    },
+    {
+      "id": "g-52_h4^3_5^6_18^1_191",
+      "code": "G-52",
+      "filename": "g-52_h4^3_5^6_18^1_191.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 9.58432,
+        "b": 9.58432,
+        "c": 14.99831,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.44404,
+        "bond_length_std": 0.03941,
+        "bond_length_min": 1.41889,
+        "bond_length_max": 1.52259,
+        "bond_length_spread": 0.1037,
+        "bond_length_alternation_bla": 0.04239,
+        "pauling_order_mean": 1.376,
+        "pauling_order_min": 1.058,
+        "pauling_order_max": 1.481,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 24,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 3,
+          "18": 1,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "4": 0.375,
+          "5": 0.5,
+          "18": 0.125
+        },
+        "ring_entropy_shannon": 0.97431,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.5,
+        "ring_bond_spreads": {
+          "4": 0.1037,
+          "18": 0.0058,
+          "5": 0.0979
+        }
+      }
+    },
+    {
+      "id": "g-53_h4^6_5^12_6^3_12^2_18^1_191",
+      "code": "G-53",
+      "filename": "g-53_h4^6_5^12_6^3_12^2_18^1_191.cif",
+      "natoms": 48,
+      "cell": {
+        "a": 13.92679,
+        "b": 13.92679,
+        "c": 19.98261,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 48
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 72,
+        "bond_length_mean": 1.43898,
+        "bond_length_std": 0.03204,
+        "bond_length_min": 1.39742,
+        "bond_length_max": 1.49651,
+        "bond_length_spread": 0.09909,
+        "bond_length_alternation_bla": 0.04478,
+        "pauling_order_mean": 1.395,
+        "pauling_order_min": 1.151,
+        "pauling_order_max": 1.588,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 54,
+          "single_like": 18,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.75,
+          "single_like": 0.25,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 3,
+          "5": 13,
+          "18": 1,
+          "4": 7,
+          "12": 1
+        },
+        "polygon_fractions": {
+          "4": 0.28,
+          "5": 0.52,
+          "6": 0.12,
+          "12": 0.04,
+          "18": 0.04
+        },
+        "ring_entropy_shannon": 1.20841,
+        "non_hexagonal_fraction": 0.88,
+        "stone_wales_fraction": 0.52,
+        "ring_bond_spreads": {
+          "6": 0.0159,
+          "5": 0.0991,
+          "18": 0.0219,
+          "4": 0.072,
+          "12": 0.0462
+        }
+      }
+    },
+    {
+      "id": "g-54_h5^6_6^3_12^1_191",
+      "code": "G-54",
+      "filename": "g-54_h5^6_6^3_12^1_191.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 8.49829,
+        "b": 8.49829,
+        "c": 14.99816,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.45804,
+        "bond_length_std": 0.08886,
+        "bond_length_min": 1.33239,
+        "bond_length_max": 1.60928,
+        "bond_length_spread": 0.27689,
+        "bond_length_alternation_bla": 0.09733,
+        "pauling_order_mean": 1.357,
+        "pauling_order_min": 0.799,
+        "pauling_order_max": 1.961,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 18,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.2,
+          "delocalized": 0.6,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 3,
+          "12": 1,
+          "5": 5
+        },
+        "polygon_fractions": {
+          "5": 0.55556,
+          "6": 0.33333,
+          "12": 0.11111
+        },
+        "ring_entropy_shannon": 0.93688,
+        "non_hexagonal_fraction": 0.66667,
+        "stone_wales_fraction": 0.55556,
+        "ring_bond_spreads": {
+          "6": 0.03,
+          "12": 0.1798,
+          "5": 0.2769
+        }
+      }
+    },
+    {
+      "id": "g-55_r4^1_5^4_6^3_8^1_10^1_47",
+      "code": "G-55",
+      "filename": "g-55_r4^1_5^4_6^3_8^1_10^1_47.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 5.76732,
+        "b": 9.9585,
+        "c": 19.99913,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43327,
+        "bond_length_std": 0.03403,
+        "bond_length_min": 1.38146,
+        "bond_length_max": 1.48793,
+        "bond_length_spread": 0.10647,
+        "bond_length_alternation_bla": 0.04683,
+        "pauling_order_mean": 1.422,
+        "pauling_order_min": 1.184,
+        "pauling_order_max": 1.672,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 24,
+          "single_like": 6,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.8,
+          "single_like": 0.2,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 3,
+          "10": 1,
+          "8": 1,
+          "5": 4,
+          "4": 1
+        },
+        "polygon_fractions": {
+          "4": 0.1,
+          "5": 0.4,
+          "6": 0.3,
+          "8": 0.1,
+          "10": 0.1
+        },
+        "ring_entropy_shannon": 1.41848,
+        "non_hexagonal_fraction": 0.7,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "6": 0.0716,
+          "10": 0.0632,
+          "8": 0.0695,
+          "5": 0.0754,
+          "4": 0.0264
+        }
+      }
+    },
+    {
+      "id": "g-56_r4^2_5^2_7^6_51",
+      "code": "G-56",
+      "filename": "g-56_r4^2_5^2_7^6_51.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 7.08049,
+        "b": 7.83786,
+        "c": 14.99868,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43447,
+        "bond_length_std": 0.04083,
+        "bond_length_min": 1.3814,
+        "bond_length_max": 1.4936,
+        "bond_length_spread": 0.1122,
+        "bond_length_alternation_bla": 0.04512,
+        "pauling_order_mean": 1.42,
+        "pauling_order_min": 1.162,
+        "pauling_order_max": 1.673,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 20,
+          "single_like": 10,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.66667,
+          "single_like": 0.33333,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 2,
+          "7": 6,
+          "5": 2
+        },
+        "polygon_fractions": {
+          "4": 0.2,
+          "5": 0.2,
+          "7": 0.6
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.8,
+        "ring_bond_spreads": {
+          "4": 0.0683,
+          "7": 0.1056,
+          "5": 0.073
+        }
+      }
+    },
+    {
+      "id": "g-57_r5^4_6^2_7^4_25",
+      "code": "G-57",
+      "filename": "g-57_r5^4_6^2_7^4_25.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 6.73547,
+        "b": 8.11436,
+        "c": 24.99807,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43678,
+        "bond_length_std": 0.05647,
+        "bond_length_min": 1.33875,
+        "bond_length_max": 1.5979,
+        "bond_length_spread": 0.25914,
+        "bond_length_alternation_bla": 0.05047,
+        "pauling_order_mean": 1.419,
+        "pauling_order_min": 0.829,
+        "pauling_order_max": 1.921,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 1,
+          "delocalized": 21,
+          "single_like": 8,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.03333,
+          "delocalized": 0.7,
+          "single_like": 0.26667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "6": 2,
+          "7": 4,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.2,
+          "7": 0.4
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.8,
+        "stone_wales_fraction": 0.8,
+        "ring_bond_spreads": {
+          "6": 0.1216,
+          "7": 0.1905,
+          "5": 0.0748
+        }
+      }
+    },
+    {
+      "id": "g-58_t5^4_6^4_8^2_127",
+      "code": "G-58",
+      "filename": "g-58_t5^4_6^4_8^2_127.cif",
+      "natoms": 20,
+      "cell": {
+        "a": 7.41569,
+        "b": 7.41569,
+        "c": 14.99998,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 20
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 30,
+        "bond_length_mean": 1.43069,
+        "bond_length_std": 0.03461,
+        "bond_length_min": 1.37514,
+        "bond_length_max": 1.48311,
+        "bond_length_spread": 0.10797,
+        "bond_length_alternation_bla": 0.0439,
+        "pauling_order_mean": 1.434,
+        "pauling_order_min": 1.203,
+        "pauling_order_max": 1.707,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 18,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.6,
+          "single_like": 0.4,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "6": 4,
+          "5": 4
+        },
+        "polygon_fractions": {
+          "5": 0.4,
+          "6": 0.4,
+          "8": 0.2
+        },
+        "ring_entropy_shannon": 1.05492,
+        "non_hexagonal_fraction": 0.6,
+        "stone_wales_fraction": 0.4,
+        "ring_bond_spreads": {
+          "8": 0.0638,
+          "6": 0.108,
+          "5": 0.0698
+        }
+      }
+    },
+    {
+      "id": "g-59_r4^2_8^2_47",
+      "code": "G-59",
+      "filename": "g-59_r4^2_8^2_47.cif",
+      "natoms": 8,
+      "cell": {
+        "a": 3.88292,
+        "b": 5.89307,
+        "c": 20.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 8
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 12,
+        "bond_length_mean": 1.44452,
+        "bond_length_std": 0.03694,
+        "bond_length_min": 1.42575,
+        "bond_length_max": 1.52688,
+        "bond_length_spread": 0.10114,
+        "bond_length_alternation_bla": 0.03584,
+        "pauling_order_mean": 1.372,
+        "pauling_order_min": 1.043,
+        "pauling_order_max": 1.449,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Delocalized sp\u00b2 (Strained)",
+        "character_counts": {
+          "double_like": 0,
+          "delocalized": 10,
+          "single_like": 2,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.0,
+          "delocalized": 0.83333,
+          "single_like": 0.16667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": false,
+        "has_delocalized": true,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "8": 2,
+          "4": 2
+        },
+        "polygon_fractions": {
+          "4": 0.5,
+          "8": 0.5
+        },
+        "ring_entropy_shannon": 0.69315,
+        "non_hexagonal_fraction": 1.0,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "8": 0.0516,
+          "4": 0.1011
+        }
+      }
+    },
+    {
+      "id": "g-60_graphenylene",
+      "code": "G-60",
+      "filename": "g-60_graphenylene.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 6.75627,
+        "b": 6.75627,
+        "c": 19.99993,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.43743,
+        "bond_length_std": 0.04599,
+        "bond_length_min": 1.37282,
+        "bond_length_max": 1.47625,
+        "bond_length_spread": 0.10343,
+        "bond_length_alternation_bla": 0.06895,
+        "pauling_order_mean": 1.411,
+        "pauling_order_min": 1.23,
+        "pauling_order_max": 1.72,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Localized Olefinic (C=C / C\u2013C)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 0,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.33333,
+          "delocalized": 0.0,
+          "single_like": 0.66667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": false,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 3,
+          "12": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "4": 0.6,
+          "6": 0.2,
+          "12": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.8,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.013,
+          "12": 0.0904,
+          "6": 0.1034
+        }
+      }
+    },
+    {
+      "id": "g-61_h4^3_6^2_12^1_191",
+      "code": "G-61",
+      "filename": "g-61_h4^3_6^2_12^1_191.cif",
+      "natoms": 12,
+      "cell": {
+        "a": 6.75627,
+        "b": 6.75627,
+        "c": 19.99993,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.0
+      },
+      "hybridization_breakdown": {
+        "sp2_planar": 12
+      },
+      "is_fully_sp2": true,
+      "bonding_descriptors": {
+        "total_bonds_unit_cell": 18,
+        "bond_length_mean": 1.43743,
+        "bond_length_std": 0.04599,
+        "bond_length_min": 1.37282,
+        "bond_length_max": 1.47625,
+        "bond_length_spread": 0.10343,
+        "bond_length_alternation_bla": 0.06895,
+        "pauling_order_mean": 1.411,
+        "pauling_order_min": 1.23,
+        "pauling_order_max": 1.72,
+        "is_uniform_resonant": false,
+        "primary_bonding": "Localized Olefinic (C=C / C\u2013C)",
+        "character_counts": {
+          "double_like": 6,
+          "delocalized": 0,
+          "single_like": 12,
+          "triple_like": 0,
+          "sp_sp_single": 0,
+          "sp_sp2_single": 0
+        },
+        "character_fractions": {
+          "double_like": 0.33333,
+          "delocalized": 0.0,
+          "single_like": 0.66667,
+          "triple_like": 0.0,
+          "sp_sp_single": 0.0,
+          "sp_sp2_single": 0.0
+        },
+        "has_double_like": true,
+        "has_delocalized": false,
+        "has_single_like": true,
+        "has_triple_like": false
+      },
+      "ring_topology": {
+        "polygon_counts": {
+          "4": 3,
+          "12": 1,
+          "6": 1
+        },
+        "polygon_fractions": {
+          "4": 0.6,
+          "6": 0.2,
+          "12": 0.2
+        },
+        "ring_entropy_shannon": 0.95027,
+        "non_hexagonal_fraction": 0.8,
+        "stone_wales_fraction": 0.0,
+        "ring_bond_spreads": {
+          "4": 0.013,
+          "12": 0.0904,
+          "6": 0.1034
+        }
+      }
+    }
+  ]
+}
