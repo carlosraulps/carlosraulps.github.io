@@ -1,7 +1,0 @@
-crystal\_toolkit.components.transformations.cubic module
-========================================================
-
-.. automodule:: crystal_toolkit.components.transformations.cubic
-   :members:
-   :undoc-members:
-   :show-inheritance:

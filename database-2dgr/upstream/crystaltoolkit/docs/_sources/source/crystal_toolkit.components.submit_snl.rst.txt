@@ -1,7 +1,0 @@
-crystal\_toolkit.components.submit\_snl module
-==============================================
-
-.. automodule:: crystal_toolkit.components.submit_snl
-   :members:
-   :undoc-members:
-   :show-inheritance:

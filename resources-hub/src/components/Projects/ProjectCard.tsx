@@ -103,15 +103,17 @@ export function ProjectCard({ project, onOpenDetails }: ProjectCardProps) {
               </a>
             )}
 
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1.5 rounded hover:bg-forest-100 text-ink-700 transition-colors"
-              title="GitHub Repository"
-            >
-              <Github className="w-3.5 h-3.5" />
-            </a>
+            {project.githubUrl && project.githubUrl !== project.liveDemoUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 rounded hover:bg-forest-100 text-ink-700 transition-colors"
+                title="GitHub Repository"
+              >
+                <Github className="w-3.5 h-3.5" />
+              </a>
+            )}
           </div>
         </div>
 

@@ -16,11 +16,11 @@ export function EditorialFooter() {
           {/* Column 1: Identity & Research Statement (5 cols) */}
           <div className="md:col-span-5 space-y-3">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded bg-forest-800 flex items-center justify-center text-ivory-50 text-xs font-mono font-bold">
-                CR
+              <div className="px-1.5 h-6 rounded bg-forest-800 flex items-center justify-center text-ivory-50 text-xs font-mono font-bold tracking-wider">
+                CRPS
               </div>
               <span className="font-serif text-xl font-bold text-forest-950">
-                Carlos Raúl Primo Ramos
+                Carlos R. Primo S.
               </span>
             </div>
             <p className="text-xs text-ink-700 leading-relaxed font-sans max-w-sm">
@@ -53,7 +53,9 @@ export function EditorialFooter() {
             <ul className="space-y-2 text-ink-700">
               <li>
                 <a
-                  href="/2d-carbon-explorer/"
+                  href="https://2d-carbon-explorer.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-forest-900 transition-colors flex items-center justify-between"
                 >
                   <span>Carbon Atlas (2D Carbon Explorer)</span>
@@ -83,12 +85,12 @@ export function EditorialFooter() {
               </li>
               <li>
                 <a
-                  href="https://github.com/carlosraulps/VASP-automatization-platform"
+                  href="https://github.com/carlosraulps/aird2d"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-forest-900 transition-colors flex items-center justify-between"
                 >
-                  <span>VASP-automatization-platform</span>
+                  <span>aird2d (C2DB ML Discovery)</span>
                   <span className="text-[10px] text-ink-500">GitHub ↗</span>
                 </a>
               </li>
@@ -100,7 +102,7 @@ export function EditorialFooter() {
         {/* Bottom Bar: Copyright, License, Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-ink-500">
           <div className="flex items-center gap-3">
-            <span>© {new Date().getFullYear()} Carlos Raúl Primo Ramos</span>
+            <span>© {new Date().getFullYear()} Carlos R. Primo S.</span>
             <span>•</span>
             <span className="flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5 text-forest-700" />

@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Carlos Ra&uacutel Blog"
+title                    : "Carlos R. Primo S."
 title_separator          : "-"
-name                     : &name "Carlos Ra&uacutel "
-description              : &description "personal description"
+name                     : &name "Carlos R. Primo S."
+description              : &description "Computational Physics, Density Functional Theory & Scientific Software"
 url                      : https://carlosraulps.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "carlosraulps/carlosraulps.github.io"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Carlos Ra&uacutel"
+  name             : "Carlos R. Primo S."
   avatar           : "me.png"
   bio              : "Physics university student, mathematical-computational modeling."
   location         : "Lima, Per&uacute"

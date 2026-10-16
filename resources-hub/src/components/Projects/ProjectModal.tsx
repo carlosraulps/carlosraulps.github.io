@@ -145,7 +145,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Modal Bottom Actions */}
         <div className="p-4 sm:p-5 border-t border-forest-800/10 bg-ivory-50/70 flex items-center justify-between text-xs font-mono">
           <div className="text-ink-500 text-[11px]">
-            Repository: carlosraulps/{project.id}
+            {project.githubUrl === project.liveDemoUrl
+              ? 'Deployment: 2d-carbon-explorer.vercel.app (Private Repo)'
+              : `Repository: carlosraulps/${project.id}`}
           </div>
 
           <div className="flex items-center gap-2.5">
@@ -172,15 +174,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </a>
             )}
 
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-white hover:bg-ivory-100 border border-forest-800/20 text-ink-800 font-medium transition-colors"
-            >
-              <Github className="w-3.5 h-3.5 text-forest-700" />
-              <span>Source Repository</span>
-            </a>
+            {project.githubUrl && project.githubUrl !== project.liveDemoUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-white hover:bg-ivory-100 border border-forest-800/20 text-ink-800 font-medium transition-colors"
+              >
+                <Github className="w-3.5 h-3.5 text-forest-700" />
+                <span>Source Repository</span>
+              </a>
+            )}
           </div>
         </div>
 

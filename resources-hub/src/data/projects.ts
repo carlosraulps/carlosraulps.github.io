@@ -11,8 +11,8 @@ export const PROJECTS: ProjectMetadata[] = [
     primaryLanguage: 'React / TypeScript / Python',
     languageColor: '#3178C6',
     techStack: ['React 18', 'Three.js', 'React Three Fiber', 'FastAPI', 'Pymatgen', 'ASE', 'VASP 6.x', 'HSE06', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/carlosraulps/2d-carbon-explorer',
-    liveDemoUrl: 'https://carlosraulps.github.io/2d-carbon-explorer/',
+    githubUrl: 'https://2d-carbon-explorer.vercel.app/',
+    liveDemoUrl: 'https://2d-carbon-explorer.vercel.app/',
     highlights: [
       '61 validated allotropes spanning all 17 plane wallpaper groups',
       'Calculated ΔE vs. Graphene monolayer ground state',

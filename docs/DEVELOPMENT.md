@@ -58,19 +58,10 @@ npm run preview:resources
 
 Carbon Atlas is Carlos's flagship materials informatics application for exploring two-dimensional carbon allotropes beyond graphene.
 
-### 3.1. Architecture & Data Provenance
-- **Complete Monorepo Source (`database-2dgr/`)**: Contains the end-to-end Python backend, crystallographic datasets (Girão 61-allotrope master dataset, Mendeley Data V2, MIDB), machine learning descriptors, and React 18 frontend source.
-- **Client-Side Production Build (`2d-carbon-explorer/`)**: The static production bundle (Vite + React Three Fiber + Drei) compiled to pure static HTML/JS/CSS with relative asset paths, deployed directly to GitHub Pages at `/2d-carbon-explorer/` and `/database-2dgr/`.
-- **Scientific Coverage**: Includes the interactive PHOTH Ab Initio Quantum & Strain Laboratory, Henkelman Bader charge redistribution under biaxial/uniaxial strain, 3D volumetric charge density difference (CDD) slices, and didactic supercell expansion.
-
-### 3.2. Building and Updating Carbon Atlas
-```bash
-cd database-2dgr/frontend
-npm install
-npm test
-npm run build
-cp -r dist/* ../../2d-carbon-explorer/
-```
+### 3.1. Architecture & Data Provenance Protection
+- **Private Source Repository & Vercel Deployment**: To protect unreleased ab initio crystallographic coordinates, volumetric charge density files (`*.bin`, `*.vti`), and proprietary codebase components prior to peer-reviewed publication, Carbon Atlas is maintained in a private GitHub repository and deployed to **[https://2d-carbon-explorer.vercel.app/](https://2d-carbon-explorer.vercel.app/)**.
+- **Public Repository Boundary**: `.gitignore` explicitly excludes `2d-carbon-explorer/`, `database-2dgr/`, `*.bin`, and `*.vti` so that raw source code and unreleased structural files are never committed to the public `carlosraulps.github.io` repository.
+- **Resources Hub Integration**: The Resources Hub links directly to `https://2d-carbon-explorer.vercel.app/` from the navigation bar, hero banner, project catalog, and footer colophon.
 
 ---
 

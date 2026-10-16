@@ -18,3 +18,12 @@ files/extra.pdf
 *_archive*
 *_backup*
 
+# macOS System Files
+.DS_Store
+
+# Protect 2D Carbon Explorer & Unreleased Allotrope Data (Hosted in Private Repo -> Vercel)
+2d-carbon-explorer/
+database-2dgr/
+*.bin
+*.vti
+resources-hub/src/data/carbonAllotropes.ts

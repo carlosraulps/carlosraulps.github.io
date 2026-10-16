@@ -1,7 +1,0 @@
-crystal\_toolkit.core.tests.test\_legend module
-===============================================
-
-.. automodule:: crystal_toolkit.core.tests.test_legend
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -23,12 +23,13 @@ export function EditorialNavbar() {
 
   const sectionAnchors = [
     { title: 'Overview', href: '#overview' },
+    { title: 'Carbon Atlas ↗', href: 'https://2d-carbon-explorer.vercel.app/', external: true },
     { title: 'Featured Applications', href: '#featured-apps' },
     { title: 'DFT & Materials', href: '#dft-materials' },
     { title: 'Numerical Computing', href: '#numerical-computing' },
     { title: 'AI & Automation', href: '#ai-automation' },
     { title: 'Linux & HPC', href: '#linux-hpc' },
-    { title: 'LaTeX & Study', href: '#academic-study' },
+    { title: 'Academic & LaTeX', href: '#academic-study' },
   ];
 
   return (
@@ -47,12 +48,12 @@ export function EditorialNavbar() {
               href="/" 
               className="flex items-center gap-2 text-forest-900 hover:text-forest-700 transition-colors group"
             >
-              <div className="w-7 h-7 rounded bg-forest-800 flex items-center justify-center text-ivory-50 text-xs font-mono font-bold group-hover:bg-forest-900 transition-colors">
-                CR
+              <div className="px-2 h-7 rounded bg-forest-800 flex items-center justify-center text-ivory-50 text-xs font-mono font-bold tracking-wider group-hover:bg-forest-900 transition-colors">
+                CRPS
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-lg tracking-tight font-bold text-forest-950 leading-none">
-                  Carlos Raúl Primo Ramos
+                  Carlos R. Primo S.
                 </span>
                 <span className="text-[10px] font-mono text-ink-500 uppercase tracking-wider mt-0.5">
                   Computational Physics & Materials Hub
@@ -113,7 +114,11 @@ export function EditorialNavbar() {
               <a
                 key={anchor.title}
                 href={anchor.href}
-                className="whitespace-nowrap hover:text-forest-900 hover:underline transition-colors"
+                target={anchor.external ? '_blank' : undefined}
+                rel={anchor.external ? 'noopener noreferrer' : undefined}
+                className={`whitespace-nowrap hover:text-forest-900 hover:underline transition-colors ${
+                  anchor.external ? 'text-forest-800 font-semibold' : ''
+                }`}
               >
                 {anchor.title}
               </a>
@@ -151,6 +156,8 @@ export function EditorialNavbar() {
               <a
                 key={anchor.title}
                 href={anchor.href}
+                target={anchor.external ? '_blank' : undefined}
+                rel={anchor.external ? 'noopener noreferrer' : undefined}
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-2 py-1.5 bg-ivory-50 rounded text-ink-800 hover:bg-forest-100 border border-forest-800/10 truncate"
               >

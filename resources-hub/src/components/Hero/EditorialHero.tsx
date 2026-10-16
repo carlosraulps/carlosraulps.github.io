@@ -11,7 +11,7 @@ export function EditorialHero() {
         <div className="flex items-center gap-2 mb-4">
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-[11px] font-mono font-medium tracking-wide bg-forest-100 text-forest-900 border border-forest-800/15">
             <span className="w-1.5 h-1.5 rounded-full bg-forest-700 animate-pulse"></span>
-            CARLOS RAÚL · COMPUTATIONAL SCIENCE LABORATORY
+            CARLOS R. PRIMO S. · COMPUTATIONAL SCIENCE LABORATORY
           </span>
           <span className="hidden sm:inline-block text-[11px] font-mono text-ink-500">
             UNMSM (Lima) · UFABC (São Paulo)
@@ -33,11 +33,13 @@ export function EditorialHero() {
         {/* Primary Action Buttons */}
         <div className="mt-8 flex items-center gap-3 flex-wrap font-mono text-xs">
           <a
-            href="/2d-carbon-explorer/"
+            href="https://2d-carbon-explorer.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-forest-800 hover:bg-forest-900 text-ivory-50 font-medium transition-all shadow-sm hover:shadow active:scale-[0.98]"
           >
             <Atom className="w-4 h-4 text-forest-300" />
-            <span>Launch Carbon Atlas (2D Explorer) ↗</span>
+            <span>Launch Carbon Atlas ↗</span>
           </a>
 
           <a
